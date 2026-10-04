@@ -4,7 +4,8 @@ Working directory
   /Users/campbellhutcheson/Documents/Codex/2026-10-03/oka/swarm-analysis
 
 What is installed
-  A local Python/SQLite pipeline, with four separate Luna jobs per packet:
+  A local Python/SQLite pipeline powered by the OpenAI Responses API, with
+  four separate gpt-6-luna jobs per packet:
   extraction -> extraction review -> interpretation -> linked summaries.
   Two queues share the same checks: coverage and investigation.
   Source versions, packets, prompts, schemas, attempts and results are retained.
@@ -21,13 +22,15 @@ Source coverage
 
 Requirements
   Python 3.10+; standard library only. The tested runtime is Homebrew Python 3.
-  An authenticated Codex CLI with access to gpt-6-luna. No API key is embedded.
+  The OpenAI key at ~/.keys/openai, with access to gpt-6-luna. The key is
+  read at runtime and never copied into this project, prompts, logs or exports.
+  API calls bill the key's OpenAI project. No key is embedded in source.
   Sources remain in ~/Projects/swarm-communication. The Transluce catalog uses
   runs/pilot-v1/corpus.sqlite; normalized excerpts use runs/network-v4/evidence.
   Existing research runs are prerequisites and remain unchanged.
 
 Initial inventory (idempotent; no model work)
-  python3 pipeline.py init
+  python3 pipeline.py init --backend openai --model gpt-6-luna --api-key-file ~/.keys/openai
   python3 pipeline.py ingest
 
 Find and prepare evidence
@@ -43,16 +46,21 @@ Find and prepare evidence
   --state /path/to/state goes BEFORE the command if a separate run is wanted.
 
 Run a bounded batch
-  python3 pipeline.py run --max-jobs 12 --concurrency 2 --max-seconds 900 --max-tokens 180000 --codex /Users/campbellhutcheson/.local/bin/codex
+  python3 pipeline.py run --max-jobs 12 --concurrency 2 --max-seconds 900 --max-tokens 180000
 
   A packet normally requires four successful model calls; failed attempts add
   calls. Concurrency is 1–3. The token threshold is checked between completed
   calls, so an in-flight call can cross it. Usage includes reported input and
   output tokens; reasoning tokens are not added again. Missing usage stops
   further automatic dispatch. It is not a dollar-spend ceiling.
-  Every worker runs read-only, receives bounded evidence, and is instructed
-  not to execute source code, follow URLs or use tools. Apps, plugins, browsing,
-  computer use, memories and further delegation are disabled for these jobs.
+  API workers receive bounded evidence, strict JSON schemas and no tools.
+  Requests use store=false and the standard service tier. max_output_tokens
+  defaults to 8,000 per request and includes reasoning output. Each response
+  records request/response IDs, returned model and usage. Incomplete responses
+  and refusals cannot pass validation. Authentication/quota failures stop
+  dispatch; raw server error messages and authorization headers are not saved.
+  A Codex CLI backend remains available via init --backend codex; switching
+  backend creates a new config hash, so prior results retain their provenance.
 
 Inspect and resume
   python3 pipeline.py status
@@ -119,5 +127,9 @@ Current limits and next increments
     not imply full payload or outcome coverage.
   - No scheduler or background full-corpus run is enabled.
 
-Codex worker documentation
+API documentation
+  https://developers.openai.com/api/docs/models/gpt-6-luna
+  https://developers.openai.com/api/docs/guides/structured-outputs
+
+Optional Codex worker documentation
   https://learn.chatgpt.com/docs/non-interactive-mode

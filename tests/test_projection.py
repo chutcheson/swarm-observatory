@@ -202,6 +202,14 @@ class ProjectionTests(unittest.TestCase):
         self.assertEqual(len(edges), 2)
         self.assertEqual(len({e["source"] for e in edges}), 2)
 
+    def test_status_counts_only_active_configuration(self):
+        self.add_packet("older")
+        self.conn.execute("UPDATE jobs SET config_hash='old-codex'")
+        self.add_packet("current")
+        snapshot=status_snapshot(self.conn)
+        self.assertEqual(4,snapshot['counts']['jobs'])
+        self.assertEqual(4,snapshot['history']['other_config_jobs'])
+
     def test_status_snapshot_contains_aggregate_counts_without_raw_text(self):
         self.add_packet("packet-status")
         self.conn.execute("UPDATE jobs SET error='PRIVATE SOURCE BODY'")

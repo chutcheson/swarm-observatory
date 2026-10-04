@@ -1,7 +1,7 @@
 """Command-line entrypoint. No model work occurs without explicit run/claim commands."""
 import argparse,json,random,sys
 from pathlib import Path
-from .db import connect,canonical,atomic_json,setting
+from .db import connect,canonical,atomic_json,setting,set_setting
 from . import engine
 ROOT=Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE=Path('/Users/campbellhutcheson/Projects/swarm-communication')
@@ -9,14 +9,14 @@ def show(x):print(json.dumps(x,ensure_ascii=False,indent=2))
 def main(argv=None):
  p=argparse.ArgumentParser(prog='swarm-pipeline');p.add_argument('--state',type=Path,default=ROOT/'pipeline-state')
  sub=p.add_subparsers(dest='command',required=True)
- a=sub.add_parser('init');a.add_argument('--model',default='gpt-6-luna');a.add_argument('--reasoning',default='high',choices=['low','medium','high'])
+ a=sub.add_parser('init');a.add_argument('--backend',choices=['openai','codex'],default='openai');a.add_argument('--api-key-file',type=Path,default=Path.home()/'.keys/openai');a.add_argument('--max-output-tokens',type=int,default=8000);a.add_argument('--model',default='gpt-6-luna');a.add_argument('--reasoning',default='high',choices=['low','medium','high'])
  a=sub.add_parser('ingest');a.add_argument('--source',type=Path,default=DEFAULT_SOURCE)
  a=sub.add_parser('packetize');a.add_argument('--entity',action='append');a.add_argument('--max-chars',type=int,default=40000)
  a=sub.add_parser('plan');a.add_argument('--coverage',type=int,default=12);a.add_argument('--investigation',type=int,default=0);a.add_argument('--seed',type=int,default=20261004);a.add_argument('--entity',action='append')
  a=sub.add_parser('enqueue');a.add_argument('packet_ids',nargs='+');a.add_argument('--queue',choices=['coverage','investigation'],default='coverage')
  a=sub.add_parser('claim');a.add_argument('--worker',required=True);a.add_argument('--stage');a.add_argument('--queue');a.add_argument('--job');a.add_argument('--output',type=Path,required=True)
  a=sub.add_parser('submit');a.add_argument('--job-file',type=Path,required=True);a.add_argument('--result',type=Path,required=True);a.add_argument('--usage',type=Path)
- a=sub.add_parser('run');a.add_argument('--max-jobs',type=int,default=4);a.add_argument('--max-seconds',type=int,default=1800);a.add_argument('--max-tokens',type=int,default=100000);a.add_argument('--concurrency',type=int,default=1);a.add_argument('--queue');a.add_argument('--stage');a.add_argument('--codex',default='codex')
+ a=sub.add_parser('run');a.add_argument('--max-jobs',type=int,default=4);a.add_argument('--max-seconds',type=int,default=1800);a.add_argument('--max-tokens',type=int,default=100000);a.add_argument('--concurrency',type=int,default=1);a.add_argument('--queue');a.add_argument('--stage');a.add_argument('--codex',default='codex');a.add_argument('--api-key-file',type=Path)
  a=sub.add_parser('invalidate');a.add_argument('job_id');a.add_argument('--reason',required=True)
  a=sub.add_parser('reprocess');a.add_argument('job_id');a.add_argument('--reason',required=True);a.add_argument('--source-uid',action='append')
  a=sub.add_parser('resolve-context');a.add_argument('ticket_id');a.add_argument('--source-uid',action='append',required=True);a.add_argument('--reason',required=True)
@@ -28,7 +28,9 @@ def main(argv=None):
  a=sub.add_parser('search');a.add_argument('query');a.add_argument('--limit',type=int,default=15)
  args=p.parse_args(argv);args.state=args.state.resolve();db=args.state/'pipeline.sqlite';c=connect(db)
  try:
-  if args.command=='init':show({'database':str(db),'config_hash':engine.configure(c,{'model':args.model,'reasoning':args.reasoning})})
+  if args.command=='init':
+   if args.backend=='openai':set_setting(c,'api_key_file',str(args.api_key_file.expanduser().resolve()))
+   show({'database':str(db),'backend':args.backend,'model':args.model,'config_hash':engine.configure(c,{'backend':args.backend,'model':args.model,'reasoning':args.reasoning,'max_output_tokens':args.max_output_tokens})})
   elif args.command=='ingest':
    from .ingest import ingest
    show(ingest(c,args.source,ROOT/'runs'/'network-v4'))
@@ -59,7 +61,7 @@ def main(argv=None):
   elif args.command=='run':
    from .worker import run
    c.close();c=None
-   show(run(db,args.state,args.max_jobs,args.max_seconds,args.max_tokens,args.concurrency,args.queue,args.stage,args.codex,on_result=lambda r:print(canonical(r),flush=True)))
+   show(run(db,args.state,args.max_jobs,args.max_seconds,args.max_tokens,args.concurrency,args.queue,args.stage,args.codex,on_result=lambda r:print(canonical(r),flush=True),key_file=args.api_key_file))
   elif args.command=='invalidate':show({'invalidated':engine.invalidate(c,args.job_id,args.reason)})
   elif args.command=='reprocess':show(engine.reprocess(c,args.job_id,args.reason,args.source_uid))
   elif args.command=='resolve-context':
@@ -77,10 +79,11 @@ def main(argv=None):
     'nightingale_revisions':c.execute("SELECT count(*) FROM sources WHERE dataset='nightingale' AND kind='revision'").fetchone()[0],
     'transluce_catalog':c.execute("SELECT count(*) FROM entities WHERE dataset='transluce'").fetchone()[0],
     'transluce_reports':c.execute("SELECT count(*) FROM sources WHERE kind='normalized_report'").fetchone()[0]}
-   jobs=[dict(r) for r in c.execute('SELECT j.id,j.stage,j.status,j.queue,j.attempt_count,j.packet_id,p.dataset,e.title FROM jobs j JOIN packets p ON p.id=j.packet_id JOIN entities e ON e.id=p.entity_id ORDER BY j.created_at,j.id')]
-   usages=[json.loads(r[0]) for r in c.execute('SELECT usage FROM attempts WHERE usage IS NOT NULL')]
+   jobs=[dict(r) for r in c.execute('SELECT j.id,j.stage,j.status,j.queue,j.attempt_count,j.packet_id,p.dataset,e.title FROM jobs j JOIN packets p ON p.id=j.packet_id JOIN entities e ON e.id=p.entity_id WHERE j.config_hash=? ORDER BY j.created_at,j.id',(setting(c,'active_config_hash'),))]
+   usages=[json.loads(r[0]) for r in c.execute('SELECT a.usage FROM attempts a JOIN jobs j ON j.id=a.job_id WHERE a.usage IS NOT NULL AND j.config_hash=?',(setting(c,'active_config_hash'),))]
    tokens=sum(u.get('input_tokens',0)+u.get('output_tokens',0) for u in usages)
-   data={'mode':'local execution · exported snapshot','status':state,'pipeline':projection,'inventory':inventory,'jobs':jobs,'validation':{'tests':args.tests,'reported_tokens':tokens}}
+   backend=setting(c,'config:'+setting(c,'active_config_hash'),{}).get('backend','codex')
+   data={'mode':('OpenAI API' if backend=='openai' else 'Codex CLI')+' workers · exported snapshot','status':state,'pipeline':projection,'inventory':inventory,'jobs':jobs,'validation':{'tests':args.tests,'reported_tokens':tokens}}
    atomic_json(args.output,data);atomic_json(args.output.with_name('pipeline-candidate.json'),{'pipeline':projection});show({'status_path':str(args.output),'candidate_records':len(projection['records'])})
   elif args.command=='status':
    from .project import status_snapshot

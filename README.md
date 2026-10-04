@@ -2,7 +2,7 @@
 
 The repeatable local pipeline is implemented in `swarm_pipeline/`, with `pipeline.py` as its CLI. Start with [the operator guide](pipeline-docs/RUNBOOK.txt). The existing supervised research runs below remain frozen.
 
-The worker uses the installed authenticated Codex CLI with `gpt-6-luna`. Nothing runs in the background unless explicitly launched. The queue supports separate extraction, review, interpretation and summary jobs, exact evidence checks, context tickets, retries, leases, scoped invalidation and candidate export. Pipeline candidates do not overwrite the 360-case research release.
+The default worker uses the OpenAI Responses API with `gpt-6-luna`, reading the key from `~/.keys/openai` at runtime. Requests have no tools, use strict output schemas and carry per-call output limits. The optional Codex CLI backend remains available; historical results keep their original configuration. Nothing runs in the background unless explicitly launched. The queue supports separate extraction, review, interpretation and summary jobs, exact evidence checks, context tickets, retries, leases, scoped invalidation and candidate export. Pipeline candidates do not overwrite the 360-case research release.
 
 ---
 

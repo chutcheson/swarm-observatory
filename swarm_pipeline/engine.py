@@ -3,10 +3,13 @@ import json,time,uuid
 from .db import now,canonical,digest,transaction,setting,set_setting
 from .contracts import STAGES,SCHEMAS,INSTRUCTIONS,VERSION,validate_result,InvalidResult
 
-DEFAULT_CONFIG={'model':'gpt-6-luna','reasoning':'high','contract_version':VERSION,'max_attempts':3,'lease_seconds':960,'max_packet_chars':40000}
+DEFAULT_CONFIG={'backend':'openai','max_output_tokens':8000,'model':'gpt-6-luna','reasoning':'high','contract_version':VERSION,'max_attempts':3,'lease_seconds':960,'max_packet_chars':40000}
 
 def configure(c,config=None):
- cfg={**DEFAULT_CONFIG,**(config or {})};cfg['prompt_hash']=digest(INSTRUCTIONS);cfg['schema_hash']=digest(SCHEMAS)
+ cfg={**DEFAULT_CONFIG,**(config or {})}
+ if cfg['backend'] not in ('openai','codex'):raise ValueError('Backend must be openai or codex')
+ if not 256<=cfg['max_output_tokens']<=32000:raise ValueError('Output token cap must be 256–32000')
+ cfg['prompt_hash']=digest(INSTRUCTIONS);cfg['schema_hash']=digest(SCHEMAS)
  h=digest(cfg);cfg['instructions']=INSTRUCTIONS;cfg['schemas']=SCHEMAS;set_setting(c,'config:'+h,cfg);set_setting(c,'active_config_hash',h);return h
 
 def enqueue(c,packet_ids,queue='coverage',config_hash=None):

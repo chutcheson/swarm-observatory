@@ -1,4 +1,4 @@
-"""Bounded Codex CLI worker; packet data is stdin, never executable shell text."""
+"""Bounded API or Codex workers sharing one durable evidence queue."""
 import json,os,subprocess,time
 from pathlib import Path
 from .db import atomic_json,canonical,connect,now
@@ -13,8 +13,12 @@ def export_job(job,directory):
  atomic_json(d/'job.json',job);atomic_json(d/'schema.json',job['schema']);(d/'prompt.txt').write_text(render_prompt(job))
  return d
 
-def run_once(db_path,state_dir,worker='codex-luna',queue=None,stage=None,job_id=None,timeout=720,codex='codex'):
- c=connect(db_path);job=engine.claim(c,worker,queue,stage,job_id,lease_seconds=timeout+120)
+def run_once(db_path,state_dir,worker='codex-luna',queue=None,stage=None,job_id=None,timeout=720,codex='codex',key_file=None):
+ c=connect(db_path)
+ active=engine.setting(c,'active_config_hash');active_cfg=engine.setting(c,'config:'+str(active),{})
+ backend=active_cfg.get('backend','codex')
+ credential_path=key_file or engine.setting(c,'api_key_file','~/.keys/openai')
+ job=engine.claim(c,'openai-api' if backend=='openai' else worker,queue,stage,job_id,lease_seconds=timeout+120)
  if not job:c.close();return {'status':'idle'}
  d=export_job(job,Path(state_dir)/'attempts'/job['attempt_id']);output=d/'result.json';prompt=(d/'prompt.txt').read_text()
  if len(prompt)>160000:
@@ -23,33 +27,41 @@ def run_once(db_path,state_dir,worker='codex-luna',queue=None,stage=None,job_id=
  args=[codex,'exec','--model',cfg['model'],'--sandbox','read-only','--ignore-user-config','--skip-git-repo-check','--ephemeral','--json','--color','never','-c','model_reasoning_effort='+json.dumps(cfg['reasoning']),'-c','web_search="disabled"','-c','features.apps=false','-c','features.plugins=false','-c','features.multi_agent=false','-c','features.memories=false','-c','features.browser_use=false','-c','features.computer_use=false','--output-schema',str((d/'schema.json').resolve()),'--output-last-message',str(output.resolve()),'-']
  usage=None;started=time.monotonic()
  try:
-  # New process group allows bounded cancellation of the entire worker, without touching others.
-  with (d/'events.jsonl').open('w') as stdout,(d/'stderr.log').open('w') as stderr:
-   p=subprocess.Popen(args,stdin=subprocess.PIPE,stdout=stdout,stderr=stderr,cwd=d,start_new_session=True,text=True)
-   try:p.communicate(prompt,timeout=timeout)
-   except (subprocess.TimeoutExpired,KeyboardInterrupt):
-    import signal
-    os.killpg(p.pid,signal.SIGTERM)
-    try:p.wait(timeout=5)
-    except subprocess.TimeoutExpired:os.killpg(p.pid,signal.SIGKILL);p.wait()
-    raise
-  for line in (d/'events.jsonl').read_text().splitlines():
-   try:event=json.loads(line)
-   except json.JSONDecodeError:continue
-   if isinstance(event.get('usage'),dict):usage=event['usage']
-  if p.returncode:raise RuntimeError('Codex worker exited '+str(p.returncode)+': '+(d/'stderr.log').read_text()[-1500:])
-  if not output.exists():raise RuntimeError('No structured worker result')
-  result=json.loads(output.read_text());answer=engine.submit(c,job['job_id'],job['lease_token'],result,usage)
+  if cfg.get('backend','codex')=='openai':
+   from .openai_transport import complete
+   result,usage,transport=complete(job,prompt,credential_path,timeout)
+   atomic_json(output,result);atomic_json(d/'transport.json',transport)
+  else:
+   # New process group allows bounded cancellation of the entire worker, without touching others.
+   with (d/'events.jsonl').open('w') as stdout,(d/'stderr.log').open('w') as stderr:
+    p=subprocess.Popen(args,stdin=subprocess.PIPE,stdout=stdout,stderr=stderr,cwd=d,start_new_session=True,text=True)
+    try:p.communicate(prompt,timeout=timeout)
+    except (subprocess.TimeoutExpired,KeyboardInterrupt):
+     import signal
+     os.killpg(p.pid,signal.SIGTERM)
+     try:p.wait(timeout=5)
+     except subprocess.TimeoutExpired:os.killpg(p.pid,signal.SIGKILL);p.wait()
+     raise
+   for line in (d/'events.jsonl').read_text().splitlines():
+    try:event=json.loads(line)
+    except json.JSONDecodeError:continue
+    if isinstance(event.get('usage'),dict):usage=event['usage']
+   if p.returncode:raise RuntimeError('Codex worker exited '+str(p.returncode)+': '+(d/'stderr.log').read_text()[-1500:])
+   if not output.exists():raise RuntimeError('No structured worker result')
+   result=json.loads(output.read_text())
+  answer=engine.submit(c,job['job_id'],job['lease_token'],result,usage)
  except (Exception,KeyboardInterrupt) as exc:
-  try:state=engine.fail(c,job['job_id'],job['lease_token'],str(exc),retryable=not isinstance(exc,KeyboardInterrupt),usage=usage)
+  usage=getattr(exc,'usage',None) or usage
+  retryable=getattr(exc,'retryable',not isinstance(exc,KeyboardInterrupt))
+  try:state=engine.fail(c,job['job_id'],job['lease_token'],str(exc),retryable=retryable,usage=usage)
   except ValueError:state='stale'
-  answer={'job_id':job['job_id'],'status':state,'error':str(exc)[:800]}
+  answer={'job_id':job['job_id'],'status':state,'error':str(exc)[:800],'fatal':getattr(exc,'fatal',False)}
   if isinstance(exc,KeyboardInterrupt):raise
  finally:c.close()
- answer.update({'stage':job['stage'],'usage':usage,'elapsed_seconds':round(time.monotonic()-started,2),'attempt_path':str(d)})
+ answer.update({'stage':job['stage'],'backend':cfg.get('backend','codex'),'usage':usage,'elapsed_seconds':round(time.monotonic()-started,2),'attempt_path':str(d)})
  atomic_json(d/'receipt.json',answer);return answer
 
-def run(db_path,state_dir,max_jobs=4,max_seconds=1800,max_tokens=100000,concurrency=1,queue=None,stage=None,codex='codex',on_result=None):
+def run(db_path,state_dir,max_jobs=4,max_seconds=1800,max_tokens=100000,concurrency=1,queue=None,stage=None,codex='codex',on_result=None,key_file=None):
  from concurrent.futures import ThreadPoolExecutor,wait,FIRST_COMPLETED
  if not (1<=concurrency<=3) or max_jobs<1 or max_seconds<=0 or max_tokens<=0:raise ValueError('Use 1–3 workers and positive run caps')
  started_at=now();started=time.monotonic();finished=[];tokens=0;dispatched=0;stop=None;pending=set();idle=False
@@ -59,7 +71,7 @@ def run(db_path,state_dir,max_jobs=4,max_seconds=1800,max_tokens=100000,concurre
     remaining=max_seconds-(time.monotonic()-started)
     if remaining<5:stop='time cap';break
     if tokens>=max_tokens:stop='token cap reached after completed call';break
-    pending.add(pool.submit(run_once,db_path,state_dir,worker='codex-luna',queue=queue,stage=stage,timeout=min(720,int(remaining)),codex=codex));dispatched+=1
+    pending.add(pool.submit(run_once,db_path,state_dir,worker='codex-luna',queue=queue,stage=stage,timeout=min(720,int(remaining)),codex=codex,key_file=key_file));dispatched+=1
    if not pending:
     if idle and not stop and dispatched<max_jobs:
      conn=connect(db_path)
@@ -78,6 +90,7 @@ def run(db_path,state_dir,max_jobs=4,max_seconds=1800,max_tokens=100000,concurre
     if r['status']=='idle':idle=True;dispatched-=1;continue
     finished.append(r)
     u=r.get('usage')
+    if r.get('fatal'):stop='API configuration or authentication failure'
     if u:tokens+=u.get('input_tokens',0)+u.get('output_tokens',0)
     else:stop='usage unavailable; stopped further automatic dispatch'
     if on_result:on_result(r)

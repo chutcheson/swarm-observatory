@@ -41,8 +41,11 @@ def _setting(conn, key):
 
 def status_snapshot(conn):
     """Return only aggregate operational status, without job or corpus text."""
-    jobs = _rows(conn, "jobs")
-    tickets = _rows(conn, "tickets")
+    all_jobs = _rows(conn, "jobs")
+    active = _setting(conn, "active_config_hash")
+    jobs = [j for j in all_jobs if j.get("config_hash") == active]
+    current_ids = {j["id"] for j in jobs}
+    tickets = [t for t in _rows(conn, "tickets") if t["job_id"] in current_ids]
     by_stage = defaultdict(Counter)
     by_status = Counter()
     for job in jobs:
@@ -53,7 +56,7 @@ def status_snapshot(conn):
     config_hash = _setting(conn, "active_config_hash")
     config = _setting(conn, "config:" + config_hash) if config_hash else None
     usage_totals = Counter()
-    attempts = _rows(conn, "attempts")
+    attempts = [a for a in _rows(conn, "attempts") if a["job_id"] in current_ids]
     for attempt in attempts:
         usage = _json(attempt.get("usage"), {})
         if not isinstance(usage, dict):
@@ -83,7 +86,9 @@ def status_snapshot(conn):
             "attempts_with_usage": sum(bool(_json(a.get("usage"), {})) for a in attempts),
         },
         "model": config.get("model") if isinstance(config, dict) else None,
+        "backend": config.get("backend", "codex") if isinstance(config, dict) else None,
         "usage_totals": dict(sorted(usage_totals.items())),
+        "history": {"all_jobs": len(all_jobs), "other_config_jobs": len(all_jobs)-len(jobs)},
     }
 
 
@@ -527,6 +532,7 @@ def build_projection(conn, baseline_path=None):
         "coverage": {stage: dict(by_stage.get(stage, {})) for stage in STAGES},
         "jobs": status["counts"]["jobs_by_status"],
         "model": status["model"],
+        "backend": status["backend"],
         "usage_totals": status["usage_totals"],
         "tickets": {
             "by_status": status["counts"]["tickets_by_status"],

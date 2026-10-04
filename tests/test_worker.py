@@ -56,7 +56,7 @@ class WorkerTests(unittest.TestCase):
         self.db_path = self.root / "state.sqlite"
         self.state_dir = self.root / "state"
         self.conn = db.connect(self.db_path)
-        self.config_hash = engine.configure(self.conn, {"max_attempts": 2, "lease_seconds": 5})
+        self.config_hash = engine.configure(self.conn, {"backend": "codex", "max_attempts": 2, "lease_seconds": 5})
 
     def tearDown(self):
         self.conn.close()
