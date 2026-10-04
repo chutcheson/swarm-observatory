@@ -1,0 +1,135 @@
+SWARM PIPELINE — operator guide
+
+Working directory
+  /Users/campbellhutcheson/Documents/Codex/2026-10-03/oka/swarm-analysis
+
+What is installed
+  A local Python/SQLite pipeline powered by the OpenAI Responses API, with
+  four separate gpt-6-luna jobs per packet:
+  extraction -> extraction review -> interpretation -> linked summaries.
+  Two queues share the same checks: coverage and investigation.
+  Source versions, packets, prompts, schemas, attempts and results are retained.
+  Jobs have leases, bounded retries and dependencies. Interrupted work resumes.
+  The hosted Operation page shows a saved export; it does not run workers.
+
+Source coverage
+  Nightingale: all 4,579 pages and 14,591 revisions, plus events and labels.
+  Transluce: all 38,160 local catalog records. Only 32 normalized captured
+  reports currently supply analysis evidence; 38,128 remain catalog-only.
+  Indexing a row is not analyzing it. A packet is not a page or a whole report.
+  Packetization records new/changed focus spans with original character offsets.
+  Carried-forward text is context. Deleted spans are tracked, not new messages.
+
+Requirements
+  Python 3.10+; standard library only. The tested runtime is Homebrew Python 3.
+  The OpenAI key at ~/.keys/openai, with access to gpt-6-luna. The key is
+  read at runtime and never copied into this project, prompts, logs or exports.
+  API calls bill the key's OpenAI project. No key is embedded in source.
+  Sources remain in ~/Projects/swarm-communication. The Transluce catalog uses
+  runs/pilot-v1/corpus.sqlite; normalized excerpts use runs/network-v4/evidence.
+  Existing research runs are prerequisites and remain unchanged.
+
+Initial inventory (idempotent; no model work)
+  python3 pipeline.py init --backend openai --model gpt-6-luna --api-key-file ~/.keys/openai
+  python3 pipeline.py ingest
+
+Find and prepare evidence
+  python3 pipeline.py search HealthdataCVD
+  python3 pipeline.py packetize --entity nightingale:dse/HealthdataCVDSequenceJun15Relay
+  python3 pipeline.py packetize --entity transluce:01c3e486-7704-4e56-ad38-dd0047301ff0
+  python3 pipeline.py plan --coverage 4 --investigation 2 --seed 20261004
+
+  packetize without --entity prepares all available source histories; it can
+  take longer on long revisions. plan only selects prepared packets. Its seeded
+  packet sample is not a stratified prevalence sample. Investigation currently
+  favors linked packets and supports explicit enqueue/reprocess choices.
+  --state /path/to/state goes BEFORE the command if a separate run is wanted.
+
+Run a bounded batch
+  python3 pipeline.py run --max-jobs 12 --concurrency 2 --max-seconds 900 --max-tokens 180000
+
+  A packet normally requires four successful model calls; failed attempts add
+  calls. Concurrency is 1–3. The token threshold is checked between completed
+  calls, so an in-flight call can cross it. Usage includes reported input and
+  output tokens; reasoning tokens are not added again. Missing usage stops
+  further automatic dispatch. It is not a dollar-spend ceiling.
+  API workers receive bounded evidence, strict JSON schemas and no tools.
+  Requests use store=false and the standard service tier. max_output_tokens
+  defaults to 8,000 per request and includes reasoning output. Each response
+  records request/response IDs, returned model and usage. Incomplete responses
+  and refusals cannot pass validation. Authentication/quota failures stop
+  dispatch; raw server error messages and authorization headers are not saved.
+  A Codex CLI backend remains available via init --backend codex; switching
+  backend creates a new config hash, so prior results retain their provenance.
+
+Inspect and resume
+  python3 pipeline.py status
+  python3 pipeline.py inspect JOB_ID
+  python3 pipeline.py recover
+  python3 pipeline.py run --max-jobs 12 --max-seconds 900 --max-tokens 180000
+
+  State lives in pipeline-state/pipeline.sqlite. Per-attempt files live under
+  pipeline-state/attempts/. Resume does not redo completed dependencies. Expired
+  leases are reclaimed; an old worker cannot submit after its lease expires.
+  Status counts include superseded history; exports use current valid ancestry.
+
+Correct a claim or retrieve missing context
+  python3 pipeline.py reprocess JOB_ID --reason "Describe the correction precisely"
+  python3 pipeline.py reprocess JOB_ID --reason "Added relevant context" --source-uid SOURCE_UID
+  python3 pipeline.py resolve-context TICKET_ID --source-uid SOURCE_UID --reason "Relevant source retrieved"
+
+  Reprocess the earliest affected stage. To correct extraction, restart extract;
+  to revise roles or protocol families, restart interpret and preserve the
+  reviewed observations. To change wording only, restart summarize. Old results
+  remain auditable but their dependent outputs become stale and cannot export.
+  For unavailable optional context, use reprocess with the explicit scope and
+  reason; retain the limitation rather than invent a fact. Genuine evidential
+  ambiguity stays held. Additional context must fit the packet budget.
+
+  Changing prompts/schema/model creates a different config hash on init. Claim
+  and export use the active configuration. Re-enqueue the affected packet IDs
+  for the new configuration; results under older configs remain in history.
+
+Supervised subagents instead of CLI workers
+  python3 pipeline.py claim --worker luna-1 --output /absolute/job-directory
+  Give prompt.txt and schema.json to a Luna worker. Save its JSON result.
+  python3 pipeline.py submit --job-file /absolute/job-directory/job.json --result /absolute/result.json --usage /absolute/usage.json
+  This is the same queue and validation contract. Never edit raw sources to
+  make a model result pass. Preserve model/usage provenance when supervising.
+
+Export candidates and status
+  python3 pipeline.py export --output pipeline-state/candidate.json --baseline runs/network-v4/snapshot.json
+  python3 pipeline.py dashboard --output ../swarm-dashboard/dist/pipeline-status.json --tests TEST_COUNT
+
+  export adds a pipeline overlay to a copy of the baseline. It does not replace
+  the 360-case research release. dashboard writes status and pipeline-candidate
+  JSON files for the Operation tab. Publishing those files is a separate step.
+  Only completed four-stage chains with approved extraction review are eligible.
+  Identity, groups, interpretations and summaries remain provisional. There is
+  no automatic human-approval claim or automatic promotion to the research UI.
+
+Tests
+  python3 -m unittest discover -s tests -v
+
+Current limits and next increments
+  - This is a working local evidence-analysis foundation, not a validated
+    full-corpus scientific result or unattended discovery service.
+  - Same-model extraction review can share errors with extraction. Supervisor
+    review caught a false recipient and a source-provenance error in the first
+    batch. A held-out human-labelled evaluation still needs to be built.
+  - Source packetization uses bounded local context. Referenced-page retrieval
+    is supervised. Cross-page identity resolution, conversation continuity,
+    hierarchy and swarm discovery need dedicated larger-context passes.
+  - Literal handles are scoped to the source entity; they are not automatically
+    merged across pages or archives. Direct communication, common tasks and
+    protocol associations remain separate edge types.
+  - Transluce report acquisition is not automated. Imported safe excerpts do
+    not imply full payload or outcome coverage.
+  - No scheduler or background full-corpus run is enabled.
+
+API documentation
+  https://developers.openai.com/api/docs/models/gpt-6-luna
+  https://developers.openai.com/api/docs/guides/structured-outputs
+
+Optional Codex worker documentation
+  https://learn.chatgpt.com/docs/non-interactive-mode

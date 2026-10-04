@@ -1,0 +1,13 @@
+{
+  "backend": "openai",
+  "model": "gpt-6-luna",
+  "tests_passed": 41,
+  "completed_api_calls": 8,
+  "completed_packets": 2,
+  "observations": 3,
+  "reported_input_output_tokens": 20153,
+  "key_in_generated_files": false,
+  "key_in_database": false,
+  "files_scanned": 249,
+  "exact_source_offsets_verified": true
+}
