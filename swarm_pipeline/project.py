@@ -180,6 +180,14 @@ def _remap_ids(values, mapping):
     return [mapping.get(value, value) for value in values]
 
 
+def _observation_key(obs, locations=None):
+    """A quote can support distinct speech acts; deduplicate identical claims only."""
+    return (tuple((e["source_uid"], e["start"], e["end"])
+                  for e in (locations if locations is not None else obs["evidence"])),
+            obs.get("kind"), obs.get("actor"), tuple(obs.get("recipients", [])),
+            obs.get("audience"), obs.get("status"), obs.get("summary"))
+
+
 def _record(packet_id, packet, evidence_packet_id, evidence_packet, entity, stages):
     extract = stages["extract"][1]
     interpretation = stages["interpret"][1]
@@ -194,7 +202,7 @@ def _record(packet_id, packet, evidence_packet_id, evidence_packet, entity, stag
         locs = _locations(evidence_packet, obs.get("evidence", []))
         if not locs:
             continue
-        key = tuple((x["source_uid"], x["start"], x["end"]) for x in locs)
+        key = _observation_key(obs, locs)
         if key in seen:
             obs_id_map[obs["id"]] = seen[key]
             continue
@@ -291,12 +299,11 @@ def _merge_records(records):
         current["packet_ids"] = sorted(set(current["packet_ids"] + record["packet_ids"]))
         current["packet_scopes"].extend(record["packet_scopes"])
         evidence_seen = {
-            tuple((e["source_uid"], e["start"], e["end"]) for e in o["evidence"])
-            : o["id"] for o in current["observations"]
+            _observation_key(o): o["id"] for o in current["observations"]
         }
         observation_id_map = {}
         for obs in record["observations"]:
-            key = tuple((e["source_uid"], e["start"], e["end"]) for e in obs["evidence"])
+            key = _observation_key(obs)
             if key in evidence_seen:
                 observation_id_map[obs["id"]] = evidence_seen[key]
             else:

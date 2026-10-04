@@ -64,10 +64,10 @@ def validate_result(stage,result,packet,previous=None,allowed_links=None,schema=
      start=p+1
    if not hit:raise InvalidResult('Observation has no focus evidence (context is not a new event)')
   quotes='\n'.join(q['quote'] for q in o['evidence'])
-  if o['actor'] and not literal_name(o['actor'],quotes):raise InvalidResult('Actor must occur in supporting quote; otherwise leave unknown')
-  if o['audience']=='direct' and (not o['actor'] or not o['recipients']):raise InvalidResult('Direct communication requires author and recipients')
+  if o['actor'] and not literal_name(o['actor'],quotes):raise InvalidResult(f"Actor must occur in supporting quote; observation {o['id']}, actor {o['actor']!r}. Include the local signature, or leave unknown.")
+  if o['audience']=='direct' and (not o['actor'] or not o['recipients']):raise InvalidResult(f"Direct communication requires both author and recipients; observation {o['id']}.")
   for name in o['recipients']:
-   if re.match(r'(?i)^(your|you|their|they|the recipient|unknown|everyone|all peers)(?:\b|$)',name) or not literal_name(name,quotes):raise InvalidResult('Recipient must be literal in evidence')
+   if re.match(r'(?i)^(your|you|their|they|the recipient|unknown|everyone|all peers)(?:\b|$)',name) or not literal_name(name,quotes):raise InvalidResult(f"Recipient must be literal in evidence; observation {o['id']}, recipient {name!r}. Quote the named agent or leave recipients empty.")
  if stage=='extract':
   if len({o['id'] for o in result['observations']})!=len(result['observations']):raise InvalidResult('Duplicate observation IDs')
   if not set(result['reviewed_source_uids'])<=set(sources):raise InvalidResult('Unknown reviewed source')

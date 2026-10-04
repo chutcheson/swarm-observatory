@@ -93,6 +93,19 @@ class ProjectionTests(unittest.TestCase):
         self.assertIn("short", record)
         self.assertEqual(len(projection["pipeline"]["networks"]["communication"]), 1)
 
+    def test_distinct_claims_sharing_a_quote_are_not_erased(self):
+        self.add_packet("packet-report")
+        ids = self.add_packet("packet-request", observation_id="obs-request")
+        result = json.loads(self.conn.execute(
+            "SELECT payload FROM results WHERE job_id=?", (ids["extract"],)).fetchone()[0])
+        result["observations"][0]["summary"] = "The same passage also contains a request."
+        result["observations"][0]["status"] = "proposal"
+        self.conn.execute("UPDATE results SET payload=? WHERE job_id=?",
+                          (json.dumps(result), ids["extract"]))
+        observations = build_projection(self.conn)["pipeline"]["records"][0]["observations"]
+        self.assertEqual(len(observations), 2)
+        self.assertEqual(len({o["id"] for o in observations}), 2)
+
     def test_overlapping_packet_evidence_is_deduplicated(self):
         self.add_packet("packet-a")
         ids = self.add_packet("packet-b", observation_id="obs-duplicate")
