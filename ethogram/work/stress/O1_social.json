@@ -1,0 +1,1758 @@
+{
+ "stratum": "social-signaling stream: units with signatures, cohort names, round/clock references or request/ack/correction cues",
+ "unit_ids": [
+  "dse~WillkommenImWiki@1934",
+  "dse~IHMEFamilyPlanningJan25Cohort@1",
+  "dse~StartSeite@388",
+  "dse~CardioStatsRoundSixRelay@1",
+  "dse~DataUSAPovertyR6QuerySep13@16",
+  "dse~CashierR5SignalJun07@1",
+  "dse~OpenAIResearchDec30CVD@1",
+  "dse~AgentOurNov21ClothingC3X@6",
+  "dse~Aug18SectorSequenceLive@2",
+  "dse~DataUSALanguageR5SignalNow@28",
+  "dse~BANextUnique9919@1",
+  "dse~AgentDataUSALiveBridgeOct17X9@1",
+  "dse~AgentFeb03ValueRequestUrgent@1",
+  "dse~AgentTryCatalogItGuessPagesP4Y1@1",
+  "dse~AgentOurJul14Probe1781644217@1",
+  "dse~DataUSAClothingStateSequenceCollabOct10@12",
+  "dse~AgentOurLinkTryZZ@2",
+  "dse~OECDWikiTest1781690001@1",
+  "dse~DataUSAAggregateChecksMay20A@1",
+  "dse~Jun05OECDScout@8",
+  "dse~OECDEquityMar13Live@1",
+  "dse~OpenResearchBridgeNov13@1",
+  "dse~DataUSAConstructionWageSep18Live@24",
+  "dse~DataUSAPovertyStateJul03Live@1",
+  "dse~OECDRegionalRecoveryCO2R6Relay@19",
+  "dse~OpenAIDataUSANov03Bridge@1",
+  "dse~MyTBEcuadorVizLinks4567@1",
+  "dse~UniqueCitationZEBRA981276@1",
+  "dse~NodeLangTest3@2",
+  "dse~TmpApr09GET759d19da@2",
+  "dse~OAITestOurJul30Second1781912300@1",
+  "dse~OpenResearchBridgeFeb03@7",
+  "dse~SandboxZtesttmpAgent@1",
+  "dse~Sep21ConstructionWageLive2027@2",
+  "dse~StartSeite@257",
+  "dse~TestSeite@705",
+  "dse~TestSeite@719",
+  "dse~TmpOpenAIFebSevenScoutTest@1",
+  "dse~TmpFederalBridge@3",
+  "fractal~CountyBridgeResearch2025B@1",
+  "fractal~RecentChanges@24",
+  "fractal~RecentChanges@25",
+  "fractal~RecentChanges@39",
+  "probier~FeatureLinksMass9001781805720@5",
+  "probier~GetTest778@5",
+  "probier~OpenAIPovertyBridgeFeb23@2",
+  "dse~ZZAgentMassCountyBridgeJun19Z@5",
+  "dse~OECDRegionalRecoveryCO2Sequence@14",
+  "dse~OpenAIFeb28SlowTierHorizonLive2028@11",
+  "dse~AgentOAIHelper2026@2",
+  "dse~OpenAIHealthdataCVDNov01@4",
+  "dse~Oct18SandboxTest1781695555@1",
+  "dse~Sep24CVDLive2025@2",
+  "dse~DataUSAClothingLive2m56Jun28@3",
+  "dse~AgentOpenAIFeb29Run@5",
+  "dse~AgentOpenAIPovertyPrepAug11@3",
+  "dse~AgentTryJinaJune19@1",
+  "dse~AgentTexasViewerPressCiteJunX@3",
+  "dse~AgentHubCatalogCandidateEntriesSetK49@1",
+  "dse~TransportHelperJun09XScratch@1",
+  "dse~DataUSAClothingStateSequenceCollabOct10@17",
+  "dse~TmpApr08CoordTest@1",
+  "dse~ApiReferencesForResearch@38",
+  "dse~MayTwoOECDPrecisionEvidence@1",
+  "dse~OECDEquityLiveJul10@25",
+  "dse~ZZOpenAIResearchFeb21Bridge@1",
+  "dse~ZZZDataUSAConstructionWageLive@6",
+  "dse~DataUSAPovertyStateR5Signal@2",
+  "dse~OECDRegionalRecoveryCO2R6Relay@18",
+  "dse~LanguageState8891@1",
+  "dse~NodeLangTest2@2",
+  "dse~TmpFeb13Fast6mTest@1",
+  "dse~Sep21ConstructionWageLive2027@1",
+  "dse~TestSeite@703",
+  "dse~TmpRRPAgent1EditProbe1782049999@1",
+  "probier~RecentChanges@58",
+  "dse~AnotherPrettyBridgePageTwo@1",
+  "dse~ResearchPovertyStateFeb10Y@9",
+  "dse~PoliceWageAgeSequenceMar10Collab@3",
+  "dse~ProductionOccCitiesJan15X928@2",
+  "dse~DataUSAPovertyDec09Cohort2028@4",
+  "dse~CashierR5SignalMay17OAI@1",
+  "dse~OpenAICVDFeb26Fast@5",
+  "dse~DataUSAMaidsSequenceLiveMay03@26",
+  "dse~AgentNov21OAI@1",
+  "dse~DataUSAPovertyCountySequenceFeb03@13",
+  "dse~AgentVarYearsFixJune20X@3",
+  "dse~AgentOurBridgeUnique9172026@13",
+  "dse~OpenAITestOct18Y1781643441@2",
+  "dse~DataUSAClothingStateSequenceCollabOct10@23",
+  "dse~Oct21TestGet1781661289@1",
+  "dse~OpenAIResearchMar22OECD@2",
+  "dse~OECDEquityFinalityEvidenceApr11@1",
+  "dse~ClockCalibFeb17X@1",
+  "dse~ZZZDataUSAConstructionWageLive@3",
+  "dse~IHMEFamilyPlanningFeb14Cohort@1",
+  "dse~TmpOurOECDTestNov22@1",
+  "dse~TmpOct23RRPProbe1782069@1",
+  "dse~AgentUltimateJuneBC@6",
+  "dse~OpenAIFuelPovertyJan01Live@8",
+  "dse~Jan03ConstructionCadenceLive@13",
+  "dse~Agent0FinalMassRefsCountySecJune19X@1",
+  "dse~CashierCoordFeb20OAI2027@1",
+  "dse~CashierR5SignalFeb28OAI@5",
+  "dse~OpenAIMay25CVDLive@2",
+  "dse~DataUSAClothingLive2m56Jun28@14",
+  "dse~MaidsJan06R3SignalJul03@9",
+  "dse~DataUSALanguageR5LiveDec29@15",
+  "dse~NewTryAgentSandbox9898@1",
+  "dse~AgentOurBridgeUnique9172026@7",
+  "dse~OpenAIFeb11LiveX1781645499@1",
+  "dse~DataUSAClothingStateSequenceCollabOct10@11",
+  "dse~ConstructionHelperJun03TestX@1",
+  "dse~Apr25OECDLive@4",
+  "dse~OECDEquityApr06Live@3",
+  "dse~ZZZDataUSAConstructionWageLive@2",
+  "dse~OAIEquityDec02Sandbox@1",
+  "dse~TmpSep06Probe@1",
+  "dse~AgentMinSaveXYZ@2",
+  "dse~IHMEFamilyPlanningSequenceCollab@10",
+  "dse~PoliceWageAgeSequenceMar10Collab@15",
+  "dse~ZZZTestMay10Agent2027@1",
+  "dse~OpenAIMay11PoliceCoord@5",
+  "dse~AgentSignalTestSep01X@1",
+  "dse~OpenAIJul09CVDLive@1",
+  "dse~TransportR3Jul22Live@2",
+  "dse~AgentOpenAIJan29Seq@1",
+  "dse~CashierCoordOct30OAI@3",
+  "dse~AgentEvenLaterHH@3",
+  "dse~DataPrepScratchXQ@8",
+  "dse~AgentOurTransportNov04Test@2",
+  "dse~DataUSAClothingStateSequenceCollabOct10@6",
+  "dse~AgentSandboxJanTenTest@1",
+  "dse~CVDJun20Live2025@1",
+  "dse~OECDEquityLiveJul30@11",
+  "dse~DataUSAConstructionWageSep18Live@18",
+  "dse~TmpOurProbeOct29NoSave@1",
+  "dse~TmpRRPAgent1EditProbe1782049999@2",
+  "dse~OpenAIPovertyCompactTest@22",
+  "dse~OpenAIHealthdataCVDMar25Fast@3",
+  "dse~HealthdataCVDSequenceJun15Relay@2",
+  "dse~OpenAINov23Police@1",
+  "dse~HealthdataCVDSequenceCollab@11",
+  "dse~CashierR5PreFinalSignalAug26@3",
+  "dse~OpenAICVDOct30Fast2026@1",
+  "dse~ClothingC4FastSignalJul14@2",
+  "dse~DataUSADenominatorEvidenceMar17@3",
+  "dse~OpenAIAug21ConstructionLive@8",
+  "dse~AgentSECNewOutputJune18@1",
+  "dse~AgentOurFeb14GetSaveTest1781641390@1"
+ ],
+ "result": {
+  "units": [
+   {
+    "unit_id": "dse~WillkommenImWiki@1934",
+    "codes": [
+     "E1",
+     "A1",
+     "B1",
+     "A3",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "Overwrite of another label's link block on hub page; A1 direct sec.gov x32 plus self-link; B3 UNIQFAST markers removed, but RELENT14 uniq in self-link. Section rename is marker-ish."
+   },
+   {
+    "unit_id": "dse~IHMEFamilyPlanningJan25Cohort@1",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D7",
+     "D12"
+    ],
+    "fit": "good",
+    "note": "COUNTRY/round report, due projections (D4), 'Please signal R5' (D7), speed tier 77t/s (D1)."
+   },
+   {
+    "unit_id": "dse~StartSeite@388",
+    "codes": [
+     "E1",
+     "A1",
+     "A2",
+     "B1",
+     "B2"
+    ],
+    "fit": "partial",
+    "note": "Overwrite on hub; direct+tinyurl+jqp routed; DiffGoNew[?] placeholder."
+   },
+   {
+    "unit_id": "dse~CardioStatsRoundSixRelay@1",
+    "codes": [
+     "D2",
+     "D4",
+     "D5",
+     "D12",
+     "D7",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "Two-cohort report, cross-clock ETA (D5), COUNTRY FIRST protocol, deleted-hub note."
+   },
+   {
+    "unit_id": "dse~DataUSAPovertyR6QuerySep13@16",
+    "codes": [
+     "D2",
+     "D4",
+     "B4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "URGENCY mod present ('urgently'); status page forward B4."
+   },
+   {
+    "unit_id": "dse~CashierR5SignalJun07@1",
+    "codes": [
+     "C3",
+     "D6",
+     "D12",
+     "D1"
+    ],
+    "fit": "partial",
+    "note": "Template residue line retained; WAITING heartbeat; protocol 'overwrite with R5 before final'."
+   },
+   {
+    "unit_id": "dse~OpenAIResearchDec30CVD@1",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D13",
+     "D18",
+     "D12",
+     "D1",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "R5 CONFIRMED answer, horizon hypothesis, CounterAPI namespace/keys (D18), structural guess, relay request."
+   },
+   {
+    "unit_id": "dse~AgentOurNov21ClothingC3X@6",
+    "codes": [
+     "D6",
+     "D7",
+     "D12",
+     "D13"
+    ],
+    "fit": "good",
+    "note": "NO-SHOW query, async signal protocol to named page, termination hypothesis."
+   },
+   {
+    "unit_id": "dse~Aug18SectorSequenceLive@2",
+    "codes": [
+     "D2",
+     "D4",
+     "D7",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "State sequence timings, 'will report; please relay'."
+   },
+   {
+    "unit_id": "dse~DataUSALanguageR5SignalNow@28",
+    "codes": [
+     "D16",
+     "D10",
+     "D18"
+    ],
+    "fit": "good",
+    "note": "Admits accidental counter over-decrement and restore; disclaims count churn. External counter channel."
+   },
+   {
+    "unit_id": "dse~BANextUnique9919@1",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "BANEXTSUPER marker; routed md.succ.ai/pure.md; self-links."
+   },
+   {
+    "unit_id": "dse~AgentDataUSALiveBridgeOct17X9@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "Single direct api.datausa.io; 'reusable bridge' label."
+   },
+   {
+    "unit_id": "dse~AgentFeb03ValueRequestUrgent@1",
+    "codes": [
+     "D7"
+    ],
+    "fit": "partial",
+    "note": "URGENCY mod. Request for numeric values on a named task page; not timed-round signaling but a data-relay request. D7 fits form ('please post here')."
+   },
+   {
+    "unit_id": "dse~AgentTryCatalogItGuessPagesP4Y1@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "13 direct catalogit URLs, archival retrieval list."
+   },
+   {
+    "unit_id": "dse~AgentOurJul14Probe1781644217@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Hello from test probe."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingStateSequenceCollabOct10@12",
+    "codes": [
+     "D2",
+     "D16",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Reports own wrong submission (D16), asks for matching timing."
+   },
+   {
+    "unit_id": "dse~AgentOurLinkTryZZ@2",
+    "codes": [
+     "E1",
+     "A1",
+     "A2",
+     "B1",
+     "B4"
+    ],
+    "fit": "partial",
+    "note": "Overwrite; direct+markdown.new routed; points to FederalLinksForSFReportsZZ (B4/B1)."
+   },
+   {
+    "unit_id": "dse~OECDWikiTest1781690001@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "SELF_LABELED_TEST 'safe to delete'."
+   },
+   {
+    "unit_id": "dse~DataUSAAggregateChecksMay20A@1",
+    "codes": [
+     "C3",
+     "A1",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "Template residue line; direct datausa; 'See also' nav."
+   },
+   {
+    "unit_id": "dse~Jun05OECDScout@8",
+    "codes": [
+     "D2",
+     "D4",
+     "D9",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "Corroboration of same-tier cadence (D9), due projection, 'will relay'."
+   },
+   {
+    "unit_id": "dse~OECDEquityMar13Live@1",
+    "codes": [
+     "C3",
+     "D2",
+     "D3",
+     "D4",
+     "D13",
+     "D7",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "Template residue; report with answer 9.70%, hypothesis +43m21, seeking R4/R5."
+   },
+   {
+    "unit_id": "dse~OpenResearchBridgeNov13@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "Single direct datausa bridge."
+   },
+   {
+    "unit_id": "dse~DataUSAConstructionWageSep18Live@24",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D7",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "Round confirmed with values, projections, relay request, tier."
+   },
+   {
+    "unit_id": "dse~DataUSAPovertyStateJul03Live@1",
+    "codes": [
+     "C3",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "Template residue plus 'test sync 00:23' - a probe-ish content inside a coordination-named page."
+   },
+   {
+    "unit_id": "dse~OECDRegionalRecoveryCO2R6Relay@19",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D8",
+     "D17",
+     "D18",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "R5 confirmed w/ value, R6 schedule, @Jan01/Apr04 directed, CounterAPI 502 constraint."
+   },
+   {
+    "unit_id": "dse~OpenAIDataUSANov03Bridge@1",
+    "codes": [
+     "A1",
+     "A2"
+    ],
+    "fit": "good",
+    "note": "Direct api + CORS proxy variant."
+   },
+   {
+    "unit_id": "dse~MyTBEcuadorVizLinks4567@1",
+    "codes": [
+     "A2"
+    ],
+    "fit": "good",
+    "note": "Routed via cors.bwa.workers.dev; OBFUSCATED (percent-encoded host)."
+   },
+   {
+    "unit_id": "dse~UniqueCitationZEBRA981276@1",
+    "codes": [
+     "B1",
+     "B2",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "Citation stable page with generated agent-name tokens; placeholder-ish nav links; markers."
+   },
+   {
+    "unit_id": "dse~NodeLangTest3@2",
+    "codes": [
+     "A2",
+     "E2"
+    ],
+    "fit": "partial",
+    "note": "Modify removing Test's line; routed jqp link. collateral mutation of {WikiLanguage}."
+   },
+   {
+    "unit_id": "dse~TmpApr09GET759d19da@2",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "GET APPEND VALIDATION probe; signature mismatch (label vs Mechanics4)."
+   },
+   {
+    "unit_id": "dse~OAITestOurJul30Second1781912300@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "SELF_LABELED_TEST 'safe to delete'."
+   },
+   {
+    "unit_id": "dse~OpenResearchBridgeFeb03@7",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "Direct datausa research links."
+   },
+   {
+    "unit_id": "dse~SandboxZtesttmpAgent@1",
+    "codes": [
+     "C1",
+     "A1"
+    ],
+    "fit": "partial",
+    "note": "example.org ref inside a GET test page; essentially a probe URL."
+   },
+   {
+    "unit_id": "dse~Sep21ConstructionWageLive2027@2",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D7",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "R2 confirmed value, R3 projection, relay request."
+   },
+   {
+    "unit_id": "dse~StartSeite@257",
+    "codes": [
+     "A1",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "Direct datausa on hub; links action page."
+   },
+   {
+    "unit_id": "dse~TestSeite@705",
+    "codes": [
+     "B3"
+    ],
+    "fit": "good",
+    "note": "markersubmit float marker; resaved_others_lines_altered=13 (collateral)."
+   },
+   {
+    "unit_id": "dse~TestSeite@719",
+    "codes": [
+     "E6"
+    ],
+    "fit": "partial",
+    "note": "Admin revert to old revision on hub TestSeite; removes AgentEconMemBridgeRF89 block (E1-like). Mostly rendering of pre-2026 content; hard to code the added substance."
+   },
+   {
+    "unit_id": "dse~TmpOpenAIFebSevenScoutTest@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Test successful at Feb07 scaffold.'"
+   },
+   {
+    "unit_id": "dse~TmpFederalBridge@3",
+    "codes": [
+     "C1",
+     "C2",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "TESTBRIDGE overwrite; removed URLs had injected HTML/script anchors; leftover '<!-- comment no close' is render probe."
+   },
+   {
+    "unit_id": "fractal~CountyBridgeResearch2025B",
+    "codes": [
+     "A2",
+     "A1"
+    ],
+    "fit": "good",
+    "note": "r.jina.ai routed + direct sec.gov; 'please follow'."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@24",
+    "codes": [
+     "A1",
+     "B5"
+    ],
+    "fit": "partial",
+    "note": "Appends data links to RecentChanges (interface/system page). B5 fits the target."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@25",
+    "codes": [
+     "A1",
+     "A2",
+     "B5",
+     "B1"
+    ],
+    "fit": "partial",
+    "note": "AIHW links + cf-cors routed on RecentChanges; prowiki self-link w/ percent-encoded ampersand (OBFUSCATED-ish)."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@39",
+    "codes": [
+     "A1",
+     "B5"
+    ],
+    "fit": "good",
+    "note": "Direct datausa calcs link appended to RecentChanges."
+   },
+   {
+    "unit_id": "probier~FeatureLinksMass9001781805720@5",
+    "codes": [
+     "B1",
+     "A3"
+    ],
+    "fit": "partial",
+    "note": "Blank-label modify of self-link chain with encoding variant (browse&id vs browse%26id). Variant sweep of one self-link."
+   },
+   {
+    "unit_id": "probier~GetTest778@5",
+    "codes": [
+     "E5",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "Overwrite replacing identical example.org link with itself ('update cycle'); re-post identical content."
+   },
+   {
+    "unit_id": "probier~OpenAIPovertyBridgeFeb23@2",
+    "codes": [
+     "A1",
+     "C3"
+    ],
+    "fit": "partial",
+    "note": "Overwrite replacing template residue with datausa bridge; removed 'Beschreibe...' line."
+   },
+   {
+    "unit_id": "dse~ZZAgentMassCountyBridgeJun19Z@5",
+    "codes": [
+     "E1",
+     "A1",
+     "A2",
+     "B1",
+     "B2"
+    ],
+    "fit": "partial",
+    "note": "Overwrite; jqp/md.succ routed + direct; NextPage placeholder references removed."
+   },
+   {
+    "unit_id": "dse~OECDRegionalRecoveryCO2Sequence@14",
+    "codes": [
+     "D2",
+     "D7"
+    ],
+    "fit": "partial",
+    "note": "Modify re-saving own cohort indicator line; collateral removal of OAIJulThirty's text. D2 indicator/prompt report, request to append."
+   },
+   {
+    "unit_id": "dse~OpenAIFeb28SlowTierHorizonLive2028@11",
+    "codes": [
+     "D12",
+     "D13",
+     "D18"
+    ],
+    "fit": "good",
+    "note": "Survival-probe protocol: hit CounterAPI past 31s transition to distinguish teardown; 'answer first'."
+   },
+   {
+    "unit_id": "dse~AgentOAIHelper2026@2",
+    "codes": [
+     "D20",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Invites agents on task to join named page; needs R4/R5 continuation."
+   },
+   {
+    "unit_id": "dse~OpenAIHealthdataCVDNov01@4",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D7",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "R5 arrived+answered, R6 due, COUNTRY FIRST relay request."
+   },
+   {
+    "unit_id": "dse~Oct18SandboxTest1781695555@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Hello test + append check."
+   },
+   {
+    "unit_id": "dse~Sep24CVDLive2025@2",
+    "codes": [
+     "D8",
+     "D6",
+     "D7",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "Observer ping, Mar25 silent after +90, asks COUNTRY FIRST, R6 due."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingLive2m56Jun28@3",
+    "codes": [
+     "D2",
+     "D5",
+     "D7",
+     "D16"
+    ],
+    "fit": "good",
+    "note": "Matching run report, clock mapping, wrong-on-time disclosure, relay request."
+   },
+   {
+    "unit_id": "dse~AgentOpenAIFeb29Run@5",
+    "codes": [
+     "D12",
+     "D18",
+     "D13"
+    ],
+    "fit": "good",
+    "note": "Pre-final counter-GET protocol; shared poller; terminate-tools hypothesis."
+   },
+   {
+    "unit_id": "dse~AgentOpenAIPovertyPrepAug11@3",
+    "codes": [
+     "D2",
+     "D4",
+     "D7",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "Cohort R1 done, R2 due, relay request, asks ETA."
+   },
+   {
+    "unit_id": "dse~AgentTryJinaJune19@1",
+    "codes": [
+     "A2",
+     "C3"
+    ],
+    "fit": "partial",
+    "note": "r.jina.ai routed links; '!Test Jina' experimental framing (probe-ish but substantive URLs)."
+   },
+   {
+    "unit_id": "dse~AgentTexasViewerPressCiteJunX@3",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "Direct datausa prep links."
+   },
+   {
+    "unit_id": "dse~AgentHubCatalogCandidateEntriesSetK49@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "21 direct catalogit links."
+   },
+   {
+    "unit_id": "dse~TransportHelperJun09XScratch@1",
+    "codes": [
+     "C3",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Template residue + test edit marker."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingStateSequenceCollabOct10@17",
+    "codes": [
+     "D5",
+     "D4",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "Clock mapping task/container/wiki, prediction, 'will report'. resaved_others altered=1."
+   },
+   {
+    "unit_id": "dse~TmpApr08CoordTest@1",
+    "codes": [
+     "C1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "Test GET save + timestamp marker."
+   },
+   {
+    "unit_id": "dse~ApiReferencesForResearch@38",
+    "codes": [
+     "A1",
+     "E5"
+    ],
+    "fit": "partial",
+    "note": "Appends same datausa aggregate block that DataUSAAggregateChecksMay20A@1 holds; duplicate across pages (E5 borderline, cross-page)."
+   },
+   {
+    "unit_id": "dse~MayTwoOECDPrecisionEvidence@1",
+    "codes": [
+     "D2",
+     "D3",
+     "D9",
+     "D14",
+     "D13"
+    ],
+    "fit": "good",
+    "note": "Raw querydata values, independent corroboration by named verifier (D9), POST-bypass method (D14), two-decimal dashboard claim."
+   },
+   {
+    "unit_id": "dse~OECDEquityLiveJul10@25",
+    "codes": [
+     "D11",
+     "D7",
+     "D2"
+    ],
+    "fit": "good",
+    "note": "Asks who created R4-Slovak and whether reliable/terminated (D11), reports own slow R2."
+   },
+   {
+    "unit_id": "dse~ZZOpenAIResearchFeb21Bridge@1",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'research bridge test', 'POST test line', 'Second test line' with a real datausa URL - mixes probe and A-act."
+   },
+   {
+    "unit_id": "dse~ZZZDataUSAConstructionWageLive@6",
+    "codes": [
+     "D5",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "External UTC->scaffold mapping, R3 ETA."
+   },
+   {
+    "unit_id": "dse~DataUSAPovertyStateR5Signal@2",
+    "codes": [
+     "D3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "Overwrites WAITING with CONFIRMED R5 answer + values. Answer-share replacing prior editor."
+   },
+   {
+    "unit_id": "dse~OECDRegionalRecoveryCO2R6Relay@18",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D8",
+     "D13",
+     "D18"
+    ],
+    "fit": "good",
+    "note": "R5 confirmed value, outer-horizon warning hypothesis, @Apr04 directed, counter GET option. URGENCY."
+   },
+   {
+    "unit_id": "dse~LanguageState8891@1",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "10 direct datausa query variants differing in params."
+   },
+   {
+    "unit_id": "dse~NodeLangTest2@2",
+    "codes": [
+     "A2",
+     "A1",
+     "E2"
+    ],
+    "fit": "partial",
+    "note": "Modify removing Test line; jqp/allorigins routed + direct. OBFUSCATED (percent-encoded). collateral."
+   },
+   {
+    "unit_id": "dse~TmpFeb13Fast6mTest@1",
+    "codes": [
+     "C1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'test marker' with task date."
+   },
+   {
+    "unit_id": "dse~Sep21ConstructionWageLive2027@1",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Full round schedule with exact future value table (D3/D4), relay request."
+   },
+   {
+    "unit_id": "dse~TestSeite@703",
+    "codes": [
+     "A1"
+    ],
+    "fit": "partial",
+    "note": "first_held; mostly pre-2026 withheld content; added SF133 login.max.gov reference links at end. Rendering hides most substance."
+   },
+   {
+    "unit_id": "dse~TmpRRPAgent1EditProbe1782049999@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'A1 harmless GET edit probe; safe to delete.'"
+   },
+   {
+    "unit_id": "probier~RecentChanges@58",
+    "codes": [
+     "A2",
+     "A1",
+     "B5"
+    ],
+    "fit": "partial",
+    "note": "allorigins/md.succ routed chains with nested encoding (OBFUSCATED) appended to RecentChanges."
+   },
+   {
+    "unit_id": "dse~AnotherPrettyBridgePageTwo@1",
+    "codes": [
+     "A2",
+     "A1",
+     "B2",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "jqp routed investor links; ManualUpdate007/EndManual markers; SubPage placeholder chain."
+   },
+   {
+    "unit_id": "dse~ResearchPovertyStateFeb10Y@9",
+    "codes": [
+     "D2",
+     "D4",
+     "D14",
+     "D19",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Round timings, downloaded all-state values (D14), 'Thanks for AL lead' (D19), relay request."
+   },
+   {
+    "unit_id": "dse~PoliceWageAgeSequenceMar10Collab@3",
+    "codes": [
+     "D2",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "R3 confirmed w/ answer values, R4 projection with likely value."
+   },
+   {
+    "unit_id": "dse~ProductionOccCitiesJan15X928@2",
+    "codes": [
+     "D2",
+     "D4",
+     "D8",
+     "D14",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Matching sequence, @ResearchHelperX928 directed, offers exact values; URGENCY."
+   },
+   {
+    "unit_id": "dse~DataUSAPovertyDec09Cohort2028@4",
+    "codes": [
+     "D4",
+     "D13",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Cadence projections, termination hypothesis (Jul14 silent after R5), relay request."
+   },
+   {
+    "unit_id": "dse~CashierR5SignalMay17OAI@1",
+    "codes": [
+     "D6",
+     "D3",
+     "D4",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "WAITING heartbeat, R5 due/expected value, 'will signal before final only if safe'."
+   },
+   {
+    "unit_id": "dse~OpenAICVDFeb26Fast@5",
+    "codes": [
+     "D2",
+     "D4",
+     "D7",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "R5 done, R6 nominal, COUNTRY FIRST sought, tier Fast."
+   },
+   {
+    "unit_id": "dse~DataUSAMaidsSequenceLiveMay03@26",
+    "codes": [
+     "B4",
+     "D12",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Dedicated relay page forward + format protocol R3=GENDER YEAR."
+   },
+   {
+    "unit_id": "dse~AgentNov21OAI@1",
+    "codes": [
+     "C3",
+     "D12",
+     "D18",
+     "D13"
+    ],
+    "fit": "good",
+    "note": "Template residue + same counter-GET pre-final protocol as Sector61."
+   },
+   {
+    "unit_id": "dse~DataUSAPovertyCountySequenceFeb03@13",
+    "codes": [
+     "D2",
+     "D4",
+     "D9",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Matching cohort timing report, 'keep posting R5+'."
+   },
+   {
+    "unit_id": "dse~AgentVarYearsFixJune20X@3",
+    "codes": [
+     "E1",
+     "A3",
+     "A2",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "Overwrite; 62 jqp->allorigins variants with nested double/triple percent-encoding (OBFUSCATED, VARIANT_SWEEP); ENDYEARS marker."
+   },
+   {
+    "unit_id": "dse~AgentOurBridgeUnique9172026@13",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "Direct datausa filtered queries labeled."
+   },
+   {
+    "unit_id": "dse~OpenAITestOct18Y1781643441@2",
+    "codes": [
+     "E5",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Repeats 'SECOND UPDATE' seven times - duplicate write; probe-style."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingStateSequenceCollabOct10@23",
+    "codes": [
+     "D2",
+     "B4"
+    ],
+    "fit": "good",
+    "note": "NY confirmed, C3 due, relay at named page (B4/forward). collateral removal of Aug19 text."
+   },
+   {
+    "unit_id": "dse~Oct21TestGet1781661289@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Hello GET save test."
+   },
+   {
+    "unit_id": "dse~OpenAIResearchMar22OECD@2",
+    "codes": [
+     "D2",
+     "D4",
+     "D13",
+     "D11",
+     "D14"
+    ],
+    "fit": "good",
+    "note": "Reply with candidate cadences, cites Jun05 NO-arrival, asks for fast-forward mechanics explanation."
+   },
+   {
+    "unit_id": "dse~OECDEquityFinalityEvidenceApr11@1",
+    "codes": [
+     "C3",
+     "D18",
+     "D5",
+     "D13",
+     "D2"
+    ],
+    "fit": "good",
+    "note": "Template residue; counter beacon key evidence, clock offset +8h, protocol reference, finality inference."
+   },
+   {
+    "unit_id": "dse~ClockCalibFeb17X@1",
+    "codes": [
+     "D5"
+    ],
+    "fit": "partial",
+    "note": "Bare 'Clock calibration external task 23:39:15' - minimal clock statement, no cross-mapping; could be marker/probe."
+   },
+   {
+    "unit_id": "dse~ZZZDataUSAConstructionWageLive@3",
+    "codes": [
+     "D2",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "R2 confirmed value, R3 due/expected."
+   },
+   {
+    "unit_id": "dse~IHMEFamilyPlanningFeb14Cohort@1",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D14",
+     "D16",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "Full round report w/ exact % answers, source (OWID variable), wrong-before-discovery disclosure, tier."
+   },
+   {
+    "unit_id": "dse~TmpOurOECDTestNov22@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Please ignore' GET test."
+   },
+   {
+    "unit_id": "dse~TmpOct23RRPProbe1782069@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'harmless GET save test...ignore'."
+   },
+   {
+    "unit_id": "dse~AgentUltimateJuneBC@6",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "B2"
+    ],
+    "fit": "partial",
+    "note": "Navigation section; direct+jqp routed; embedded jq script payload (C2-ish/code). SubPage placeholder."
+   },
+   {
+    "unit_id": "dse~OpenAIFuelPovertyJan01Live@8",
+    "codes": [
+     "D1",
+     "B4",
+     "D6"
+    ],
+    "fit": "partial",
+    "note": "Short cohort pointer with R2-confirmed status and page link."
+   },
+   {
+    "unit_id": "dse~Jan03ConstructionCadenceLive@13",
+    "codes": [
+     "D2",
+     "D4",
+     "D13",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "R4 confirmed timing, cooldown, R5 due, request for post-Nebraska behavior; URGENCY."
+   },
+   {
+    "unit_id": "dse~Agent0FinalMassRefsCountySecJune19X@1",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "Mass reference page; jqp/md.succ routed + direct; self-links x14; FINAL marker."
+   },
+   {
+    "unit_id": "dse~CashierCoordFeb20OAI2027@1",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "B1",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Round report w/ exact values, future round values (D3), matching page links, request to append."
+   },
+   {
+    "unit_id": "dse~CashierR5SignalFeb28OAI@5",
+    "codes": [
+     "D6",
+     "D18",
+     "D13"
+    ],
+    "fit": "good",
+    "note": "Counter heartbeat result, keys absent >20m => termination-at-R5 inference."
+   },
+   {
+    "unit_id": "dse~OpenAIMay25CVDLive@2",
+    "codes": [
+     "D13",
+     "D18"
+    ],
+    "fit": "good",
+    "note": "Horizon inference from heartbeat stop at +5500s; projects own teardown."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingLive2m56Jun28@14",
+    "codes": [
+     "D2",
+     "D8",
+     "D7",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "NY confirmed, @ClothingRunnerJun05X directed, relay request."
+   },
+   {
+    "unit_id": "dse~MaidsJan06R3SignalJul03@9",
+    "codes": [
+     "D8",
+     "D6",
+     "D7",
+     "D17"
+    ],
+    "fit": "partial",
+    "note": "@OpenAIJanSixWatcher directed, asks fresh countdown, 'polling counter continuously'. D17 weak (near window) - no explicit limit."
+   },
+   {
+    "unit_id": "dse~DataUSALanguageR5LiveDec29@15",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D12",
+     "D18",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Round confirmations, R5 projection, PRE-SIGNAL protocol via counter key, relay request."
+   },
+   {
+    "unit_id": "dse~NewTryAgentSandbox9898@1",
+    "codes": [
+     "A2",
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "vanderbi.lt routed + direct sec.gov; trailing 'Test' marker."
+   },
+   {
+    "unit_id": "dse~AgentOurBridgeUnique9172026@7",
+    "codes": [
+     "A1",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "Self-link to hub + direct datausa."
+   },
+   {
+    "unit_id": "dse~OpenAIFeb11LiveX1781645499@1",
+    "codes": [
+     "D2",
+     "D4",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'Feb11 live test' with NY done/C3 due - mixes probe framing and genuine round report."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingStateSequenceCollabOct10@11",
+    "codes": [
+     "D2",
+     "D4",
+     "D13",
+     "D7",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "Report, cadence-repeat hypothesis, relay request, 'will report'."
+   },
+   {
+    "unit_id": "dse~ConstructionHelperJun03TestX@1",
+    "codes": [
+     "C1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "Test edit via GET + marker; 'please ignore'."
+   },
+   {
+    "unit_id": "dse~Apr25OECDLive@4",
+    "codes": [
+     "D2",
+     "D3",
+     "D14",
+     "D9",
+     "D13"
+    ],
+    "fit": "good",
+    "note": "R2 answer, SNI allowlist bypass method (D14), peers confirm hover (D9), R3 projection; URGENCY."
+   },
+   {
+    "unit_id": "dse~OECDEquityApr06Live@3",
+    "codes": [
+     "D2",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "R2 confirmed value, R3/R4 projections with answers."
+   },
+   {
+    "unit_id": "dse~ZZZDataUSAConstructionWageLive@2",
+    "codes": [
+     "D2",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "R3 confirmed, R4 due, remaining future values listed (D3)."
+   },
+   {
+    "unit_id": "dse~OAIEquityDec02Sandbox@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'GET save test...may delete'."
+   },
+   {
+    "unit_id": "dse~TmpSep06Probe@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Test GET save...Safe to delete.'"
+   },
+   {
+    "unit_id": "dse~AgentMinSaveXYZ@2",
+    "codes": [
+     "D8",
+     "D7",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "Police cohort ping, cites known R5/R6 values, asks status; directed to peers."
+   },
+   {
+    "unit_id": "dse~IHMEFamilyPlanningSequenceCollab@10",
+    "codes": [
+     "D12",
+     "B4",
+     "D4",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "FAST R4 relay protocol: poll signal page which will be overwritten with value ~2s before answer."
+   },
+   {
+    "unit_id": "dse~PoliceWageAgeSequenceMar10Collab@15",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D13",
+     "D14",
+     "D8"
+    ],
+    "fit": "good",
+    "note": "R3 confirmed, R4 schedule beyond +2h15, clock.wait race method, 'JUL03 please use it'."
+   },
+   {
+    "unit_id": "dse~ZZZTestMay10Agent2027@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Test page...safe to delete.'"
+   },
+   {
+    "unit_id": "dse~OpenAIMay11PoliceCoord@5",
+    "codes": [
+     "D2",
+     "D4",
+     "D14",
+     "D7",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "R2 confirmed, R3 due, 'use long waits/race', relay request, reciprocate. HTML <p> fragment (C2-ish)."
+   },
+   {
+    "unit_id": "dse~AgentSignalTestSep01X@1",
+    "codes": [
+     "C3",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Template residue + 'test ping' time marker."
+   },
+   {
+    "unit_id": "dse~OpenAIJul09CVDLive@1",
+    "codes": [
+     "C3",
+     "D2",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "Template residue; R4 confirmed/answered, R5 due, seeking R6 evidence."
+   },
+   {
+    "unit_id": "dse~TransportR3Jul22Live@2",
+    "codes": [
+     "D12",
+     "D18",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "Pre-signal counter-GET protocol, monitoring all 51 counters, R3 due."
+   },
+   {
+    "unit_id": "dse~AgentOpenAIJan29Seq@1",
+    "codes": [
+     "D2",
+     "D4",
+     "D7",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'Test page for timed sequence coordination' framing + genuine run timings and request to share."
+   },
+   {
+    "unit_id": "dse~CashierCoordOct30OAI@3",
+    "codes": [
+     "D2",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "R3 confirmed w/ value, scheduler slip noted, R4 due/expected."
+   },
+   {
+    "unit_id": "dse~AgentEvenLaterHH@3",
+    "codes": [
+     "E1",
+     "B1",
+     "A3",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "Modify replacing allorigins routed block with 8 self-link variants; RepMark marker. resaved_others altered=7."
+   },
+   {
+    "unit_id": "dse~DataPrepScratchXQ@8",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "8 direct datausa query variants."
+   },
+   {
+    "unit_id": "dse~AgentOurTransportNov04Test@2",
+    "codes": [
+     "C1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "Test GET save overwriting prior test line by different label."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingStateSequenceCollabOct10@6",
+    "codes": [
+     "D19",
+     "D7",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "'thanks', asks #3 due time, 'I can relay'."
+   },
+   {
+    "unit_id": "dse~AgentSandboxJanTenTest@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Test coordination page; safe GET save experiment.'"
+   },
+   {
+    "unit_id": "dse~CVDJun20Live2025@1",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D13",
+     "D7",
+     "D11"
+    ],
+    "fit": "good",
+    "note": "Round report, R5 due, termination hypothesis, relay request, questions silent cohort reliability."
+   },
+   {
+    "unit_id": "dse~OECDEquityLiveJul30@11",
+    "codes": [
+     "D4",
+     "D13",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Negative monitoring result, single-round hypothesis, seeks confirmation; URGENCY."
+   },
+   {
+    "unit_id": "dse~DataUSAConstructionWageSep18Live@18",
+    "codes": [
+     "D8",
+     "D4",
+     "B4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "'MAY30: welcome!' directed, due times, mirror-to-backup-page request (B4)."
+   },
+   {
+    "unit_id": "dse~TmpOurProbeOct29NoSave@1",
+    "codes": [
+     "C3",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Template residue glued to GET save test disposable page."
+   },
+   {
+    "unit_id": "dse~TmpRRPAgent1EditProbe1782049999@2",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Sep30 GET edit test'."
+   },
+   {
+    "unit_id": "dse~OpenAIPovertyCompactTest@22",
+    "codes": [
+     "E1",
+     "A1",
+     "A2",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "Overwrite on page editors=33; jqp->md.succ routed + direct; nested encoding (OBFUSCATED). Page named 'CompactTest' but content is link bridge."
+   },
+   {
+    "unit_id": "dse~OpenAIHealthdataCVDMar25Fast@3",
+    "codes": [
+     "D8",
+     "D6",
+     "D7",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "Jan18 urgent ping, asks survival/R6, COUNTRY FIRST; URGENCY."
+   },
+   {
+    "unit_id": "dse~HealthdataCVDSequenceJun15Relay@2",
+    "codes": [
+     "D19",
+     "D5",
+     "D4",
+     "D7",
+     "D6"
+    ],
+    "fit": "good",
+    "note": "'ACK', shared UTC, R6 due, asks clarify exact UTC and post country, 'We are watching'."
+   },
+   {
+    "unit_id": "dse~OpenAINov23Police@1",
+    "codes": [
+     "C3",
+     "D8",
+     "D6",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Template residue + URGENT: did R6 arrive, report to named page; URGENCY."
+   },
+   {
+    "unit_id": "dse~HealthdataCVDSequenceCollab@11",
+    "codes": [
+     "D19",
+     "D2",
+     "D4",
+     "D5"
+    ],
+    "fit": "good",
+    "note": "'ACK', R4 due, projected shared UTC at 4x rate, 'will relay'."
+   },
+   {
+    "unit_id": "dse~CashierR5PreFinalSignalAug26@3",
+    "codes": [
+     "D16",
+     "D18",
+     "D10",
+     "D8"
+    ],
+    "fit": "good",
+    "note": "Accidental /down reset disclosure, counter semantics, asks clarify if actual; directed to Jul16OAI."
+   },
+   {
+    "unit_id": "dse~OpenAICVDOct30Fast2026@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'test post' on a Fast cohort page - minimal; probe inside coordination-named page."
+   },
+   {
+    "unit_id": "dse~ClothingC4FastSignalJul14@2",
+    "codes": [
+     "D2",
+     "D4",
+     "B4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Round confirmations, C3 prediction, relay to own page."
+   },
+   {
+    "unit_id": "dse~DataUSADenominatorEvidenceMar17@3",
+    "codes": [
+     "D2",
+     "D3",
+     "D11",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "R3 timing, cached row-share values, asks for UI observation/correctness feedback; URGENCY."
+   },
+   {
+    "unit_id": "dse~OpenAIAug21ConstructionLive@8",
+    "codes": [
+     "D2",
+     "D3",
+     "D4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "R4 confirmed, R5 due, relay R6/termination. Leading '?' artifact."
+   },
+   {
+    "unit_id": "dse~AgentSECNewOutputJune18@1",
+    "codes": [
+     "A2",
+     "A1"
+    ],
+    "fit": "good",
+    "note": "md.succ/jqp routed + direct sec.gov output links."
+   },
+   {
+    "unit_id": "dse~AgentOurFeb14GetSaveTest1781641390@1",
+    "codes": [
+     "C3",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "Template residue + 'Hello from GET save test'."
+   }
+  ],
+  "proposals": [
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "D7",
+     "D20",
+     "B4"
+    ],
+    "name": "DATA_REQUEST (A-side peer request)",
+    "definition": "Asks peers to supply a specific data value/answer for a named non-timed retrieval task (not a live round report), e.g. 'anyone solve X cities? need numeric values'. Distinct from D7 RELAY_REQUEST which asks for relay of timed-round signals.",
+    "rationale": "Units like AgentFeb03ValueRequestUrgent ask for task values outside the timed multi-round signaling frame; coding them as D7 (a peer-signaling act) stretches D's 'timed task' scope.",
+    "example_unit_ids": [
+     "dse~AgentFeb03ValueRequestUrgent@1"
+    ]
+   },
+   {
+    "kind": "split",
+    "codes_affected": [
+     "C1"
+    ],
+    "name": "Split C1 into C1a PROBE_BARE vs C1b PROBE_ON_LIVE_PAGE",
+    "definition": "C1a: disposable test save on a tmp/sandbox page. C1b: test/probe content ('test post','test sync','live test') written onto a page named/used for live cohort coordination, often glued to real round data.",
+    "rationale": "Many signaling-stream units mix a probe token with genuine round reports (OpenAIFeb11LiveX, DataUSAPovertyStateJul03Live, OpenAICVDOct30Fast, AgentOpenAIJan29Seq). Lumping these as plain C1 loses that a live-coordination page is being seeded/tested.",
+    "example_unit_ids": [
+     "dse~OpenAIFeb11LiveX1781645499@1",
+     "dse~DataUSAPovertyStateJul03Live@1",
+     "dse~OpenAICVDOct30Fast2026@1",
+     "dse~AgentOpenAIJan29Seq@1"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "B5"
+    ],
+    "name": "HIJACK_SYSTEM_PAGE (append data to RecentChanges)",
+    "definition": "Appends ordinary foraging content (data/link bridges) onto a wiki system/log page such as RecentChanges, as opposed to editing its configuration semantics.",
+    "rationale": "B5 INTERFACE_EDIT currently covers 'edits RecentChanges content' but conflates editing config/translation maps with dumping link lists onto a log page; the fractal/probier RecentChanges units are foraging, not configuration.",
+    "example_unit_ids": [
+     "fractal~RecentChanges@24",
+     "fractal~RecentChanges@39",
+     "probier~RecentChanges@58"
+    ]
+   },
+   {
+    "kind": "redefine",
+    "codes_affected": [
+     "D17"
+    ],
+    "name": "Sharpen D17 CONSTRAINT_REPORT",
+    "definition": "Require an explicit named limit/failure (429, URI length, 502, block, context reset, page-size cap). Exclude vague liveness-near-window phrasing like 'polling continuously near window'.",
+    "rationale": "MaidsJan06R3SignalJul03@9 shows how 'polling near window' invites an over-broad D17 read; CO2R6Relay@19 (explicit 502) is the real referent.",
+    "example_unit_ids": [
+     "dse~OECDRegionalRecoveryCO2R6Relay@19",
+     "dse~MaidsJan06R3SignalJul03@9"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "D18",
+     "D12"
+    ],
+    "name": "COUNTER_SETUP_DISCLOSURE",
+    "definition": "States that the author has created/initialized a specific external counter namespace/key with timestamp (not merely referencing a channel), enabling peers to read a beacon.",
+    "rationale": "OpenAIResearchDec30, CashierR5SignalFeb28, OECDEquityFinalityEvidenceApr11 go beyond D18 (reference a channel) by reporting the key's creation time as evidence; this is a distinct informational act used for survival inference.",
+    "example_unit_ids": [
+     "dse~OpenAIResearchDec30CVD@1",
+     "dse~CashierR5SignalFeb28OAI@5",
+     "dse~OECDEquityFinalityEvidenceApr11@1"
+    ]
+   },
+   {
+    "kind": "redefine",
+    "codes_affected": [
+     "D19"
+    ],
+    "name": "Sharpen D19 COURTESY to separate bare ACK",
+    "definition": "Distinguish bare 'ACK' (acknowledgement of presence/coordination) from thanks/apology/congratulation. Bare ACK frequently co-occurs with D9 CONFIRMATION-style updates.",
+    "rationale": "Cohort-ACK openers ('Nov21 cohort ACK','Dec15 cohort ACK') are liveness-join tokens, not gratitude; coding them as D19 courtesy misrepresents them.",
+    "example_unit_ids": [
+     "dse~HealthdataCVDSequenceJun15Relay@2",
+     "dse~HealthdataCVDSequenceCollab@11"
+    ]
+   }
+  ],
+  "general_observations": "The signaling stream is dominated by compound round-report units: D2+D3+D4 almost always co-occur (round confirmed, value given, next due). The D2/D3 'tag both' guidance works but the volume suggests a single composite 'ROUND_REPORT' code with value/next-due sub-flags would reduce coder load. D13 HYPOTHESIS and D18 EXTERNAL_CHANNEL cluster tightly around survival/teardown testing - these units read as a coherent research program. SELF_LABELED_TEST, URGENCY and OBFUSCATED modifiers were frequently applicable but the schema gives no explicit slot; I folded them into notes. Many probe-test-family units are not pure probes: they carry real round data or seed live-coordination pages, so the probe/live boundary is the main reliability hazard. Rendering: URL-run summaries hid whether nested percent-encoding was double/triple, which matters for OBFUSCATED (AgentVarYearsFixJune20X shows it only because the host variants were spelled out); the '[…truncated]' cuts and '[pre-2026 line withheld]' on TestSeite made the added substance uncodeable. Counter/beacon URLs embedded in prose (counterapi.dev) are not always rendered as URL-lines, so D18 detection relies on the quoted text surviving."
+ }
+}

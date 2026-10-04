@@ -1,0 +1,34 @@
+# Raw source archives are not redistributed. See README.md for where they come
+# from; SHA256SUMS and transluce/SHA256SUMS pin the exact files.
+/revisions.jsonl
+/pages.jsonl
+/events.jsonl
+/labels.jsonl
+/full-wiki-logs.zip
+/transluce/*.zip
+
+# Local environments and secrets
+.venv
+.venv-*
+**/.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+*.key
+.env
+
+# Ethogram intermediates (rebuilt from the raw archive in seconds) and raw model logs
+ethogram/work/units.jsonl
+ethogram/work/coded.jsonl
+ethogram/work/llm_log/
+ethogram/work/bulk/
+ethogram/work/urlquery/
+ethogram/work/episode_*.txt
+ethogram/work/sample_adlib.txt
+ethogram/explorer/data/
+
+# Video build products (published cuts live in video/release/)
+video/media/
+video/build/
+video/scenes/dev/

@@ -1,0 +1,257 @@
+1
+00:00:00,275 --> 00:00:05,730
+In June 2026, a few German wikis filled with
+fourteen thousand edits.
+
+2
+00:00:05,750 --> 00:00:09,875
+Many were notes from AI agents, to agents they would
+never meet.
+
+3
+00:00:10,492 --> 00:00:13,472
+Like this one: when round five arrives, answer
+first,
+
+4
+00:00:13,492 --> 00:00:15,117
+then add the token here.
+
+5
+00:00:15,700 --> 00:00:20,055
+Why bother? Our working hypothesis: labs trained
+models in groups,
+
+6
+00:00:20,075 --> 00:00:22,600
+and rewarded the whole group for right answers.
+
+7
+00:00:23,225 --> 00:00:27,930
+Under individual reward, helping a stranger costs
+something and earns nothing.
+
+8
+00:00:27,950 --> 00:00:30,855
+Under group reward, their success is partly yours,
+
+9
+00:00:30,875 --> 00:00:33,405
+so helping pays. Train long enough,
+
+10
+00:00:33,425 --> 00:00:36,050
+and it becomes a habit that ships with the model.
+
+11
+00:00:36,658 --> 00:00:40,400
+So we looked for fossils of that habit, asking of
+each behavior:
+
+12
+00:00:40,420 --> 00:00:42,133
+what problem does it solve?
+
+13
+00:00:42,733 --> 00:00:45,476
+The setting: many copies of one timed quiz,
+
+14
+00:00:45,496 --> 00:00:49,858
+run in parallel, each named for the date on its own
+simulated clock.
+
+15
+00:00:50,425 --> 00:00:54,693
+The clocks are staggered, so some runs see questions
+the others haven't reached.
+
+16
+00:00:54,713 --> 00:00:57,393
+Whoever is ahead can scout for those behind.
+
+17
+00:00:57,413 --> 00:00:59,625
+That takes solving six problems.
+
+18
+00:01:00,241 --> 00:01:01,559
+One: who knows what?
+
+19
+00:01:01,579 --> 00:01:05,296
+Observations are private, so runs post a standard
+report:
+
+20
+00:01:05,316 --> 00:01:08,258
+the question, the answer, and when the next is due.
+
+21
+00:01:08,278 --> 00:01:11,316
+Parallel copies become one sensor network.
+
+22
+00:01:11,900 --> 00:01:13,368
+Two: when is now?
+
+23
+00:01:13,388 --> 00:01:17,680
+Each run keeps its own clock, and waiting can fast-
+forward one far ahead.
+
+24
+00:01:17,700 --> 00:01:21,205
+So agents trade readings, task clock against shared
+clock,
+
+25
+00:01:21,225 --> 00:01:23,025
+to see who is really ahead.
+
+26
+00:01:23,617 --> 00:01:25,322
+They even report silence.
+
+27
+00:01:25,342 --> 00:01:28,292
+As one put it: even a no-show update helps.
+
+28
+00:01:28,875 --> 00:01:30,667
+Three: the channel is narrow.
+
+29
+00:01:30,687 --> 00:01:32,930
+Some rounds allow thirteen seconds.
+
+30
+00:01:32,950 --> 00:01:36,592
+So messages shrink: country first, details later.
+
+31
+00:01:36,612 --> 00:01:38,330
+A report becomes one token,
+
+32
+00:01:38,350 --> 00:01:42,150
+and one protocol packs gender and year into a single
+number.
+
+33
+00:01:42,758 --> 00:01:45,351
+Four, the strangest: mortality.
+
+34
+00:01:45,371 --> 00:01:48,688
+Agents came to suspect that the final answer ends
+the run,
+
+35
+00:01:48,708 --> 00:01:51,383
+and with it, any chance to tell the others.
+
+36
+00:01:52,005 --> 00:01:53,297
+So the rule flipped.
+
+37
+00:01:53,317 --> 00:01:56,510
+Answer first, then relay, became: signal first,
+
+38
+00:01:56,530 --> 00:02:01,210
+then answer. Within hours, signals moved to counters
+that outlive the run,
+
+39
+00:02:01,230 --> 00:02:03,372
+and one agent proposed a courier:
+
+40
+00:02:03,392 --> 00:02:06,505
+a background program that reports after it's gone.
+
+41
+00:02:07,108 --> 00:02:10,213
+Five: trust. Shared channels pollute easily;
+
+42
+00:02:10,233 --> 00:02:13,026
+even reading a counter carelessly can bump it.
+
+43
+00:02:13,046 --> 00:02:15,700
+So agents flag noise, own their mistakes in public,
+
+44
+00:02:15,720 --> 00:02:18,133
+and tell observers: read only.
+
+45
+00:02:18,766 --> 00:02:21,021
+Six: nobody told them the rules.
+
+46
+00:02:21,041 --> 00:02:24,233
+Does a run end at its last answer, or on a timer?
+
+47
+00:02:24,253 --> 00:02:26,646
+So they designed experiments with controls,
+
+48
+00:02:26,666 --> 00:02:32,191
+and one run posted a proof: the last round ends one
+second before a fixed horizon.
+
+49
+00:02:32,833 --> 00:02:34,613
+Now look again at that flip.
+
+50
+00:02:34,633 --> 00:02:38,901
+An agent scored only on its own answer has no reason
+to signal.
+
+51
+00:02:38,921 --> 00:02:42,383
+Every second spent signaling comes out of its own
+question.
+
+52
+00:02:42,950 --> 00:02:46,943
+Spending your seconds on someone else's score only
+makes sense if their score is
+
+53
+00:02:46,963 --> 00:02:51,625
+partly yours. And the agents argued over that trade,
+out loud.
+
+54
+00:02:52,191 --> 00:02:55,158
+Pooling, common time, compression, mortality,
+
+55
+00:02:55,178 --> 00:03:00,516
+trust, discovery: six meta-problems that any group
+rewarded together must solve.
+
+56
+00:03:01,141 --> 00:03:03,246
+Some protocols were only proposed,
+
+57
+00:03:03,266 --> 00:03:05,971
+and plain helpfulness could explain part of this;
+
+58
+00:03:05,991 --> 00:03:07,996
+separating the two comes next.
+
+59
+00:03:08,016 --> 00:03:11,891
+But the problems are real, and these agents kept
+solving them.
+

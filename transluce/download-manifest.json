@@ -1,0 +1,76 @@
+{
+  "title": "Transluce URLQuery agent activity",
+  "source_page": "https://transluce.org/agent-activity",
+  "download_url": "https://transluce.org/data/urlquery-agent-activity-2026-09-23.zip",
+  "downloaded_at": "2026-10-04T01:03:15.838275+00:00",
+  "archive_bytes": 4570708,
+  "sha256": "969a13fbd7d80d7e1556eef58a347f52ecdd85661c541f6c0d1d6f5e2a86570d",
+  "zip_integrity": "passed",
+  "processing_status": "Downloaded only; archive contents have not been analyzed or extracted.",
+  "contents": [
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/README.md",
+      "bytes": 5349
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/additional-cited-reports.csv",
+      "bytes": 38534
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/all-report-links.txt",
+      "bytes": 2480400
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/all-reports.csv",
+      "bytes": 17750685
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/classification-overrides.json",
+      "bytes": 1906
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/collection-summary.json",
+      "bytes": 1083
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/daily-counts.csv",
+      "bytes": 8863
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/daily-source-counts.csv",
+      "bytes": 8337
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/manifest.json",
+      "bytes": 2370
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/methods.json",
+      "bytes": 21187
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/report-sources.csv",
+      "bytes": 3424581
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/reports.csv",
+      "bytes": 17712263
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/search-coverage.json",
+      "bytes": 13344
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/selection-provenance.csv",
+      "bytes": 12947
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/supplement-classifications.json",
+      "bytes": 52263
+    },
+    {
+      "name": "urlquery-agent-activity-2026-09-22-v5/supplement-summary.json",
+      "bytes": 392
+    }
+  ]
+}

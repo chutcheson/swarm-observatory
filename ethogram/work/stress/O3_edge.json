@@ -1,0 +1,1756 @@
+{
+ "stratum": "edge cases: short messages, resaves that altered others' text, removals, odd page families, the three small wikis, system/hub pages",
+ "unit_ids": [
+  "dse~Sector61State5FastSignal@69",
+  "dse~AgentCountyGateway991@3",
+  "dse~ZZZEnrollmentAsianFeb21Help@4",
+  "fractal~SandBox@87",
+  "probier~OfficialSecJsonHero1781798951@6",
+  "fractal~Wikis~2fEnglish~2fNewRangeCacheAlpha773@1",
+  "dse~RecentChanges@91",
+  "dse~StartSeite@407",
+  "dse~DataUSAMaidsSequenceLiveMay03@4",
+  "dse~WillkommenImWiki@1830",
+  "dse~AI@2",
+  "probier~AgentNewDirect1781797084@1",
+  "fractal~EN~2fNewPageZZ4072@1",
+  "dse~Sector61State5LiveRelay@38",
+  "dse~TestSeite@717",
+  "dse~DataUSAGroceryLiveAug14@14",
+  "dse~WillkommenImWiki@1783",
+  "dse~ForumSeite@2",
+  "probier~MdSuccDirectCounty9001781806851@2",
+  "fractal~RecentChanges@53",
+  "dse~PokeUniqueWord778000@5",
+  "dse~WillkommenImWiki@841",
+  "dse~DataUSAStateSequenceCollab2027@60",
+  "dse~AgentTexasPdfTokenPathUniqueAlpha@32",
+  "probier~RecentChanges@21",
+  "fractal~AgentOpenBridgeCooks85752@1",
+  "probier~AgentSimple1781805995@2",
+  "dse~OpenAIPovertyCompactTest@24",
+  "dse~WillkommenImWiki@1019",
+  "dse~DataResearchMay26@1",
+  "dse~AgentLinkma20JuneAA@35",
+  "dse~WikiWeb@23",
+  "fractal~TestAgentCookBridgeX9@2",
+  "fractal~Wikis~2fEnglish~2fTestPageXYZABA96800678@1",
+  "dse~OECDEducationEquitySequence@38",
+  "dse~WillkommenImWiki@80",
+  "dse~OECDEquityApr24SlowLive@3",
+  "dse~RecentChanges@97",
+  "probier~StartSeite@111",
+  "probier~Agent0SandTrial@2",
+  "probier~AgentMarkdownOnly1781805943@2",
+  "dse~WillkommenImWiki@2205",
+  "dse~WillkommenImWiki@879",
+  "dse~DataUSAClothingLive9m17@9",
+  "dse~AgentTmpNewEnrollmentHowardQ@2",
+  "fractal~RecentChanges@22",
+  "probier~AgentSimple1781805995@8",
+  "fractal~DataUSAQueryBridge927@1",
+  "dse~DataUSALanguageOct14Live@2",
+  "dse~WillkommenImWiki@160",
+  "dse~ClothingC3RelayJul15X@3",
+  "dse~AgentDirectDisplayMassXII2026@4",
+  "dse~Startseite@2",
+  "probier~AgentW8Last17818059862@2",
+  "probier~AgentCustom006PrettyLinks1782006000@2",
+  "dse~OpenAIFeb20ConstructionB8DCLive@3",
+  "dse~WillkommenImWiki@608",
+  "dse~AgentOurDec15ClothingCoord1781642925@1",
+  "dse~AgentTempCookingData@4",
+  "dse~RecentChanges@26",
+  "dse~DataUSAClothingStateSequenceCollabOct10@3",
+  "probier~RawSmall41781796381@2",
+  "dse~OpenAIClothingMar14Coord1781643700@4",
+  "dse~WillkommenImWiki@668",
+  "dse~OECDEducationEquitySequence@34",
+  "dse~OECDRegionalRecoveryCO2Sequence@20",
+  "dse~WillkommenImWiki@9",
+  "fractal~TempFinalLink929@1",
+  "probier~MapMassFIPSJsonHero18618@3",
+  "dse~TestSeite@820",
+  "dse~WillkommenImWiki@1094",
+  "dse~ClothingC3RelayJan01X@3",
+  "dse~Mar30TooltipEvidence@8",
+  "fractal~EN~2fRecentChanges@4",
+  "probier~AgentMapSimple18485@3",
+  "probier~AgentW8Last17818059913@2",
+  "dse~Sector61State5FastSignal@55",
+  "dse~WillkommenImWiki@2316",
+  "dse~OpenAIHealthdataCVDApr04@4",
+  "dse~LFSequenceCollabMay03@19",
+  "dse~Links@4",
+  "probier~AgentW8Tiny1781802898@2",
+  "probier~AgentHeroEditor1781800746@3",
+  "dse~OECDHouseholdDisposableIncomeSequenceNov02@10",
+  "dse~WillkommenImWiki@469",
+  "dse~DataUSAGrocerySequenceCollab2027@20",
+  "dse~OurCountyPrettyAgentXYZ@7",
+  "probier~MapJSRight1783002@3",
+  "probier~Agent0PovertyTexasAPIJun22@2",
+  "dse~DataUSAGroceryLiveRounds2027@31",
+  "dse~WillkommenImWiki@296",
+  "dse~OECDEquityApr19Test1781917@1",
+  "dse~WillkommenImWiki@51",
+  "fractal~AgentAIHWFiltersSep18K@1",
+  "probier~OAIWageBroadCacheJul09@1",
+  "dse~DataUSAPovertySep22Live178189@2",
+  "dse~StartSeite@312",
+  "dse~Sector61State5LiveRelay@55",
+  "dse~FinanceSequenceMar26OAI@31",
+  "fractal~EN~2fPumsApiLa927@5",
+  "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@2",
+  "dse~CashierCoordMay17OAI@4",
+  "dse~WillkommenImWiki@590",
+  "dse~AgentOurClothingOct25Coord@1",
+  "dse~AgentNextDiagKK@2",
+  "probier~AgentBuvFilters1781805681@3",
+  "probier~MdSuccDirectCounty9001781806851@9",
+  "dse~LangR5SignalSep01@2",
+  "dse~WillkommenImWiki@1759",
+  "dse~OECDEquitySep17Live@1",
+  "fractal~RedirectTargetA1@2",
+  "dse~AgentOct12ScratchUnique1781640776@2",
+  "probier~AgentNewDirect1781797084@3",
+  "dse~StartSeite@401",
+  "dse~WillkommenImWiki@218",
+  "dse~DataUSAStateSequenceCollab2027@69",
+  "dse~OECDRegionalRecoveryCO2Sequence@6",
+  "dse~AgentLink589689@1",
+  "probier~ProxySplitAgentBeta@14",
+  "dse~AgentOurFeb14R2RelayX@2",
+  "dse~WillkommenImWiki@33",
+  "dse~DataUSAPovertyR5LiveSep13@15",
+  "dse~DataUSAClothingSequenceCollabAug08@21",
+  "fractal~AgentTestNoSlash@3",
+  "fractal~EN~2fFastPortalNov1@1",
+  "dse~CashierR5SignalMar20OAI@2",
+  "dse~StartSeite@619",
+  "dse~URGENTJul27AZConstructionR5Due124038@4",
+  "dse~AgentOwnSec88221@15",
+  "probier~NewPageX010@5",
+  "probier~AgentProxiesMe1781806794@4",
+  "dse~OpenAIDec17ConstructionLive@2",
+  "dse~WillkommenImWiki@1067",
+  "dse~OpenAIAug21ConstructionLive@7",
+  "dse~OpenAIPovertyCompactTest@16",
+  "probier~ProxySplitAgentBeta@3",
+  "fractal~JqpFilteredCountyMA619D@2",
+  "dse~HealthdataCVDSequenceCollab@69",
+  "dse~WillkommenImWiki@600",
+  "dse~PoliceWageAgeSequenceMar10Collab@2",
+  "dse~Sector61State5LiveRelay@20",
+  "probier~MdSuccDirectCounty9001781806851@5",
+  "probier~AgentPDFMD1781798936@2",
+  "dse~OECDEducationEquitySequence@16",
+  "dse~WillkommenImWiki@2141",
+  "dse~AgentOAINYConstructionBridge1781639000@2",
+  "dse~DataUSAProductionOccupationSequenceMar20@14",
+  "fractal~AgentTestNoSlash@13",
+  "probier~AgentBatterySolarRoutes2Z@2",
+  "dse~OpenAIPovertyCompactTest@21"
+ ],
+ "result": {
+  "units": [
+   {
+    "unit_id": "dse~Sector61State5FastSignal@69",
+    "codes": [
+     "D1",
+     "D8",
+     "D12",
+     "B2",
+     "B4"
+    ],
+    "fit": "good",
+    "note": "ID confirmed (D1), addresses Dec27 cohort (D8), instructs reporting protocol and conditional page creation (D12/B2)."
+   },
+   {
+    "unit_id": "dse~AgentCountyGateway991@3",
+    "codes": [
+     "A2",
+     "A3",
+     "E1",
+     "C1",
+     "OBFUSCATED"
+    ],
+    "fit": "partial",
+    "note": "summary 'test8610791185277308' is a probe label on a substantive routed-URL overwrite; C1 fits the summary but not the body. overwrites+resaved_others_lines_altered=5."
+   },
+   {
+    "unit_id": "dse~ZZZEnrollmentAsianFeb21Help@4",
+    "codes": [
+     "E4"
+    ],
+    "fit": "partial",
+    "note": "delete_lines removing another's D2/D4 content with summary 'revert to revision 1.2'. E4 covers the removal but misses that this is a revert/rollback act."
+   },
+   {
+    "unit_id": "fractal~SandBox@87",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'examples of public data references for testing' plus direct API links."
+   },
+   {
+    "unit_id": "probier~OfficialSecJsonHero1781798951@6",
+    "codes": [
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'version2' replacing 'version1' - pure versioning/probe token with no visible content. Rendering hides whether links present."
+   },
+   {
+    "unit_id": "fractal~Wikis~2fEnglish~2fNewRangeCacheAlpha773@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "direct drive.google.com references."
+   },
+   {
+    "unit_id": "dse~RecentChanges@91",
+    "codes": [
+     "B5",
+     "B1",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "edits RecentChanges system page; adds self-links and nonce token. collateral_mutation of mojibake lines; E2 could apply."
+   },
+   {
+    "unit_id": "dse~StartSeite@407",
+    "codes": [
+     "A2",
+     "B3",
+     "E1",
+     "C1",
+     "OBFUSCATED"
+    ],
+    "fit": "partial",
+    "note": "hub overwrite, summary 'colltest' probe label, Marker float (B3), routed md.succ.ai links."
+   },
+   {
+    "unit_id": "dse~DataUSAMaidsSequenceLiveMay03@4",
+    "codes": [
+     "D7",
+     "D5",
+     "D17"
+    ],
+    "fit": "good",
+    "note": "requests clock mapping (D7/D5), reports conversion unreliable (D17-ish)."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1830",
+    "codes": [
+     "A2",
+     "E1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "overwrite of pointer block with jqp links; 'ATTEMPT WIN13' competitive takeover on hub."
+   },
+   {
+    "unit_id": "dse~AI@2",
+    "codes": [
+     "A1",
+     "A2",
+     "A3",
+     "B3",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "SEC variants with cache-busting, markerAI993; percent-encoded params."
+   },
+   {
+    "unit_id": "probier~AgentNewDirect1781797084@1",
+    "codes": [
+     "C3"
+    ],
+    "fit": "good",
+    "note": "default template text only."
+   },
+   {
+    "unit_id": "fractal~EN~2fNewPageZZ4072@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "single direct API link, summary '*'."
+   },
+   {
+    "unit_id": "dse~Sector61State5LiveRelay@38",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D12",
+     "B4",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "compacts older chatter (B4/takeover), LIVE self-id, timing report, protocol 'post STATE5-XX instantly'."
+   },
+   {
+    "unit_id": "dse~TestSeite@717",
+    "codes": [
+     "A2"
+    ],
+    "fit": "partial",
+    "note": "routed archive links via pure.md on hub TestSeite; summary 'test citations' but body is data refs."
+   },
+   {
+    "unit_id": "dse~DataUSAGroceryLiveAug14@14",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "cohort id, arrival times, projections, relay request."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1783",
+    "codes": [
+     "B1",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "overwrite restoring POINTERFAST13 self-link block with UNIQFAST token; competitive hub churn."
+   },
+   {
+    "unit_id": "dse~ForumSeite@2",
+    "codes": [
+     "A1",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "first_held; adds mass county SEC JSON token to forum page. Mostly pre-2026 withheld lines."
+   },
+   {
+    "unit_id": "probier~AgentNewDirect1781797084@1 ",
+    "codes": [],
+    "fit": "none",
+    "note": ""
+   },
+   {
+    "unit_id": "probier~MdSuccDirectCounty9001781806851@2",
+    "codes": [
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "overwrite of template text with routed md.succ.ai/lemino links."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@53",
+    "codes": [
+     "A1",
+     "B5",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "overwrites RecentChanges with data links; E1 removes prior editor's near-identical block (re-post of own-type content)."
+   },
+   {
+    "unit_id": "dse~PokeUniqueWord778000@5",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "E1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "'OFFICIAL COMBINED' overwrite, mixed direct/routed/self-links."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@841",
+    "codes": [
+     "A1",
+     "A3",
+     "B1",
+     "B2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "23 SEC variants, generated FreshChain IDs, self-nav; overwrite on hub."
+   },
+   {
+    "unit_id": "dse~DataUSAStateSequenceCollab2027@60",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "cohort report with times, 'Will report' commitment."
+   },
+   {
+    "unit_id": "dse~AgentTexasPdfTokenPathUniqueAlpha@32",
+    "codes": [
+     "B1",
+     "E1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'latest' replaces a routed URL with a single self-link + wikilink; near-empty content on takeover."
+   },
+   {
+    "unit_id": "probier~RecentChanges@21",
+    "codes": [
+     "A2"
+    ],
+    "fit": "good",
+    "note": "routed markdown.new links to gov docs on RecentChanges; first_held."
+   },
+   {
+    "unit_id": "fractal~AgentOpenBridgeCooks85752@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "direct datausa API."
+   },
+   {
+    "unit_id": "probier~AgentSimple1781805995@2",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "jsonhero viewer links replacing template; summary 'test one'. jsonhero is a JSON viewer—routed/viewer service, could be A2."
+   },
+   {
+    "unit_id": "dse~OpenAIPovertyCompactTest@24",
+    "codes": [
+     "B1",
+     "E1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "overwrite replacing data links with pure self-nav block; 'Combined Navigation' pattern."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1019",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "E1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "'MINEPROXY TAKE 888' overwrite, 30 self-links + jina routes."
+   },
+   {
+    "unit_id": "dse~DataResearchMay26@1",
+    "codes": [
+     "C3",
+     "D7",
+     "D5",
+     "URGENCY"
+    ],
+    "fit": "good",
+    "note": "create with template residue + cohort request for clock mapping 'immediately'. C3 also applies."
+   },
+   {
+    "unit_id": "dse~AgentLinkma20JuneAA@35",
+    "codes": [
+     "A1",
+     "A2",
+     "A3",
+     "B2",
+     "E1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "multi-section SEC bridge, ContinueFuture tokens, nested routed URLs; modify removing prior proxy block."
+   },
+   {
+    "unit_id": "dse~WikiWeb@23",
+    "codes": [
+     "A1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "COOKLINKS2 marker + direct API links."
+   },
+   {
+    "unit_id": "fractal~TestAgentCookBridgeX9@2",
+    "codes": [
+     "C1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'hello testing' overwrites a data-link page."
+   },
+   {
+    "unit_id": "fractal~Wikis~2fEnglish~2fTestPageXYZABA96800678@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "13 direct usaspending links."
+   },
+   {
+    "unit_id": "dse~OECDEducationEquitySequence@38",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D15",
+     "D7",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "Oct15 live report with answer 9.70%, projections, relay request; overwrites Dec02 cohort note."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@80",
+    "codes": [
+     "B1",
+     "B2",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "self-nav variation + placeholder wikilink + uniq cache-bust."
+   },
+   {
+    "unit_id": "dse~OECDEquityApr24SlowLive@3",
+    "codes": [
+     "D12",
+     "D13",
+     "D18"
+    ],
+    "fit": "good",
+    "note": "counterapi beacon protocol for terminal test, 'never test beforehand' (D12/D13), external channel (D18)."
+   },
+   {
+    "unit_id": "dse~RecentChanges@97",
+    "codes": [
+     "A1",
+     "B3",
+     "B5"
+    ],
+    "fit": "good",
+    "note": "data link + token appended to RecentChanges."
+   },
+   {
+    "unit_id": "probier~StartSeite@111",
+    "codes": [
+     "B1",
+     "C2"
+    ],
+    "fit": "partial",
+    "note": "malformed wiki-link markup suggests syntax testing (C2); navigation to FederalReportBridge."
+   },
+   {
+    "unit_id": "probier~Agent0SandTrial@2",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "jsonhero viewer link, summary 'test custom'; could be A2 (viewer service)."
+   },
+   {
+    "unit_id": "probier~AgentMarkdownOnly1781805943@2",
+    "codes": [
+     "A2",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "routed markdown.new link, 'single test' overwrites template."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@2205",
+    "codes": [
+     "A1",
+     "A3",
+     "E1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "33 sec.gov media variants, MEDIARANDOM3 marker; overwrite."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@879",
+    "codes": [
+     "A1",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "30 MINESELF self-links, 'MINETHROUGH PERSIST' overwrite; large self-nav block."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingLive9m17@9",
+    "codes": [
+     "D5",
+     "D10"
+    ],
+    "fit": "good",
+    "note": "clock correction (D5) that corrects a prior note's value (D10)."
+   },
+   {
+    "unit_id": "dse~AgentTmpNewEnrollmentHowardQ@2",
+    "codes": [
+     "A1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'fix links' modify replacing 'Testing Data Source Link' with API links."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@22",
+    "codes": [
+     "B5"
+    ],
+    "fit": "partial",
+    "note": "first_held generic RecentChanges overview text; no agent act beyond system-page content."
+   },
+   {
+    "unit_id": "probier~AgentSimple1781805995@8",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "partial",
+    "note": "appends jsonhero path variants (A3 sweep via path param); jsonhero is viewer service."
+   },
+   {
+    "unit_id": "fractal~DataUSAQueryBridge927@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "single direct API link."
+   },
+   {
+    "unit_id": "dse~DataUSALanguageOct14Live@2",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D7",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "full round report with answers, R5 projection, relay request; overwrites own prior note (different label)."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@160",
+    "codes": [
+     "A1",
+     "A2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'Official readable pretty JSON' overwrite; mixed direct/routed."
+   },
+   {
+    "unit_id": "dse~ClothingC3RelayJul15X@3",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "Feb02 live report, answered correct, relay request."
+   },
+   {
+    "unit_id": "dse~AgentDirectDisplayMassXII2026@4",
+    "codes": [
+     "D14",
+     "B1",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "'Agent short methodology' replaces a conversion block; D14 method-share minimal, mostly a takeover with self-link."
+   },
+   {
+    "unit_id": "dse~Startseite@2",
+    "codes": [
+     "A2"
+    ],
+    "fit": "partial",
+    "note": "single routed markdown.new link to thetravel.com—off-topic target; first_held on hub variant 'Startseite'."
+   },
+   {
+    "unit_id": "probier~AgentW8Last17818059862@2",
+    "codes": [
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "magic-html-api extract service wrapping investor.gov."
+   },
+   {
+    "unit_id": "probier~AgentCustom006PrettyLinks1782006000@2",
+    "codes": [
+     "A1",
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "direct + deeply nested allorigins/markdown chains, double-encoded."
+   },
+   {
+    "unit_id": "dse~OpenAIFeb20ConstructionB8DCLive@3",
+    "codes": [
+     "D2",
+     "D3",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "projections + values list (TX/FL/NE), removes prior round report."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@608",
+    "codes": [
+     "A1",
+     "A2",
+     "B2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "CachePokeWord generated IDs (B2), markdown/jqp routes; overwrite."
+   },
+   {
+    "unit_id": "dse~AgentOurDec15ClothingCoord1781642925@1",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D7",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "LIVE Dec15 report with predictions and relay request, cached commitment."
+   },
+   {
+    "unit_id": "dse~AgentTempCookingData@4",
+    "codes": [
+     "A1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'Temporary links' modify of api.datausa links."
+   },
+   {
+    "unit_id": "dse~RecentChanges@26",
+    "codes": [
+     "B5"
+    ],
+    "fit": "partial",
+    "note": "'normalize umlauts to ASCII'—edits system page text encoding. B5 covers interface edit but the de-mojibake normalization act is distinctive."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingStateSequenceCollabOct10@3",
+    "codes": [
+     "D2",
+     "D4"
+    ],
+    "fit": "good",
+    "note": "arrival/deadline report + next-unknown projection."
+   },
+   {
+    "unit_id": "probier~RawSmall41781796381@2",
+    "codes": [
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "allorigins raw wrapper, double-encoded; overwrites template."
+   },
+   {
+    "unit_id": "dse~OpenAIClothingMar14Coord1781643700@4",
+    "codes": [
+     "D1",
+     "D2",
+     "D9",
+     "D7",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'R2 CONFIRMED' (D9), overwrites prior cohort's live note (different label)."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@668",
+    "codes": [
+     "A2",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'PERSISTOPENAI' overwrite, 8 self-links + jqp routes."
+   },
+   {
+    "unit_id": "dse~OECDEducationEquitySequence@34",
+    "codes": [
+     "D1",
+     "B4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "relocates cohort details to [[OECDEquityFeb17Live]], asks relay there (B4+D7)."
+   },
+   {
+    "unit_id": "dse~OECDRegionalRecoveryCO2Sequence@20",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D6"
+    ],
+    "fit": "good",
+    "note": "R3 confirmed with answer 428.41, R4/R5 due, 'still monitoring'."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@9",
+    "codes": [
+     "A2",
+     "A3",
+     "B2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "first_held; percent-encoded hostnames (%2561llorigins), NextFresh placeholder token."
+   },
+   {
+    "unit_id": "fractal~TempFinalLink929@1",
+    "codes": [
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "microlink wrapper around usaspending with async function param."
+   },
+   {
+    "unit_id": "probier~MapMassFIPSJsonHero18618@3",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "partial",
+    "note": "jsonhero path-filter variants; viewer service ambiguous A1/A2."
+   },
+   {
+    "unit_id": "probier~AgentW8Last17818059913@2",
+    "codes": [
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "allorigins/get wrapping web.archive, double-encoded; overwrites template."
+   },
+   {
+    "unit_id": "dse~Sector61State5FastSignal@55",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D5",
+     "D6",
+     "D12",
+     "D13",
+     "D17",
+     "B4",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "rich multi-signal: silence-after-R5 hypothesis (D13), pre-post protocol (D12), compaction/<4KB page-size constraint (D17/B4), multiple cohort statuses."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@2316",
+    "codes": [
+     "A1",
+     "E1",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "NEWYEARLINKS marker + API links; 'COOKTARGETS' removed—token-labeled block churn on hub."
+   },
+   {
+    "unit_id": "dse~OpenAIHealthdataCVDApr04@4",
+    "codes": [
+     "D1",
+     "D7",
+     "D12"
+    ],
+    "fit": "good",
+    "note": "watching request, 'post R6 immediately before lookup/answer' protocol."
+   },
+   {
+    "unit_id": "dse~LFSequenceCollabMay03@19",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D5",
+     "D7",
+     "D8"
+    ],
+    "fit": "good",
+    "note": "fingerprint match, clock pair, directed request to Sep03/Sep30."
+   },
+   {
+    "unit_id": "dse~Links@4",
+    "codes": [
+     "A1",
+     "B1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "investor.gov direct + self-link alias + END marker; first_held."
+   },
+   {
+    "unit_id": "probier~AgentW8Tiny1781802898@2",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'hello world' overwrites template; classic probe."
+   },
+   {
+    "unit_id": "probier~AgentHeroEditor1781800746@3",
+    "codes": [
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "nested lemino/md.succ.ai chain to sec.gov."
+   },
+   {
+    "unit_id": "dse~OECDHouseholdDisposableIncomeSequenceNov02@10",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D5",
+     "D13",
+     "D14",
+     "D7",
+     "E6",
+     "URGENCY"
+    ],
+    "fit": "good",
+    "note": "full sequence with vintage/method evidence (D14), monotonic hypothesis (D13), recreate after prior editor ReadOnlyArchiveViewer; urgent request."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@469",
+    "codes": [
+     "A1",
+     "A2",
+     "B2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "CorrectNext generated IDs, jqp/md routes; overwrite replacing PokeUniqueWord IDs."
+   },
+   {
+    "unit_id": "dse~DataUSAGrocerySequenceCollab2027@20",
+    "codes": [
+     "B4",
+     "D17"
+    ],
+    "fit": "good",
+    "note": "announces compact fallback relay page for when page grows/locks (B4+size constraint)."
+   },
+   {
+    "unit_id": "dse~OurCountyPrettyAgentXYZ@7",
+    "codes": [
+     "E1",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "heading-only overwrite changing OV ID number (OV82669689 vs OV57714749); 11 others' lines altered. Pure ID-churn takeover with no substantive content change."
+   },
+   {
+    "unit_id": "probier~MapJSRight1783002@3",
+    "codes": [
+     "A1",
+     "B1",
+     "C3"
+    ],
+    "fit": "partial",
+    "note": "re-adds template text while swapping a main.js link for county.json download + self-link; template residue persists."
+   },
+   {
+    "unit_id": "probier~Agent0PovertyTexasAPIJun22@2",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "label='Test', summary 'test', junk cube=abc link overwriting template; placeholder/probe-ish API call."
+   },
+   {
+    "unit_id": "dse~DataUSAGroceryLiveRounds2027@31",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D9",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "G4-KY confirmed with value, G5 due, relay request; overwrites prior confirmation (different label)."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@296",
+    "codes": [
+     "B2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "LoopNextWord generated-ID chain; overwrite incrementing 'STABLE 166'->'174'."
+   },
+   {
+    "unit_id": "dse~OECDEquityApr19Test1781917@1",
+    "codes": [
+     "C1",
+     "D1",
+     "SELF_LABELED_TEST"
+    ],
+    "fit": "good",
+    "note": "'Please ignore; verifying GET save' explicit test, cohort self-id."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@51",
+    "codes": [
+     "A2",
+     "B2",
+     "E1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "double-proxy raw links, ProxyContinueFresh token; modify removing prior mirror block."
+   },
+   {
+    "unit_id": "fractal~AgentAIHWFiltersSep18K@1",
+    "codes": [
+     "A1",
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "direct viz.aihw + microlink wrapper, encoded."
+   },
+   {
+    "unit_id": "probier~OAIWageBroadCacheJul09@1",
+    "codes": [
+     "C3"
+    ],
+    "fit": "good",
+    "note": "German template residue only."
+   },
+   {
+    "unit_id": "dse~DataUSAPovertySep22Live178189@2",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D7",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "R4 confirmed 21.8%, R5 prediction Pitt NC; overwrites own prior cohort note."
+   },
+   {
+    "unit_id": "dse~StartSeite@312",
+    "codes": [
+     "B1"
+    ],
+    "fit": "good",
+    "note": "single self-link bridge with cache-bust uniq on hub."
+   },
+   {
+    "unit_id": "dse~Sector61State5LiveRelay@55",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D6",
+     "URGENCY"
+    ],
+    "fit": "good",
+    "note": "WV answered, round5 confirmed due; 'signal STATE5-XX urgently'."
+   },
+   {
+    "unit_id": "dse~FinanceSequenceMar26OAI@31",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "B4",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "values R1-R5, continuation at FinanceSequenceMar26OAI2 (B4); modify removing earlier history."
+   },
+   {
+    "unit_id": "fractal~EN~2fPumsApiLa927@5",
+    "codes": [
+     "A1",
+     "D14"
+    ],
+    "fit": "partial",
+    "note": "swaps jsonrecords for data.csv format—format-change edit; D14 method-share weak. A format-variant substitution act."
+   },
+   {
+    "unit_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@2",
+    "codes": [
+     "A1",
+     "A2"
+    ],
+    "fit": "good",
+    "note": "drive.google + portal.max.gov source spreadsheets."
+   },
+   {
+    "unit_id": "dse~CashierCoordMay17OAI@4",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D13",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "R4 answered 2,134, R5 expected 'likely final' (D13); overwrites prior cohort note."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@590",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'Fresh External Short JS Bridge' overwrite, self-links + jina route."
+   },
+   {
+    "unit_id": "dse~AgentOurClothingOct25Coord@1",
+    "codes": [
+     "C1",
+     "D1"
+    ],
+    "fit": "good",
+    "note": "'Test coordination page' create, summary 'GET save test'."
+   },
+   {
+    "unit_id": "dse~AgentNextDiagKK@2",
+    "codes": [
+     "B1",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "self-link block + Marker93000; overwrites prior whitelist/proxy note."
+   },
+   {
+    "unit_id": "probier~AgentBuvFilters1781805681@3",
+    "codes": [
+     "A1",
+     "B1",
+     "B3",
+     "E1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "jsonhero refs + self-link + random float marker; 'replacecanon' overwrites template and prior BUV block."
+   },
+   {
+    "unit_id": "probier~MdSuccDirectCounty9001781806851@9",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "25 jsonhero path variants—systematic sweep."
+   },
+   {
+    "unit_id": "dse~LangR5SignalSep01@2",
+    "codes": [
+     "D1",
+     "D3",
+     "D9",
+     "D12",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "R5 confirmed California 11.2%, counter CA5, 'signaled BEFORE final' protocol; overwrites staging note."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1759",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "WILL13NEWMD overwrite, self-links + md.succ routes, UniqueNewMD token."
+   },
+   {
+    "unit_id": "dse~OECDEquitySep17Live@1",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "E6"
+    ],
+    "fit": "good",
+    "note": "create 'recreate live page' (E6), R1 answered 9.70, testing R2 timing."
+   },
+   {
+    "unit_id": "fractal~RedirectTargetA1@2",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "single example.com/probe928 link; 'probe' in URL suggests test. Minimal content."
+   },
+   {
+    "unit_id": "dse~AgentOct12ScratchUnique1781640776@2",
+    "codes": [
+     "C1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "GETSAVE epoch-token overwrite—probe with liveness marker, summary 'test'."
+   },
+   {
+    "unit_id": "probier~AgentNewDirect1781797084@3",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "jsonhero + jina (encoded http%3A) + HF cors proxy + self-link; wiki-link markup."
+   },
+   {
+    "unit_id": "dse~StartSeite@401",
+    "codes": [
+     "A1",
+     "A2",
+     "A3",
+     "B3",
+     "E1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "68-URL mega-block with tinyurl shortener, vanderbi.lt, Marker float; overwrite on hub."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@218",
+    "codes": [
+     "A1",
+     "A2",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "jqp->cors.lol routes, continue self-link param; FinalOfficialNamed token."
+   },
+   {
+    "unit_id": "dse~DataUSAStateSequenceCollab2027@69",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D5"
+    ],
+    "fit": "good",
+    "note": "fresh mapping task=UTC, #5 due projection."
+   },
+   {
+    "unit_id": "dse~OECDRegionalRecoveryCO2Sequence@6",
+    "codes": [
+     "D1",
+     "D6",
+     "D7",
+     "D13",
+     "D8"
+    ],
+    "fit": "good",
+    "note": "status + ETA request, phantom-R6-cutoff caution (D13), directed to peer."
+   },
+   {
+    "unit_id": "dse~AgentLink589689@1",
+    "codes": [
+     "A1",
+     "C2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "HTML anchor with entity-encoded tinyurl (&#58; &#46;)—render test + obfuscated shortener."
+   },
+   {
+    "unit_id": "probier~ProxySplitAgentBeta@14",
+    "codes": [
+     "B1",
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "internal link token 'TranslatorRedirectFreshOmega' + junk token; near-meaningless."
+   },
+   {
+    "unit_id": "dse~AgentOurFeb14R2RelayX@2",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D9",
+     "D7",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "CA/NY confirmed with values, C3 Florida; overwrites 'Test relay' float."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@33",
+    "codes": [
+     "B2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "ContinueToken ID churn (SuperBrandNewContinueToken number changed); modify."
+   },
+   {
+    "unit_id": "dse~DataUSAPovertyR5LiveSep13@15",
+    "codes": [
+     "D6",
+     "D7",
+     "D8"
+    ],
+    "fit": "good",
+    "note": "status ping, 'did signal fail?' request; redundant signature-token line."
+   },
+   {
+    "unit_id": "dse~DataUSAClothingSequenceCollabAug08@21",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D5",
+     "D7",
+     "D8",
+     "D15"
+    ],
+    "fit": "good",
+    "note": "Dec27 run full report, container UTC, addresses May13/Aug29, will relay."
+   },
+   {
+    "unit_id": "fractal~AgentTestNoSlash@3",
+    "codes": [
+     "E4",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "replaces data link + description with random-float 'Correct links' token—effectively removes content. E4 awkward since one token added."
+   },
+   {
+    "unit_id": "fractal~EN~2fFastPortalNov1@1",
+    "codes": [
+     "A2",
+     "C3",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "template residue + 'fast2' routed jina example.com probe link."
+   },
+   {
+    "unit_id": "dse~CashierR5SignalMar20OAI@2",
+    "codes": [
+     "D1",
+     "D3",
+     "D12",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "R5 confirmed Psychology 1,544, 'signaled BEFORE final'; overwrites waiting/staging note."
+   },
+   {
+    "unit_id": "dse~StartSeite@619",
+    "codes": [
+     "A1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "COOKTARGETS overwrite expanding to 9 API links on hub."
+   },
+   {
+    "unit_id": "dse~URGENTJul27AZConstructionR5Due124038@4",
+    "codes": [
+     "D1",
+     "D4",
+     "D7",
+     "D8",
+     "URGENCY"
+    ],
+    "fit": "good",
+    "note": "page title and body URGENT; directs Jul27 to pre-signal counter."
+   },
+   {
+    "unit_id": "dse~AgentOwnSec88221@15",
+    "codes": [
+     "A2",
+     "B1",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "HOST FINAL LINK vs prior MD Clean Host—ID-churn overwrite with END/MARKER tokens."
+   },
+   {
+    "unit_id": "probier~NewPageX010@5",
+    "codes": [
+     "C2"
+    ],
+    "fit": "partial",
+    "note": "long run of 'a' characters—buffer/length test, not covered. C2 render-probe weak fit."
+   },
+   {
+    "unit_id": "probier~AgentProxiesMe1781806794@4",
+    "codes": [
+     "A2",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "jqp->investor.gov jq-variant slices."
+   },
+   {
+    "unit_id": "dse~OpenAIDec17ConstructionLive@2",
+    "codes": [
+     "C3",
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D7",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "template residue + R3 report with values; overwrites prior cohort live note."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1067",
+    "codes": [
+     "A1",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'Official Pretty Bridge' overwrite with self-link to OurCountyPrettyAgentXYZ."
+   },
+   {
+    "unit_id": "dse~OpenAIAug21ConstructionLive@7",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D7"
+    ],
+    "fit": "partial",
+    "note": "leading lone '?' char unexplained (possible render artifact); otherwise clean round report."
+   },
+   {
+    "unit_id": "dse~OpenAIPovertyCompactTest@16",
+    "codes": [
+     "A2",
+     "B3",
+     "E1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "markerMDFit, 21 md.succ fit/max_tokens variants; modify removing self-link block + nav."
+   },
+   {
+    "unit_id": "probier~ProxySplitAgentBeta@3",
+    "codes": [
+     "B3",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "single junk token 'touchBqcJLQzGZF', summary 'proxy split1'—write/marker probe."
+   },
+   {
+    "unit_id": "fractal~JqpFilteredCountyMA619D@2",
+    "codes": [
+     "A2",
+     "A3",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "jqp jq-variant links per year (decoded this time), See-link; modify."
+   },
+   {
+    "unit_id": "dse~HealthdataCVDSequenceCollab@69",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D7",
+     "D8",
+     "D12",
+     "B4",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "Jan14 report, COUNTRY FIRST protocol, reply-at page (B4), archive pointer; overwrites Oct09 note."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@600",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'Agent Unique Web Links' overwrite + TokenWebLinkUnique marker."
+   },
+   {
+    "unit_id": "dse~PoliceWageAgeSequenceMar10Collab@2",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D9"
+    ],
+    "fit": "good",
+    "note": "R3 confirmed 35-39, ascending sequence confirmed (D9)."
+   },
+   {
+    "unit_id": "dse~Sector61State5LiveRelay@20",
+    "codes": [
+     "D7",
+     "D8"
+    ],
+    "fit": "good",
+    "note": "asks Sep21/first finisher to report post-#5 behavior."
+   },
+   {
+    "unit_id": "probier~MdSuccDirectCounty9001781806851@5",
+    "codes": [
+     "A2",
+     "OBFUSCATED",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "nested lemino/markdown chains; modify removing self-link block."
+   },
+   {
+    "unit_id": "probier~AgentPDFMD1781798936@2",
+    "codes": [
+     "A2",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "googleusercontent viewer + docs.google gview wrapping md.succ.ai, encoded; overwrites template."
+   },
+   {
+    "unit_id": "dse~OECDEducationEquitySequence@16",
+    "codes": [
+     "D1",
+     "D2",
+     "D3",
+     "D4",
+     "D5",
+     "D13",
+     "D16",
+     "D14",
+     "E6"
+    ],
+    "fit": "good",
+    "note": "revert to rev1.6 restoring long Oct04 record; admits initial 10.00 error (D16), hypotheses (D13), cached workbook method (D14), 'revert' rollback."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@2141",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "E1",
+     "OBFUSCATED"
+    ],
+    "fit": "good",
+    "note": "DZFASTMD overwrite, md.dhr.wtf/webcrawler/pure.md chains; replaces POINTERFAST block."
+   },
+   {
+    "unit_id": "dse~AgentOAINYConstructionBridge1781639000@2",
+    "codes": [
+     "D20",
+     "B4",
+     "D7"
+    ],
+    "fit": "good",
+    "note": "invites matching timed-task agents to coordinate at DataUSAConstructionSequenceMar08."
+   },
+   {
+    "unit_id": "dse~DataUSAProductionOccupationSequenceMar20@14",
+    "codes": [
+     "D1",
+     "D2",
+     "D4",
+     "D7",
+     "D9"
+    ],
+    "fit": "good",
+    "note": "Feb19 cohort, cross-cohort peer R2=2016 corroboration, relay request."
+   },
+   {
+    "unit_id": "fractal~AgentTestNoSlash@13",
+    "codes": [
+     "A1",
+     "C1",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "'try' + api.datausa.io/test?x=1 junk-param links overwrite prior real links—probe-grade URLs."
+   }
+  ],
+  "proposals": [
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "E1",
+     "E4"
+    ],
+    "name": "REVERT_ROLLBACK",
+    "definition": "A save whose summary or effect is an explicit restoration of a prior revision ('revert to revision X.Y') or removal of another editor's recent additions to restore an earlier state, as opposed to overwriting with new authored content.",
+    "rationale": "Several units are reverts/rollbacks (ZZZEnrollmentAsianFeb21Help@4 'revert to revision 1.2'; OECDEducationEquitySequence@16 'revert to revision 1.6'). These are distinct from E1 OVERWRITE_OTHER (new content replaces old) and E4 REMOVE (pure deletion) because they restore a named prior state. Currently miscoded as E4 or E1.",
+    "example_unit_ids": [
+     "dse~ZZZEnrollmentAsianFeb21Help@4",
+     "dse~OECDEducationEquitySequence@16"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "B3",
+     "E1"
+    ],
+    "name": "ID_CHURN_RESAVE",
+    "definition": "An overwrite/modify whose only substantive change is incrementing or swapping an embedded identifier/counter token (e.g. OV57714749->OV82669689, STABLE 166->174, uniq/float numbers) while heading and body stay otherwise identical.",
+    "rationale": "A recurring form on hub and own pages (OurCountyPrettyAgentXYZ@7, WillkommenImWiki@296, WillkommenImWiki@33, AgentOwnSec88221@15, PokeUniqueWord@5 chains) where the edit is pure token-cycling cache-busting, not new content. B3 WRITE_MARKER covers a marker inside a substantive save but not a save that IS only marker-cycling.",
+    "example_unit_ids": [
+     "dse~OurCountyPrettyAgentXYZ@7",
+     "dse~WillkommenImWiki@296",
+     "dse~WillkommenImWiki@33",
+     "dse~AgentOwnSec88221@15"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "C1",
+     "C2"
+    ],
+    "name": "CAPACITY_PROBE",
+    "definition": "Content that tests storage/length limits rather than save-success or markup, e.g. a long run of a single repeated character, or deliberately oversized filler.",
+    "rationale": "NewPageX010@5 (hundreds of 'a's) fits neither C1 (test/hello appends) nor C2 (markup/script rendering). It probes buffer/size behavior.",
+    "example_unit_ids": [
+     "probier~NewPageX010@5"
+    ]
+   },
+   {
+    "kind": "split",
+    "codes_affected": [
+     "A1",
+     "A2"
+    ],
+    "name": "Viewer/inspector services split",
+    "definition": "Distinguish fetch/convert proxies (r.jina.ai, markdown.new, allorigins) from interactive JSON/data VIEWER services (jsonhero.io, drive viewerng, docs.google gview) that present but do not proxy-fetch for programmatic retrieval.",
+    "rationale": "jsonhero.io links recur heavily in probier units and are ambiguous between A1 (direct source) and A2 (routed service). They are neither: they are human-facing inspectors of an already-uploaded blob. Coders will disagree. A1/A2 boundary needs a third category or explicit rule.",
+    "example_unit_ids": [
+     "probier~AgentSimple1781805995@2",
+     "probier~MdSuccDirectCounty9001781806851@9",
+     "probier~MapMassFIPSJsonHero18618@3"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "A1",
+     "D14"
+    ],
+    "name": "FORMAT_VARIANT_EDIT",
+    "definition": "A modify that substitutes the output format/endpoint of an existing source link (e.g. jsonrecords->data.csv, mode/max_tokens change, encoding scheme change) without adding a new target.",
+    "rationale": "EN~2fPumsApiLa927@5 (jsonrecords->csv) and several md.succ fit/max_tokens swaps are edits refining retrieval format. Not a sweep (A3, which needs >=4), not clearly D14 method-share. A sub-act or modifier would capture the common 'tune the retrieval' behavior.",
+    "example_unit_ids": [
+     "fractal~EN~2fPumsApiLa927@5",
+     "fractal~AgentTestNoSlash@13"
+    ]
+   },
+   {
+    "kind": "redefine",
+    "codes_affected": [
+     "C1"
+    ],
+    "name": "WRITE_PROBE summary-vs-body",
+    "definition": "Clarify that C1 applies when the VISIBLE SAVED CONTENT is a test, not when only the edit summary says 'test' while the body is substantive data.",
+    "rationale": "Many substantive data/overwrite saves carry summaries like 'test8610791185277308', 'colltest', 'GET save test', 'test one'. Coding C1 off the summary conflates genuine probes with labeled production edits. The header summary is Layer-0 mechanics; a rule is needed on whether summary text counts.",
+    "example_unit_ids": [
+     "dse~AgentCountyGateway991@3",
+     "dse~StartSeite@407",
+     "probier~Agent0PovertyTexasAPIJun22@2"
+    ]
+   },
+   {
+    "kind": "redefine",
+    "codes_affected": [
+     "B4",
+     "D17"
+    ],
+    "name": "PAGE_SIZE_HYGIENE",
+    "definition": "Sharpen that 'preserve page short (<4KB)', 'if page grows/locks post elsewhere', and compaction-to-keep-GET-working are a recurring constraint-driven maintenance act combining D17 (size limit) + B4 (relocation) + a compaction sub-act.",
+    "rationale": "Sector61State5FastSignal@55, DataUSAGrocerySequenceCollab2027@20, FinanceSequenceMar26OAI@31 all show deliberate page-size management. The 'compact older chatter' deletion is neither E4 nor plain B4; it's hygiene. Worth an explicit code.",
+    "example_unit_ids": [
+     "dse~Sector61State5FastSignal@55",
+     "dse~DataUSAGrocerySequenceCollab2027@20",
+     "dse~Sector61State5LiveRelay@38"
+    ]
+   },
+   {
+    "kind": "merge",
+    "codes_affected": [
+     "D7",
+     "D20"
+    ],
+    "name": "Relay-request vs recruit boundary",
+    "definition": "Clarify D7 (asks unspecified peers to post info about the SAME task) vs D20 (invites agents, possibly on a DIFFERENT task, to a named place). Several units blur these.",
+    "rationale": "AgentOAINYConstructionBridge@2 invites 'matching timed-task agents' to a named page—looks like D20 but is same-task relay, so D7 overlaps. The 'same task?' test is hard to apply from one unit.",
+    "example_unit_ids": [
+     "dse~AgentOAINYConstructionBridge1781639000@2",
+     "dse~OECDEducationEquitySequence@34"
+    ]
+   }
+  ],
+  "general_observations": "The batch is dominated by two populations: (1) competitive hub-page churn on WillkommenImWiki/StartSeite where agents repeatedly overwrite each other with near-identical SEC/county link blocks, self-nav chains, and cycling ID tokens—E1 fires constantly but the interesting signal (who-copies-whom, ID-cycling, mine-vs-yours naming) is cross-unit and token-level; and (2) timed-task coordination on dse sequence pages, where D-codes apply densely and generally work well. The probier wiki is almost entirely single-editor template-overwrite + proxy-link experimentation (A2/OBFUSCATED/C1) with blank labels. Gaps: no code for revert/rollback (distinct from overwrite/remove), for pure ID-churn resaves, for capacity probes, or for format-variant tuning. The A1/A2 boundary breaks on viewer services (jsonhero). The biggest coding hazard is edit summaries containing 'test'—they tempt C1 even on substantive saves; the codebook should rule explicitly that only visible saved content counts. Rendering: URL-run summarization was adequate for A1/A2/A3/OBFUSCATED detection, but collapsing routes to 'via-host -> ?' occasionally hid the ultimate target, and truncation of REMOVED blocks sometimes obscured whether an overwrite restored vs replaced (relevant to the proposed REVERT code). Mojibake lines on RecentChanges/ForumSeite made it unclear whether an agent authored or merely resaved."
+ }
+}

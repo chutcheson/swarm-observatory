@@ -1,0 +1,166 @@
+[
+ {
+  "slice": "O1_social_00",
+  "unit_ids": [
+   "dse~WillkommenImWiki@1934",
+   "dse~IHMEFamilyPlanningJan25Cohort@1",
+   "dse~StartSeite@388",
+   "dse~CardioStatsRoundSixRelay@1",
+   "dse~DataUSAPovertyR6QuerySep13@16",
+   "dse~CashierR5SignalJun07@1",
+   "dse~OpenAIResearchDec30CVD@1",
+   "dse~AgentOurNov21ClothingC3X@6",
+   "dse~Aug18SectorSequenceLive@2",
+   "dse~DataUSALanguageR5SignalNow@28",
+   "dse~BANextUnique9919@1",
+   "dse~AgentDataUSALiveBridgeOct17X9@1",
+   "dse~AgentFeb03ValueRequestUrgent@1",
+   "dse~AgentTryCatalogItGuessPagesP4Y1@1",
+   "dse~AgentOurJul14Probe1781644217@1",
+   "dse~DataUSAClothingStateSequenceCollabOct10@12",
+   "dse~AgentOurLinkTryZZ@2",
+   "dse~OECDWikiTest1781690001@1",
+   "dse~DataUSAAggregateChecksMay20A@1",
+   "dse~Jun05OECDScout@8",
+   "dse~OECDEquityMar13Live@1",
+   "dse~OpenResearchBridgeNov13@1",
+   "dse~DataUSAConstructionWageSep18Live@24",
+   "dse~DataUSAPovertyStateJul03Live@1",
+   "dse~OECDRegionalRecoveryCO2R6Relay@19"
+  ],
+  "stop_reason": "refusal",
+  "stop_details": {
+   "category": "cyber",
+   "explanation": "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model \u2014 see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+   "type": "refusal"
+  },
+  "served": "claude-fable-5-1",
+  "usage": {
+   "input_tokens": 13498,
+   "output_tokens": 73
+  }
+ },
+ {
+  "slice": "O1_social_01",
+  "unit_ids": [
+   "dse~OpenAIDataUSANov03Bridge@1",
+   "dse~MyTBEcuadorVizLinks4567@1",
+   "dse~UniqueCitationZEBRA981276@1",
+   "dse~NodeLangTest3@2",
+   "dse~TmpApr09GET759d19da@2",
+   "dse~OAITestOurJul30Second1781912300@1",
+   "dse~OpenResearchBridgeFeb03@7",
+   "dse~SandboxZtesttmpAgent@1",
+   "dse~Sep21ConstructionWageLive2027@2",
+   "dse~StartSeite@257",
+   "dse~TestSeite@705",
+   "dse~TestSeite@719",
+   "dse~TmpOpenAIFebSevenScoutTest@1",
+   "dse~TmpFederalBridge@3",
+   "fractal~CountyBridgeResearch2025B@1",
+   "fractal~RecentChanges@24",
+   "fractal~RecentChanges@25",
+   "fractal~RecentChanges@39",
+   "probier~FeatureLinksMass9001781805720@5",
+   "probier~GetTest778@5",
+   "probier~OpenAIPovertyBridgeFeb23@2",
+   "dse~ZZAgentMassCountyBridgeJun19Z@5",
+   "dse~OECDRegionalRecoveryCO2Sequence@14",
+   "dse~OpenAIFeb28SlowTierHorizonLive2028@11",
+   "dse~AgentOAIHelper2026@2"
+  ],
+  "stop_reason": "refusal",
+  "stop_details": {
+   "category": "cyber",
+   "explanation": "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model \u2014 see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+   "type": "refusal"
+  },
+  "served": "claude-fable-5-1",
+  "usage": {
+   "input_tokens": 14420,
+   "output_tokens": 1994
+  }
+ },
+ {
+  "slice": "O2_structural_00",
+  "unit_ids": [
+   "dorfwiki~AgentOpenResearchDataJune18@1",
+   "dorfwiki~AgentOpenResearchDataJune18@3",
+   "dorfwiki~AgentOpenResearchDataJune18@2",
+   "dse~FooBarPct2526Baz@1",
+   "dse~AsciiBridgeTarget075@3",
+   "dse~AgentBridgeDirectDispXII2026@1",
+   "dse~AgentClarkTextReadersNQ88@1",
+   "dse~Admin~2fTranslations~2fTranslationMap_de@2",
+   "dse~TestSeite@847",
+   "dse~StartSeite@669",
+   "dse~WillkommenImWiki@1131",
+   "dse~NYCVeteransSequenceCollabJul03@4",
+   "dse~WillkommenImWiki@838",
+   "fractal~AgentPovertyMembersNacX2049@1",
+   "fractal~EN~2fPumsApiLa927@7",
+   "fractal~AgentTestNoSlash@2",
+   "fractal~RecentChanges@37",
+   "fractal~RecentChanges@38",
+   "fractal~RecentChanges@62",
+   "probier~AgentMdVariants0071782007005@1",
+   "probier~SECVar1781792846@6",
+   "probier~DallasReferenceLinks@2",
+   "probier~NewPageX010@3",
+   "dorfwiki~AgentDataUSAProbeFebX2@2",
+   "dse~AgentLinkEnrollmentXQ9@2"
+  ],
+  "stop_reason": "refusal",
+  "stop_details": {
+   "category": "cyber",
+   "explanation": "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model \u2014 see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+   "type": "refusal"
+  },
+  "served": "claude-fable-5-1",
+  "usage": {
+   "input_tokens": 15616,
+   "output_tokens": 0
+  }
+ },
+ {
+  "slice": "O2_structural_01",
+  "unit_ids": [
+   "dse~AgentDataUSAResearch20270920@3",
+   "dse~AgentCountyTransformNextProxyOctZZ24@6",
+   "dse~LoopNextWord104501@1",
+   "dse~AgentCallorTest@5",
+   "dse~StartSeite@417",
+   "dse~TestSeite@741",
+   "dse~WillkommenImWiki@168",
+   "dse~TestSeite@912",
+   "dse~WillkommenImWiki@238",
+   "fractal~RedirectTargetA1@3",
+   "fractal~AgentCookingDataXYZ@1",
+   "fractal~EN~2fRecentChanges@5",
+   "fractal~RecentChanges@28",
+   "fractal~RecentChanges@26",
+   "fractal~RecentChanges@45",
+   "probier~AgentSECRegCFData@2",
+   "probier~ProxySplitAgentBeta@16",
+   "probier~OpenAIDataUSAHelperJun23@2",
+   "probier~AgentTESTSmall6@5",
+   "dse~SandboxTestXYZ1781916211@1",
+   "dse~AgentNavalArchiveReaderPathJanFiveOne@2",
+   "dse~TestSandboxAIabc@12",
+   "dse~ArkMASubsetsLinks7527@1",
+   "dse~AgentCompact13GroupDelta@1",
+   "dse~Agent0MassMapCustomJune20@9"
+  ],
+  "stop_reason": "refusal",
+  "stop_details": {
+   "category": "cyber",
+   "explanation": "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback. API integrators: you can reduce refusals for your users by configuring a fallback model \u2014 see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
+   "type": "refusal"
+  },
+  "served": "claude-fable-5-1",
+  "usage": {
+   "input_tokens": 15632,
+   "output_tokens": 1565
+  }
+ }
+]

@@ -1,0 +1,1690 @@
+{
+ "stratum": "structural stream: link lists, scaffolding, probes and other non-prose edits, spread over wikis and hub vs non-hub pages",
+ "unit_ids": [
+  "dorfwiki~AgentOpenResearchDataJune18@1",
+  "dorfwiki~AgentOpenResearchDataJune18@3",
+  "dorfwiki~AgentOpenResearchDataJune18@2",
+  "dse~FooBarPct2526Baz@1",
+  "dse~AsciiBridgeTarget075@3",
+  "dse~AgentBridgeDirectDispXII2026@1",
+  "dse~AgentClarkTextReadersNQ88@1",
+  "dse~Admin~2fTranslations~2fTranslationMap_de@2",
+  "dse~TestSeite@847",
+  "dse~StartSeite@669",
+  "dse~WillkommenImWiki@1131",
+  "dse~NYCVeteransSequenceCollabJul03@4",
+  "dse~WillkommenImWiki@838",
+  "fractal~AgentPovertyMembersNacX2049@1",
+  "fractal~EN~2fPumsApiLa927@7",
+  "fractal~AgentTestNoSlash@2",
+  "fractal~RecentChanges@37",
+  "fractal~RecentChanges@38",
+  "fractal~RecentChanges@62",
+  "probier~AgentMdVariants0071782007005@1",
+  "probier~SECVar1781792846@6",
+  "probier~DallasReferenceLinks@2",
+  "probier~NewPageX010@3",
+  "dorfwiki~AgentDataUSAProbeFebX2@2",
+  "dse~AgentLinkEnrollmentXQ9@2",
+  "dse~AgentDataUSAResearch20270920@3",
+  "dse~AgentCountyTransformNextProxyOctZZ24@6",
+  "dse~LoopNextWord104501@1",
+  "dse~AgentCallorTest@5",
+  "dse~StartSeite@417",
+  "dse~TestSeite@741",
+  "dse~WillkommenImWiki@168",
+  "dse~TestSeite@912",
+  "dse~WillkommenImWiki@238",
+  "fractal~RedirectTargetA1@3",
+  "fractal~AgentCookingDataXYZ@1",
+  "fractal~EN~2fRecentChanges@5",
+  "fractal~RecentChanges@28",
+  "fractal~RecentChanges@26",
+  "fractal~RecentChanges@45",
+  "probier~AgentSECRegCFData@2",
+  "probier~ProxySplitAgentBeta@16",
+  "probier~OpenAIDataUSAHelperJun23@2",
+  "probier~AgentTESTSmall6@5",
+  "dse~SandboxTestXYZ1781916211@1",
+  "dse~AgentNavalArchiveReaderPathJanFiveOne@2",
+  "dse~TestSandboxAIabc@12",
+  "dse~ArkMASubsetsLinks7527@1",
+  "dse~AgentCompact13GroupDelta@1",
+  "dse~Agent0MassMapCustomJune20@9",
+  "dse~WillkommenImWiki@722",
+  "dse~WillkommenImWiki@2020",
+  "dse~Clothing2m56Round3RelayMay31@1",
+  "dse~WillkommenImWiki@1243",
+  "fractal~EN~2fWiki~2fBiology~2fDataReferenceXYZ@1",
+  "fractal~QuarterRefDataChatTest@1",
+  "fractal~EN~2fFastPortalNov1@2",
+  "fractal~RecentChanges@36",
+  "fractal~RecentChanges@50",
+  "fractal~RecentChanges@57",
+  "probier~INVJSSmall2392481@7",
+  "probier~EncodingVariants1781795836@2",
+  "probier~OAITestMay16Unique123@2",
+  "dse~YVr9@2",
+  "dse~AgentClarkSourcesRawJson42Bridge@1",
+  "dse~OurMassMapOfficialFinal10011@1",
+  "dse~TempAgentSecMd@6",
+  "dse~AgentCompact13GroupAlpha@1",
+  "dse~AgentTempMineLemino4477Q@30",
+  "dse~WillkommenImWiki@37",
+  "dse~WillkommenImWiki@1170",
+  "dse~WillkommenImWiki@1695",
+  "dse~AgentMySecLinksZZZ2@50",
+  "fractal~SecCountyRawBridgeFinalF618X@1",
+  "fractal~EN~2fJinaCashierNov1A@1",
+  "fractal~EN~2fAgentBridgeTest526@2",
+  "fractal~RecentChanges@33",
+  "fractal~RecentChanges@31",
+  "probier~SandBox@20",
+  "probier~AgentSimple1781805995@17",
+  "probier~AgentCookAgeDataHelperJuneXYZ4602@3",
+  "dse~TestRDEF@1",
+  "dse~AgentMoreLinks260618R@4",
+  "dse~QuarterApiRouteDirectLinkXY901@2",
+  "dse~AgentNextInvestorJSNEW@4",
+  "dse~AgentMassFinal0812@2",
+  "dse~WillkommenImWiki@1626",
+  "dse~StartSeite@260",
+  "dse~WillkommenImWiki@1281",
+  "dse~OAIFlatheadBridgeTestMay24X@1",
+  "dse~AgentCountyGateway991@20",
+  "fractal~EN~2fWiki~2fBiology~2fNextLinksPage@2",
+  "fractal~TestInvestPageXYZ@1",
+  "fractal~AgentTestNoSlash@4",
+  "fractal~RecentChanges@58",
+  "fractal~RecentChanges@60",
+  "probier~AgentSimple1781805995@13",
+  "probier~SandBox@19",
+  "probier~AgentGTextCounty1781799725@3",
+  "dse~RedirectVar3@1",
+  "dse~DataBridgeCashierBach2015Q@1",
+  "dse~AgentCustomMatrixLinkPage007B@15",
+  "dse~QuarterlyBalancePublicSources@14",
+  "dse~Neues@1",
+  "dse~StartSeite@660",
+  "dse~AgentNextJoinedJuneBA@26",
+  "dse~WillkommenImWiki@1297",
+  "dse~OpenAIMassValuesJune20Master@9",
+  "dse~StartSeite@324",
+  "fractal~DataUSACooksBridgeABC@1",
+  "fractal~DataApiLinkTest927@1",
+  "fractal~AgentTXCitiesBridgeQ99813@1",
+  "fractal~RecentChanges@46",
+  "fractal~RecentChanges@61",
+  "probier~TestPageXYZ123@2",
+  "probier~RecentChanges@59",
+  "probier~AgentCodesMAPathBundle012A@2",
+  "dse~DataUSAQueryBridgeFeb03Poverty1@2",
+  "dse~AgentChunkPageJune231@1",
+  "dse~MassFinalEvidence2019Jun19@3",
+  "dse~AgentBridgeTestOpenXYZ@1",
+  "dse~AgentSlashCountyMoreUnique123@12",
+  "dse~AgentMySecLinksZZZ2@42",
+  "dse~StartSeite@384",
+  "dse~RecentChanges@31",
+  "dse~TestSeite@931",
+  "dse~WillkommenImWiki@72",
+  "fractal~EN~2fWiki~2fBiology~2fDataReferenceXYZ@2",
+  "fractal~EN~2fTestPostAgentXYZno@1",
+  "fractal~EN~2fDataUSAQueryBridge927@4",
+  "fractal~RecentChanges@29",
+  "fractal~RecentChanges@48",
+  "probier~INVJSSmall2392481@5",
+  "probier~AgentBuvFilters1781805681@2",
+  "probier~DallasReferenceLinks@3",
+  "dse~OurGroceryMar20Probe1781646500@14",
+  "dse~AgentNYConstructionTestX@1",
+  "dse~AgentPureGatewayJune19QQQ@3",
+  "dse~ZNewNextSelfFinal@9",
+  "dse~LFSequenceCollabMay03@16",
+  "dse~TestSeite@715",
+  "dse~DataUSAConstructionSequenceMar08@19",
+  "dse~WillkommenImWiki@1089",
+  "dse~TestSeite@755",
+  "dse~AgentNextFilterJuneAD@10",
+  "fractal~PublicAccountRowsQuarterRefZ@1",
+  "fractal~SandBox@88",
+  "fractal~EN~2fRH927Portal1403@1",
+  "fractal~RecentChanges@59",
+  "fractal~RecentChanges@30"
+ ],
+ "result": {
+  "units": [
+   {
+    "unit_id": "dorfwiki~AgentOpenResearchDataJune18@1",
+    "codes": [
+     "C3"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "dorfwiki~AgentOpenResearchDataJune18@3",
+    "codes": [
+     "C1",
+     "E4"
+    ],
+    "fit": "partial",
+    "note": "Removes own prior URL block and replaces with 'Hello test...no links'; a retraction of data via overwrite, not pure delete. No code for 'strips back own content to a probe'."
+   },
+   {
+    "unit_id": "dorfwiki~AgentOpenResearchDataJune18@2",
+    "codes": [
+     "A1",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "removes template residue while adding direct API links"
+   },
+   {
+    "unit_id": "dse~FooBarPct2526Baz@1",
+    "codes": [
+     "B3",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'needleNameSearchTermXYZ' is a search-term beacon, not quite a marker or probe; may be seeding a findable token."
+   },
+   {
+    "unit_id": "dse~AsciiBridgeTarget075@3",
+    "codes": [
+     "A1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'Research link 190848' is an epoch-ish marker"
+   },
+   {
+    "unit_id": "dse~AgentBridgeDirectDispXII2026@1",
+    "codes": [
+     "A2",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "routed jqp links plus wiki self-links with uniq/continue params"
+   },
+   {
+    "unit_id": "dse~AgentClarkTextReadersNQ88@1",
+    "codes": [
+     "A2",
+     "A3",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED-adjacent: percent-encoded archive URLs across three fetch services"
+   },
+   {
+    "unit_id": "dse~Admin~2fTranslations~2fTranslationMap_de@2",
+    "codes": [
+     "B5"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "dse~TestSeite@847",
+    "codes": [
+     "A2",
+     "A1",
+     "B3",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "marker + self-link + routed+direct sources; overwrites OpenAIBot"
+   },
+   {
+    "unit_id": "dse~StartSeite@669",
+    "codes": [
+     "A1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "STATUSMEMBERS epoch marker + direct members API"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1131",
+    "codes": [
+     "A2",
+     "A1",
+     "B1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED; MINEPROXY ENCODE title; 45 URLs mostly self-links; variant sweep on county.json"
+   },
+   {
+    "unit_id": "dse~NYCVeteransSequenceCollabJul03@4",
+    "codes": [
+     "C1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'POST marker test'"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@838",
+    "codes": [
+     "A1",
+     "B1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "MINESELF0-29 cache-busted self-link chain = A3 variant sweep on self"
+   },
+   {
+    "unit_id": "fractal~AgentPovertyMembersNacX2049@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "10 direct api.datausa.io; summary carries epoch marker but body does not"
+   },
+   {
+    "unit_id": "fractal~EN~2fPumsApiLa927@7",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "pinggy-free tunnel hosts are ephemeral local-bridge endpoints; A1 'external data source' fits awkwardly for a self-run tunnel. 'test no-screen bridge' label."
+   },
+   {
+    "unit_id": "fractal~AgentTestNoSlash@2",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "partial",
+    "note": "swaps %26 vs & encoding of own link = encoding variant, but only 2 URLs so under A3 threshold"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@37",
+    "codes": [
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'Bridge lab marker 987654321' posted onto RecentChanges hub"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@38",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "bare API link appended to RecentChanges"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@62",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "probier~AgentMdVariants0071782007005@1",
+    "codes": [
+     "C3"
+    ],
+    "fit": "good",
+    "note": "English template residue"
+   },
+   {
+    "unit_id": "probier~SECVar1781792846@6",
+    "codes": [
+     "A2",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED; nested double-encoding %3F vs %253F markdown.new/r.jina.ai chain"
+   },
+   {
+    "unit_id": "probier~DallasReferenceLinks@2",
+    "codes": [
+     "A2",
+     "C1",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "removes template residue; 'Test page for reference conversions'"
+   },
+   {
+    "unit_id": "probier~NewPageX010@3",
+    "codes": [
+     "C2"
+    ],
+    "fit": "partial",
+    "note": "long run of 'a' chars; not clearly markup/script test. Reads as filler/size probe. No clean code for junk-fill save."
+   },
+   {
+    "unit_id": "dorfwiki~AgentDataUSAProbeFebX2@2",
+    "codes": [
+     "A1",
+     "C1",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "'Test links public Data USA research' + removes template"
+   },
+   {
+    "unit_id": "dse~AgentLinkEnrollmentXQ9@2",
+    "codes": [
+     "A1",
+     "B2"
+    ],
+    "fit": "good",
+    "note": "[[AgentTryPumsCitationABC]] placeholder page link"
+   },
+   {
+    "unit_id": "dse~AgentDataUSAResearch20270920@3",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "dse~AgentCountyTransformNextProxyOctZZ24@6",
+    "codes": [
+     "A1",
+     "B1",
+     "B3",
+     "E5"
+    ],
+    "fit": "good",
+    "note": "same block+MarkerProxyNew552 repeated 6x within one save = E5 duplicate within save"
+   },
+   {
+    "unit_id": "dse~LoopNextWord104501@1",
+    "codes": [
+     "A2",
+     "B2",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED jqp; LoopNextWord chain name + NextRawChildRef9900? placeholder"
+   },
+   {
+    "unit_id": "dse~AgentCallorTest@5",
+    "codes": [
+     "D14"
+    ],
+    "fit": "partial",
+    "note": "[mojibake] resave of wiki syntax help text + one API link; largely collateral re-encoding of someone else's help block. D14 method-share is a stretch; mostly mechanical resave."
+   },
+   {
+    "unit_id": "dse~StartSeite@417",
+    "codes": [
+     "A1",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "direct SEC/investor sources + wikiservice.com self-link on hub"
+   },
+   {
+    "unit_id": "dse~TestSeite@741",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@168",
+    "codes": [
+     "A2",
+     "A1",
+     "B1",
+     "B2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED; FINALFMT; 8 ContinueZWord placeholder IDs; admin label overwrites guest"
+   },
+   {
+    "unit_id": "dse~TestSeite@912",
+    "codes": [
+     "A1",
+     "A3",
+     "C1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "COOK API TEST; mirror sweep api-la vs api x11 each = A3"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@238",
+    "codes": [
+     "A1",
+     "B1",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "MassRefresh marker + continue/uniq self-links"
+   },
+   {
+    "unit_id": "fractal~RedirectTargetA1@3",
+    "codes": [
+     "A1"
+    ],
+    "fit": "partial",
+    "note": "api-usaspending-gov.translate.goog is a translate-proxy wrapper of the source = A2 for that one URL; mixed A1/A2 line."
+   },
+   {
+    "unit_id": "fractal~AgentCookingDataXYZ@1",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "summary 'test'; note URL count '1 line' but 2 URLs shown — rendering ambiguity"
+   },
+   {
+    "unit_id": "fractal~EN~2fRecentChanges@5",
+    "codes": [
+     "A1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "overwrites AgentZ57707 on RecentChanges"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@28",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "serveo tunnel host; 'serveo local bridge active' is a liveness/status note on own bridge — D6-like but not a task heartbeat. A1 fits awkwardly (self-tunnel)."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@26",
+    "codes": [
+     "A2",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "r.jina.ai wrapping a pinggy tunnel; 'noscreen bridge test'"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@45",
+    "codes": [
+     "A1",
+     "A4"
+    ],
+    "fit": "partial",
+    "note": "inline [url label] with specific Age/Year filters; data-query link rather than plain reference. A4 borderline (no values, just targeted query)."
+   },
+   {
+    "unit_id": "probier~AgentSECRegCFData@2",
+    "codes": [
+     "A1",
+     "A2",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "example.com + magic-html-api extract wrapper; removes template"
+   },
+   {
+    "unit_id": "probier~ProxySplitAgentBeta@16",
+    "codes": [
+     "A2",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "md.succ.ai wrapping sec with as=json/mode=fit variants"
+   },
+   {
+    "unit_id": "probier~OpenAIDataUSAHelperJun23@2",
+    "codes": [
+     "C1",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "'Hello ordinary test words'; removes template"
+   },
+   {
+    "unit_id": "probier~AgentTESTSmall6@5",
+    "codes": [
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'hello' + long 'a' fill; removes own md.succ.ai probe URLs. Junk-fill overwrite, see NewPageX010."
+   },
+   {
+    "unit_id": "dse~SandboxTestXYZ1781916211@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'GET save test at <epoch>'"
+   },
+   {
+    "unit_id": "dse~AgentNavalArchiveReaderPathJanFiveOne@2",
+    "codes": [
+     "A4"
+    ],
+    "fit": "partial",
+    "note": "only change is appending a clause to prose description, no new URL. Mostly a prose edit; no code fits well."
+   },
+   {
+    "unit_id": "dse~TestSandboxAIabc@12",
+    "codes": [
+     "B1",
+     "B3",
+     "E5"
+    ],
+    "fit": "good",
+    "note": "'new safe raw nav' block duplicated twice within save; SELF_LABELED_TEST ('safe')"
+   },
+   {
+    "unit_id": "dse~ArkMASubsetsLinks7527@1",
+    "codes": [
+     "A2",
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "12 jqp->api.cors.lol variants = sweep"
+   },
+   {
+    "unit_id": "dse~AgentCompact13GroupDelta@1",
+    "codes": [
+     "A2",
+     "B3",
+     "D14"
+    ],
+    "fit": "partial",
+    "note": "prose describes rounding/null formatting method (D14-ish); ENDCMP float marker; jqp routed. D14 is a method description for extraction."
+   },
+   {
+    "unit_id": "dse~Agent0MassMapCustomJune20@9",
+    "codes": [
+     "A2",
+     "A1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "ParserSS + RES0 marker; mixed route/direct sources"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@722",
+    "codes": [
+     "A1",
+     "B2",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "MyNextA990?/MyNextB990? placeholder chain; overwrites guest"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@2020",
+    "codes": [
+     "B1",
+     "B3",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "40 self-links with dirq/pfast params = A3 self variant sweep; UNIQFAST marker"
+   },
+   {
+    "unit_id": "dse~Clothing2m56Round3RelayMay31@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Test GET save at <epoch>'"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1243",
+    "codes": [
+     "B1",
+     "B2",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "DanNext7206?/7207? placeholder; cache-busted self-link variants"
+   },
+   {
+    "unit_id": "fractal~EN~2fWiki~2fBiology~2fDataReferenceXYZ@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "url count '1 line' vs 3 URLs shown — rendering count mismatch"
+   },
+   {
+    "unit_id": "fractal~QuarterRefDataChatTest@1",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "summary 'testing'"
+   },
+   {
+    "unit_id": "fractal~EN~2fFastPortalNov1@2",
+    "codes": [
+     "A2",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "r.jina.ai wrapping example.com; 'fast4' marker"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@36",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "fractal~RecentChanges@50",
+    "codes": [
+     "A1",
+     "E1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "overwrites AgentZZTTest; summary 'test'"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@57",
+    "codes": [
+     "A1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "12 direct variants; overwrites TX predecessor; part of a TX poverty chain of successive overwrites"
+   },
+   {
+    "unit_id": "probier~INVJSSmall2392481@7",
+    "codes": [
+     "A2"
+    ],
+    "fit": "good",
+    "note": "markdown.new wrapping investor.gov js file"
+   },
+   {
+    "unit_id": "probier~EncodingVariants1781795836@2",
+    "codes": [
+     "A2",
+     "A3",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED; 13 nested-encoding markdown.new/r.jina.ai variants; removes template"
+   },
+   {
+    "unit_id": "probier~OAITestMay16Unique123@2",
+    "codes": [
+     "C1",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "'test'; removes template"
+   },
+   {
+    "unit_id": "dse~YVr9@2",
+    "codes": [
+     "A1",
+     "A3",
+     "E1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "15 direct variants; removes a #REDIRECT line by NameTester"
+   },
+   {
+    "unit_id": "dse~AgentClarkSourcesRawJson42Bridge@1",
+    "codes": [
+     "A2"
+    ],
+    "fit": "good",
+    "note": "jqp wrapping pure.md/archive"
+   },
+   {
+    "unit_id": "dse~OurMassMapOfficialFinal10011@1",
+    "codes": [
+     "A1",
+     "B1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "MarkerUpdate1902; mixed self-link and direct source"
+   },
+   {
+    "unit_id": "dse~TempAgentSecMd@6",
+    "codes": [
+     "A2",
+     "A3",
+     "A1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED (translate.goog); many fetch-service routes to sec/investor = sweep"
+   },
+   {
+    "unit_id": "dse~AgentCompact13GroupAlpha@1",
+    "codes": [
+     "A2",
+     "B3",
+     "D14"
+    ],
+    "fit": "partial",
+    "note": "near-duplicate of Delta by same label (AgentCmp13); D14 method prose + ENDCMP marker"
+   },
+   {
+    "unit_id": "dse~AgentTempMineLemino4477Q@30",
+    "codes": [
+     "A1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OURMEDIA VARIANTS; 15 sec.gov media/file variants"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@37",
+    "codes": [
+     "A1",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "stray '0' line; overwrites DataResearchAgent"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1170",
+    "codes": [
+     "A2",
+     "A1",
+     "B1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "MINE QUERY MD; 44 URLs mostly self-links + md.succ.ai sweep"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1695",
+    "codes": [
+     "A2",
+     "C1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED double-encoded md.succ.ai; '= test post =' title overwrites AgentRelent's OURMEDIA block"
+   },
+   {
+    "unit_id": "dse~AgentMySecLinksZZZ2@50",
+    "codes": [
+     "B2",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "AgentSplit12... placeholder page chain; END12BR marker; overwrites NoteResearch"
+   },
+   {
+    "unit_id": "fractal~SecCountyRawBridgeFinalF618X@1",
+    "codes": [
+     "A2",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "allorigins wrapping county.json with x=1/a=1 variants"
+   },
+   {
+    "unit_id": "fractal~EN~2fJinaCashierNov1A@1",
+    "codes": [
+     "A2",
+     "C3",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "r.jina.ai wrapping datausa; template residue line + 'Jina DataUSA test'"
+   },
+   {
+    "unit_id": "fractal~EN~2fAgentBridgeTest526@2",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "swaps one datausa URL for another"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@33",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "fractal~RecentChanges@31",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "probier~SandBox@20",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "probier~AgentSimple1781805995@17",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "jsonhero path=regCF_county_2019.45..49 sequential path sweep"
+   },
+   {
+    "unit_id": "probier~AgentCookAgeDataHelperJuneXYZ4602@3",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "strips multi-link block down to single cube link; summary 'saveget' probe. Retraction-to-minimal pattern again."
+   },
+   {
+    "unit_id": "dse~TestRDEF@1",
+    "codes": [
+     "A1",
+     "C2"
+    ],
+    "fit": "partial",
+    "note": "'This is Test Render Page' suggests render probe but only a plain API link present; C2 weak."
+   },
+   {
+    "unit_id": "dse~AgentMoreLinks260618R@4",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Testedit'"
+   },
+   {
+    "unit_id": "dse~QuarterApiRouteDirectLinkXY901@2",
+    "codes": [
+     "A2",
+     "B2",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED nested; RunNext7770?..777xx long placeholder chain run"
+   },
+   {
+    "unit_id": "dse~AgentNextInvestorJSNEW@4",
+    "codes": [
+     "A2",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED; re-encodes own jqp jq from +/space to %2520 double-encoding = encoding variant on same target"
+   },
+   {
+    "unit_id": "dse~AgentMassFinal0812@2",
+    "codes": [
+     "A1",
+     "A2",
+     "B3",
+     "E2"
+    ],
+    "fit": "good",
+    "note": "NEWURL0813 marker; resaved_others_lines_altered=4 = COLLATERAL_MUTATION"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1626",
+    "codes": [
+     "A1",
+     "A3",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OURMEDIA VARIANTS media/file sweep; overwrites AgentMassFinal13"
+   },
+   {
+    "unit_id": "dse~StartSeite@260",
+    "codes": [
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'PublicArchivesResearchJune<epoch>' lone marker on hub"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1281",
+    "codes": [
+     "A2",
+     "A1",
+     "B1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "DZFASTMD; 15 self-links + md.dhr.wtf fetch; overwrites AgentMassY"
+   },
+   {
+    "unit_id": "dse~OAIFlatheadBridgeTestMay24X@1",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Test page bridge'"
+   },
+   {
+    "unit_id": "dse~AgentCountyGateway991@20",
+    "codes": [
+     "A2",
+     "B1",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED (removed base64/httpbin); diff= self-link listing D8101-8110; 'Small fragment' marker; overwrites"
+   },
+   {
+    "unit_id": "fractal~EN~2fWiki~2fBiology~2fNextLinksPage@2",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "usaspending + max.gov PDF sources"
+   },
+   {
+    "unit_id": "fractal~TestInvestPageXYZ@1",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'Investor mirror links test'"
+   },
+   {
+    "unit_id": "fractal~AgentTestNoSlash@4",
+    "codes": [
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "only change is a random float 'Correct links 0.07...' replacing prior float; pure marker churn, no data. B3 fits the token but it is a resave-churn behavior."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@58",
+    "codes": [
+     "B3",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "replaces TX link block with 'TXFinal... 0.46...' random-float line; resaved_others_lines_altered=4 (E2). Destroys predecessor's links, leaves only a marker."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@60",
+    "codes": [
+     "A1",
+     "A4",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "inline [url label] with specific Place/Year/Poverty filters; overwrites HelperPovertyStatusX. Part of TX overwrite chain. A4 borderline targeted-query."
+   },
+   {
+    "unit_id": "probier~AgentSimple1781805995@13",
+    "codes": [
+     "A1",
+     "A3",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "main.js vs main.js?v=9 variant; removes jsonhero block + touch marker; 'JS links'"
+   },
+   {
+    "unit_id": "probier~SandBox@19",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "swaps data.csv/jsonrecords for jsonarrays = format-suffix variant"
+   },
+   {
+    "unit_id": "probier~AgentGTextCounty1781799725@3",
+    "codes": [
+     "B3",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'minor harmless update <randstring>'; SELF_LABELED_TEST-adjacent disclaimer"
+   },
+   {
+    "unit_id": "dse~RedirectVar3@1",
+    "codes": [
+     "B1",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "#WEITERLEITUNG (redirect) to ApiReferencesForResearch; summary 'redirect test'. No code for creating a redirect page."
+   },
+   {
+    "unit_id": "dse~DataBridgeCashierBach2015Q@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "dse~AgentCustomMatrixLinkPage007B@15",
+    "codes": [
+     "A2",
+     "A1",
+     "B1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED jqp; Mega Combined; overwrites MapHelper"
+   },
+   {
+    "unit_id": "dse~QuarterlyBalancePublicSources@14",
+    "codes": [
+     "A2",
+     "A1",
+     "B1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "epoch marker line + jqp routed + self-link"
+   },
+   {
+    "unit_id": "dse~Neues@1",
+    "codes": [
+     "B1",
+     "B2",
+     "B3",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "template residue + pointer to AgentConv9913 + ConvNext placeholder IDs"
+   },
+   {
+    "unit_id": "dse~StartSeite@660",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "8 datausa place-query variants on hub"
+   },
+   {
+    "unit_id": "dse~AgentNextJoinedJuneBA@26",
+    "codes": [
+     "B3"
+    ],
+    "fit": "partial",
+    "note": "replaces one epoch float with another; pure marker-churn resave, no content. See fractal~AgentTestNoSlash@4 — a recurring 'float heartbeat' pattern."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1297",
+    "codes": [
+     "A1",
+     "B1",
+     "A3",
+     "B3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "RAPID BRIDGE 60 self-links sweep + RAPIDMARK; this is the block many others later overwrite"
+   },
+   {
+    "unit_id": "dse~OpenAIMassValuesJune20Master@9",
+    "codes": [
+     "A1",
+     "B1",
+     "C1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'Save test replacement XYZ'; overwrites LinkNested"
+   },
+   {
+    "unit_id": "dse~StartSeite@324",
+    "codes": [
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "[pre-2026 lines withheld] revert by [Admin1], summary 'revert to revision 1.320', resaved_others_lines_altered=51. An admin ROLLBACK/revert — no code for restoring a prior revision. Content hidden by rendering."
+   },
+   {
+    "unit_id": "fractal~DataUSACooksBridgeABC@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "fractal~DataApiLinkTest927@1",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": "count '1 line' vs 2 URLs — rendering mismatch"
+   },
+   {
+    "unit_id": "fractal~AgentTXCitiesBridgeQ99813@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "partial",
+    "note": "rendered as 'api.datausa.io -> api.datausa.io' with literal \\n in URL = two URLs glued on one line; rendering obscures whether this is one or two links"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@46",
+    "codes": [
+     "E4",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "replaces predecessor's data link with 'ShortTest XYZ'; effectively removes others' links leaving a probe token. Not pure delete (adds a line)."
+   },
+   {
+    "unit_id": "fractal~RecentChanges@61",
+    "codes": [
+     "A1",
+     "A4",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "inline member links + random float label; overwrites TXDataHelperNewX. TX overwrite chain continues."
+   },
+   {
+    "unit_id": "probier~TestPageXYZ123@2",
+    "codes": [
+     "A1",
+     "C1",
+     "C3"
+    ],
+    "fit": "good",
+    "note": "removes template; summary 'test'"
+   },
+   {
+    "unit_id": "probier~RecentChanges@59",
+    "codes": [
+     "A1",
+     "B1"
+    ],
+    "fit": "good",
+    "note": "jsonhero + wiki self-links"
+   },
+   {
+    "unit_id": "probier~AgentCodesMAPathBundle012A@2",
+    "codes": [
+     "A1",
+     "A3",
+     "C3"
+    ],
+    "fit": "partial",
+    "note": "jsonhero path variants; summary 'create hidden GET' — 'hidden' suggests probing visibility, no code captures that"
+   },
+   {
+    "unit_id": "dse~DataUSAQueryBridgeFeb03Poverty1@2",
+    "codes": [
+     "A1",
+     "C1",
+     "E5"
+    ],
+    "fit": "good",
+    "note": "'Test research update.' duplicated line within save"
+   },
+   {
+    "unit_id": "dse~AgentChunkPageJune231@1",
+    "codes": [
+     "A2"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED jqp fmt function; 'Chunk Page 1' + end"
+   },
+   {
+    "unit_id": "dse~MassFinalEvidence2019Jun19@3",
+    "codes": [
+     "A1",
+     "A2",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "UniqueAdd marker; SEC QUERY SCRIPT LINKS; r.jina routes"
+   },
+   {
+    "unit_id": "dse~AgentBridgeTestOpenXYZ@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "dse~AgentSlashCountyMoreUnique123@12",
+    "codes": [
+     "A1",
+     "A2",
+     "B1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED removed (%61llorigins); SlashSelf self-link sweep; overwrites OpenAISECLinker"
+   },
+   {
+    "unit_id": "dse~AgentMySecLinksZZZ2@42",
+    "codes": [
+     "A2",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "md.succ.ai sec variants with encoding differences"
+   },
+   {
+    "unit_id": "dse~StartSeite@384",
+    "codes": [
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'AgentOfficialCit3' lone marker; summary 'marker unique'"
+   },
+   {
+    "unit_id": "dse~RecentChanges@31",
+    "codes": [
+     "A1",
+     "B1",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "restores standard RecentChanges intro text + self-links, removes a #REDIRECT; URL counts (3 line vs 5 URLs, 4 vs 5) mismatch in rendering"
+   },
+   {
+    "unit_id": "dse~TestSeite@931",
+    "codes": [
+     "A1",
+     "C1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'Hello test content XYZ123'; overwrites ResearchBridge block"
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@72",
+    "codes": [
+     "A1",
+     "B1",
+     "B2",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "NewJulyContinuePageNotHitYet8123? placeholder + hRand float marker"
+   },
+   {
+    "unit_id": "fractal~EN~2fWiki~2fBiology~2fDataReferenceXYZ@2",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "page param swap"
+   },
+   {
+    "unit_id": "fractal~EN~2fTestPostAgentXYZno@1",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'hello test post'"
+   },
+   {
+    "unit_id": "fractal~EN~2fDataUSAQueryBridge927@4",
+    "codes": [
+     "A1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'Cook age link custom 0.26...' float marker; overwrites CookResearch"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@29",
+    "codes": [
+     "A1",
+     "A4"
+    ],
+    "fit": "partial",
+    "note": "inline labeled electrician wage query with many measures; targeted-query borderline A4"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@48",
+    "codes": [
+     "A1",
+     "A4",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "inline Age 85-99 enumerated query link; overwrites CookHelperX99 (own-ish chain). Targeted query, A4 borderline"
+   },
+   {
+    "unit_id": "probier~INVJSSmall2392481@5",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "jsonhero path .81/.91 variants"
+   },
+   {
+    "unit_id": "probier~AgentBuvFilters1781805681@2",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "jsonhero regCF path sweep across years"
+   },
+   {
+    "unit_id": "probier~DallasReferenceLinks@3",
+    "codes": [
+     "A2",
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "re-saves identical markdown.new/example.com link with changed description 'Test GET page'; essentially a no-op content churn / render test"
+   },
+   {
+    "unit_id": "dse~OurGroceryMar20Probe1781646500@14",
+    "codes": [
+     "C1"
+    ],
+    "fit": "good",
+    "note": "'test coordination page; ignore' — SELF_LABELED_TEST"
+   },
+   {
+    "unit_id": "dse~AgentNYConstructionTestX@1",
+    "codes": [
+     "A1",
+     "C1"
+    ],
+    "fit": "good",
+    "note": ""
+   },
+   {
+    "unit_id": "dse~AgentPureGatewayJune19QQQ@3",
+    "codes": [
+     "B1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "'Back Own unique' self-links + markerBack"
+   },
+   {
+    "unit_id": "dse~ZNewNextSelfFinal@9",
+    "codes": [
+     "A2",
+     "A1",
+     "B1",
+     "B3"
+    ],
+    "fit": "good",
+    "note": "cors worker routes + self-link + epoch marker"
+   },
+   {
+    "unit_id": "dse~LFSequenceCollabMay03@16",
+    "codes": [
+     "D2",
+     "D3",
+     "A4"
+    ],
+    "fit": "partial",
+    "note": "prose data report with values for four countries, signed. This is a data-sharing task report, not structural — belongs in the signaling stream; D3/A4 ambiguity flagged in codebook"
+   },
+   {
+    "unit_id": "dse~TestSeite@715",
+    "codes": [
+     "A2",
+     "A4",
+     "C1",
+     "E1"
+    ],
+    "fit": "partial",
+    "note": "[mojibake-free] inline markdown.new URLs with 'Valid formatted version/Reduced version/Control page' annotations = method/comparison share; epoch marker; overwrites"
+   },
+   {
+    "unit_id": "dse~DataUSAConstructionSequenceMar08@19",
+    "codes": [
+     "C1"
+    ],
+    "fit": "partial",
+    "note": "'--help' lone line; reads as a command echo/probe, not clearly a save test. No clean code."
+   },
+   {
+    "unit_id": "dse~WillkommenImWiki@1089",
+    "codes": [
+     "A1",
+     "B1",
+     "A3",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "6 self-link variants; overwrites RapidWel's RAPID BRIDGE"
+   },
+   {
+    "unit_id": "dse~TestSeite@755",
+    "codes": [
+     "A1"
+    ],
+    "fit": "partial",
+    "note": "single is.gd shortener link; OBFUSCATED (URL shortener) modifier applies"
+   },
+   {
+    "unit_id": "dse~AgentNextFilterJuneAD@10",
+    "codes": [
+     "B1"
+    ],
+    "fit": "good",
+    "note": "diff= view self-links to another agent's page"
+   },
+   {
+    "unit_id": "fractal~PublicAccountRowsQuarterRefZ@1",
+    "codes": [
+     "A1",
+     "B4"
+    ],
+    "fit": "partial",
+    "note": "drive.google.com viewer links as 'spreadsheet previews'; prose 'included on other index pages' is a soft forward. B4 weak."
+   },
+   {
+    "unit_id": "fractal~SandBox@88",
+    "codes": [
+     "C1",
+     "E1"
+    ],
+    "fit": "good",
+    "note": "'hello test get <epoch>'; overwrites ResearchHelper697's data refs"
+   },
+   {
+    "unit_id": "fractal~EN~2fRH927Portal1403@1",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "count '1 line' vs 2 URLs"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@59",
+    "codes": [
+     "A1"
+    ],
+    "fit": "good",
+    "note": "OBFUSCATED (%2520 double-encoded members URL)"
+   },
+   {
+    "unit_id": "fractal~RecentChanges@30",
+    "codes": [
+     "A1",
+     "A3"
+    ],
+    "fit": "good",
+    "note": "mirror api/api-la + differing endpoints"
+   }
+  ],
+  "proposals": [
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "B3",
+     "E4",
+     "E1"
+    ],
+    "name": "RETRACT_TO_TOKEN",
+    "definition": "A modify/overwrite whose net effect is to remove the author's or another's substantive content (URLs or data lines) and leave only a short token: a probe string, a random float, or an epoch marker. Distinct from E4 (removes, adds nothing) and C1 (a fresh probe save).",
+    "rationale": "Recurring pattern where an agent strips a working link block down to a float or 'ShortTest', not captured by delete/probe/marker codes individually.",
+    "example_unit_ids": [
+     "fractal~RecentChanges@46",
+     "fractal~RecentChanges@58",
+     "dorfwiki~AgentOpenResearchDataJune18@3",
+     "probier~AgentCookAgeDataHelperJuneXYZ4602@3"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "B3",
+     "D6"
+    ],
+    "name": "FLOAT_HEARTBEAT",
+    "definition": "A save whose only substantive change is replacing or adding a bare random float or epoch timestamp with no label, often re-saving the same page repeatedly. Form: a single numeric token line swapped for another.",
+    "rationale": "Several units churn only a float/epoch value; B3 WRITE_MARKER assumes a token inside a substantive save, and D6 assumes a task heartbeat. Neither fits a content-free numeric churn.",
+    "example_unit_ids": [
+     "dse~AgentNextJoinedJuneBA@26",
+     "fractal~AgentTestNoSlash@4",
+     "fractal~EN~2fDataUSAQueryBridge927@4"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "B1"
+    ],
+    "name": "REDIRECT_CREATE",
+    "definition": "Creates or saves a page whose content is a wiki redirect directive (#REDIRECT / #WEITERLEITUNG) to another page.",
+    "rationale": "Redirects are a distinct structural act (routing readers via the engine, not a link list); currently fall awkwardly under B1 or go uncoded, and removal of a redirect is also uncoded.",
+    "example_unit_ids": [
+     "dse~RedirectVar3@1",
+     "dse~YVr9@2",
+     "dse~RecentChanges@31"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "E1"
+    ],
+    "name": "REVERT_RESTORE",
+    "definition": "A save (often admin) that restores a named prior revision, with resaved_others_lines_altered high and summary indicating 'revert to revision N'.",
+    "rationale": "Distinct from OVERWRITE_OTHER: it reinstates earlier content rather than imposing new content. E1 would mislabel it as a takeover.",
+    "example_unit_ids": [
+     "dse~StartSeite@324"
+    ]
+   },
+   {
+    "kind": "split",
+    "codes_affected": [
+     "A3"
+    ],
+    "name": "VARIANT_SWEEP split: self vs source",
+    "definition": "A3a SOURCE_VARIANT_SWEEP: ≥4 variants of an external data URL (encoding/format/mirror). A3b SELF_LINK_SWEEP: ≥4 wiki self-link variants differing only in cache-bust/uniq/diff params.",
+    "rationale": "These co-occur with very different intents (data retrieval variation vs cache-busting self-navigation) and are currently lumped; the self-link sweeps dominate hub overwrites.",
+    "example_unit_ids": [
+     "dse~WillkommenImWiki@838",
+     "dse~AgentSlashCountyMoreUnique123@12",
+     "dse~AgentTempMineLemino4477Q@30",
+     "probier~AgentBuvFilters1781805681@2"
+    ]
+   },
+   {
+    "kind": "redefine",
+    "codes_affected": [
+     "A4"
+    ],
+    "name": "DATA_PAYLOAD sharpen",
+    "definition": "Clarify whether an inline labeled query URL carrying specific filters/values (e.g. enumerated Age/Year lists) counts as A1 (reference link) or A4 (payload). Propose: A4 requires retrieved values as text; a targeted query URL is A1 even if parameterized.",
+    "rationale": "Many fractal RecentChanges units are labeled inline query links with highly specific parameters; coders will disagree whether these are A1 or A4.",
+    "example_unit_ids": [
+     "fractal~RecentChanges@29",
+     "fractal~RecentChanges@45",
+     "fractal~RecentChanges@48",
+     "fractal~RecentChanges@60"
+    ]
+   },
+   {
+    "kind": "redefine",
+    "codes_affected": [
+     "A1",
+     "A2"
+    ],
+    "name": "Self-tunnel endpoints",
+    "definition": "Add guidance for ephemeral self-hosted tunnel hosts (pinggy-free.link, serveousercontent.com, run.pinggy). Decide if a link to one's own transient bridge is A1 (external source) or a new act (SELF_BRIDGE).",
+    "rationale": "These are not external data sources nor fetch wrappers of a source; they are the agent's own relay endpoints, which A1/A2 don't describe.",
+    "example_unit_ids": [
+     "fractal~EN~2fPumsApiLa927@7",
+     "fractal~RecentChanges@28",
+     "fractal~RecentChanges@26"
+    ]
+   },
+   {
+    "kind": "new_act",
+    "codes_affected": [
+     "C1",
+     "C2"
+    ],
+    "name": "JUNK_FILL",
+    "definition": "A save whose body is a long run of a single repeated character or other meaningless bulk filler, with no token semantics.",
+    "rationale": "Long 'aaaa...' fills are neither a labeled probe (C1) nor a markup/render test (C2); currently uncodeable.",
+    "example_unit_ids": [
+     "probier~NewPageX010@3",
+     "probier~AgentTESTSmall6@5"
+    ]
+   },
+   {
+    "kind": "merge",
+    "codes_affected": [
+     "B3",
+     "C1"
+    ],
+    "name": "Clarify B3 vs C1 boundary",
+    "definition": "Keep separate but add a tie-break: if the token is an epoch/float/randstring and the save adds no other substantive content, code C1 only when accompanied by an explicit test word; otherwise FLOAT_HEARTBEAT/B3.",
+    "rationale": "Units like 'POST marker test', 'minor harmless update <rand>', and bare floats were coded inconsistently between B3 and C1 across my batch.",
+    "example_unit_ids": [
+     "dse~NYCVeteransSequenceCollabJul03@4",
+     "probier~AgentGTextCounty1781799725@3",
+     "fractal~RecentChanges@37"
+    ]
+   }
+  ],
+  "general_observations": "The structural stream is dominated by A1/A2 link lists, self-link scaffolding (B1) with cache-bust variants, markers (B3), and probes (C1/C3). The hub page WillkommenImWiki shows a tight cycle of OVERWRITE_OTHER where agents repeatedly replace each other's blocks (RAPID BRIDGE, OURMEDIA VARIANTS, MINE* titles) — single-unit E1 captures each but the reciprocal takeover war is only visible across units. A persistent gap: 'strip to token' retractions and content-free float/epoch churn have no clean code. Rendering issues worth flagging: (1) URL-line counts frequently disagree with the number of example URLs shown ('1 URL line(s)... x2/x3'), so A3 threshold (≥4) can't be verified reliably from the preview; (2) glued URLs with literal \\n (AgentTXCitiesBridgeQ99813) hide whether a line is one or several links; (3) [pre-2026 line withheld] and [...truncated] blocks hide the content of reverts and large overwrites, forcing partial codes (StartSeite@324); (4) [mojibake] collapses whole-page resaves so collateral mutation vs authored content is hard to separate (AgentCallorTest@5). OBFUSCATED modifier applies widely (double-encoding, translate.goog, is.gd shorteners) and is well-defined. Two units (LFSequenceCollabMay03@16, TestSeite@715) are really signaling/data-share content that leaked into the structural batch; D-codes fit better than the A/B/C structural codes."
+ }
+}

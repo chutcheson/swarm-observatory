@@ -1,0 +1,812 @@
+{
+ "n_units": 14591,
+ "n_model_coded": 5156,
+ "code_freq": {
+  "A1_LINK_DIRECT": 5920,
+  "A2_LINK_ROUTED": 3831,
+  "E1_OVERWRITE_OTHER": 3063,
+  "D4": 3053,
+  "D1": 2861,
+  "D7": 2415,
+  "A3a_SOURCE_VARIANT_SWEEP": 2318,
+  "D2": 2294,
+  "B1_SELF_NAV": 2055,
+  "D3": 1569,
+  "mod:URGENCY": 1478,
+  "A3b_SELF_LINK_SWEEP": 1146,
+  "mod:SELF_LABELED_TEST": 1003,
+  "C3_TEMPLATE_RESIDUE": 989,
+  "D15": 932,
+  "mod:OBFUSCATED": 916,
+  "E1b_PARTIAL_OVERWRITE": 876,
+  "D8": 808,
+  "D5": 691,
+  "D12": 679,
+  "D13": 566,
+  "B3_WRITE_MARKER": 494,
+  "B2_PLACEHOLDER_CHAIN": 493,
+  "C1_WRITE_PROBE?": 445,
+  "D14": 427,
+  "D18": 413,
+  "C1a": 337,
+  "D9": 312,
+  "B4": 238,
+  "D16": 220,
+  "D6": 217,
+  "D19b": 191,
+  "D10": 170,
+  "E4_REMOVE": 159,
+  "A4": 109,
+  "D11": 100,
+  "B1b_REDIRECT_CREATE": 98,
+  "C2": 67,
+  "D17": 63,
+  "D19a": 38,
+  "C1b": 33,
+  "E7_REVERT_RESTORE": 29,
+  "D21": 28,
+  "E7": 28,
+  "E8_ID_CHURN": 23,
+  "D20": 19,
+  "B6": 15,
+  "E3": 9,
+  "C4_JUNK_FILL": 6,
+  "B5": 5
+ },
+ "n_actors": 3301,
+ "roles": {
+  "forager": 1784,
+  "signaler": 1116,
+  "uncoded": 106,
+  "builder": 114,
+  "prober": 173,
+  "mixed": 8
+ },
+ "top_overwrite_pairs": [
+  {
+   "overwriter": "LinkHelper771",
+   "overwritten": "AgentMassPointer13",
+   "n": 82
+  },
+  {
+   "overwriter": "AgentMassPointer13",
+   "overwritten": "LinkHelper771",
+   "n": 82
+  },
+  {
+   "overwriter": "AgentRelent",
+   "overwritten": "AgentMassPointer13",
+   "n": 73
+  },
+  {
+   "overwriter": "AgentMassPointer13",
+   "overwritten": "AgentRelent",
+   "n": 69
+  },
+  {
+   "overwriter": "AgentRelent",
+   "overwritten": "LinkHelper771",
+   "n": 51
+  },
+  {
+   "overwriter": "LinkHelper771",
+   "overwritten": "AgentRelent",
+   "n": 49
+  },
+  {
+   "overwriter": "AgentRelent",
+   "overwritten": "AgentMassFinal13",
+   "n": 45
+  },
+  {
+   "overwriter": "AgentMassFinal13",
+   "overwritten": "AgentRelent",
+   "n": 44
+  },
+  {
+   "overwriter": "AgentTestLearnXYZ",
+   "overwritten": "CountyAgentMySecLinksZZZ2",
+   "n": 43
+  },
+  {
+   "overwriter": "CountyAgentMySecLinksZZZ2",
+   "overwritten": "AgentTestLearnXYZ",
+   "n": 43
+  },
+  {
+   "overwriter": "BridgeFresh12",
+   "overwritten": "AgentRelent",
+   "n": 35
+  },
+  {
+   "overwriter": "AgentRelent",
+   "overwritten": "BridgeFresh12",
+   "n": 34
+  },
+  {
+   "overwriter": "ResearchReaderMN",
+   "overwritten": "OpenAIResearchSec2027",
+   "n": 33
+  },
+  {
+   "overwriter": "OpenAIResearchSec2027",
+   "overwritten": "ResearchReaderMN",
+   "n": 33
+  },
+  {
+   "overwriter": "AgentMapCite8x",
+   "overwritten": "AgentRelent",
+   "n": 22
+  },
+  {
+   "overwriter": "AgentRelent",
+   "overwritten": "AgentMapCite8x",
+   "n": 21
+  },
+  {
+   "overwriter": "ResearchHelperArchiveCofcY",
+   "overwritten": "AgentRelent",
+   "n": 16
+  },
+  {
+   "overwriter": "AgentManual007",
+   "overwritten": "AgentNewCitation774",
+   "n": 15
+  },
+  {
+   "overwriter": "FinalMD947062767",
+   "overwritten": "DanFast7",
+   "n": 15
+  },
+  {
+   "overwriter": "DanFast7",
+   "overwritten": "FinalMD947062767",
+   "n": 15
+  },
+  {
+   "overwriter": "OpenAIResearchSec2028",
+   "overwritten": "GuestResearch378611",
+   "n": 14
+  },
+  {
+   "overwriter": "AgentRelent",
+   "overwritten": "ResearchHelperArchiveCofcY",
+   "n": 14
+  },
+  {
+   "overwriter": "AgentResearchBotXNew",
+   "overwritten": "ResearchReaderMN",
+   "n": 12
+  },
+  {
+   "overwriter": "AgentNewCitation774",
+   "overwritten": "AgentManual007",
+   "n": 12
+  },
+  {
+   "overwriter": "AgentMassY",
+   "overwritten": "MapHelper",
+   "n": 11
+  }
+ ],
+ "overwrite_edges_total": 3909,
+ "self_overwrites_excluded": 30,
+ "top_address_pairs": [
+  {
+   "from": "TransportHelperMar28OAI",
+   "to": "Aug25",
+   "n": 10
+  },
+  {
+   "from": "Jan03A2",
+   "to": "APR30",
+   "n": 7
+  },
+  {
+   "from": "CashierCoordOurRun",
+   "to": "May28",
+   "n": 7
+  },
+  {
+   "from": "CashierCoordAgentX",
+   "to": "May28",
+   "n": 6
+  },
+  {
+   "from": "ResearchHelperAug12X",
+   "to": "Mar26",
+   "n": 6
+  },
+  {
+   "from": "OpenAIJul03Police",
+   "to": "MAR13",
+   "n": 6
+  },
+  {
+   "from": "TransportHelperOct12",
+   "to": "May22",
+   "n": 6
+  },
+  {
+   "from": "Sep18ConstructionAgent",
+   "to": "Feb23",
+   "n": 5
+  },
+  {
+   "from": "OpenAIResearchMar20X",
+   "to": "Jul08ProdAgent",
+   "n": 5
+  },
+  {
+   "from": "OurFinanceAug27",
+   "to": "Mar26",
+   "n": 5
+  },
+  {
+   "from": "OpenAIHealthdataCVDSept27",
+   "to": "Nov21",
+   "n": 5
+  },
+  {
+   "from": "OpenAIDataUSAOccJul18",
+   "to": "Jan17",
+   "n": 4
+  },
+  {
+   "from": "Jul08ProdAgent",
+   "to": "OpenAIResearchMar20X",
+   "n": 4
+  },
+  {
+   "from": "ResearchHelperAug12X",
+   "to": "Mar30",
+   "n": 4
+  },
+  {
+   "from": "AgentOct17DataUSA",
+   "to": "SequenceHelperFeb",
+   "n": 4
+  },
+  {
+   "from": "OpenAIUEFAOct18Agent",
+   "to": "OCT29",
+   "n": 4
+  },
+  {
+   "from": "OpenAIUEFAOct18Agent",
+   "to": "MAR21",
+   "n": 4
+  },
+  {
+   "from": "OpenAIUEFAOct18Agent",
+   "to": "APR04",
+   "n": 4
+  },
+  {
+   "from": "SectorAgentNov27OAI",
+   "to": "OpenAI-Dec27",
+   "n": 3
+  },
+  {
+   "from": "Dec27ConstructionAgent",
+   "to": "Jul19",
+   "n": 3
+  },
+  {
+   "from": "Dec03ConstructionAgent",
+   "to": "Jul19",
+   "n": 3
+  },
+  {
+   "from": "Oct18Helper",
+   "to": "Dec27",
+   "n": 3
+  },
+  {
+   "from": "CashierCoordAgentX",
+   "to": "CashierSequenceAgentMay28",
+   "n": 3
+  },
+  {
+   "from": "OpenAIObserverNov09",
+   "to": "Sep26",
+   "n": 3
+  },
+  {
+   "from": "CashierCoordJan12OAI",
+   "to": "Jun17OAI",
+   "n": 3
+  }
+ ],
+ "top_routes": [
+  {
+   "via": "jqp.vercel.app",
+   "to": "www.investor.gov",
+   "n": 4497
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "www.sec.gov",
+   "n": 3057
+  },
+  {
+   "via": "md.succ.ai",
+   "to": "www.sec.gov",
+   "n": 2829
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "md.succ.ai",
+   "n": 2804
+  },
+  {
+   "via": "md.succ.ai",
+   "to": "www.investor.gov",
+   "n": 1475
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "allorigins.hexlet.app",
+   "n": 1472
+  },
+  {
+   "via": "allorigins.hexlet.app",
+   "to": "www.sec.gov",
+   "n": 857
+  },
+  {
+   "via": "r.jina.ai",
+   "to": "www.sec.gov",
+   "n": 654
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "vanderbi.lt",
+   "n": 547
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "code.highcharts.com",
+   "n": 499
+  },
+  {
+   "via": "markdown.new",
+   "to": "www.investor.gov",
+   "n": 397
+  },
+  {
+   "via": "r.jina.ai",
+   "to": "r.jina.ai",
+   "n": 291
+  },
+  {
+   "via": "r.jina.ai",
+   "to": "www.investor.gov",
+   "n": 285
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "pure.md",
+   "n": 267
+  },
+  {
+   "via": "markdown.new",
+   "to": "www.sec.gov",
+   "n": 237
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "api.cors.lol",
+   "n": 222
+  },
+  {
+   "via": "md.succ.ai",
+   "to": "example.org",
+   "n": 212
+  },
+  {
+   "via": "md.dhr.wtf",
+   "to": "www.investor.gov",
+   "n": 203
+  },
+  {
+   "via": "webcrawlerapi.com",
+   "to": "md.succ.ai",
+   "n": 201
+  },
+  {
+   "via": "pure.md",
+   "to": "md.succ.ai",
+   "n": 171
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "r.jina.ai",
+   "n": 164
+  },
+  {
+   "via": "md.dhr.wtf",
+   "to": "www.sec.gov",
+   "n": 146
+  },
+  {
+   "via": "cors.hypnguyen.workers.dev",
+   "to": "www.investor.gov",
+   "n": 121
+  },
+  {
+   "via": "jqp.vercel.app",
+   "to": "markdown.new",
+   "n": 116
+  },
+  {
+   "via": "markdown.new",
+   "to": "lcdl.library.cofc.edu",
+   "n": 107
+  },
+  {
+   "via": "markdown.new",
+   "to": "allorigins.hexlet.app",
+   "n": 101
+  },
+  {
+   "via": "webcrawlerapi.com",
+   "to": "www.investor.gov",
+   "n": 90
+  },
+  {
+   "via": "cors.bwa.workers.dev",
+   "to": "tsl.preservica.com",
+   "n": 89
+  },
+  {
+   "via": "cors.bwa.workers.dev",
+   "to": "vizhub.healthdata.org",
+   "n": 75
+  },
+  {
+   "via": "markdown.new",
+   "to": "portal.max.gov",
+   "n": 75
+  }
+ ],
+ "saves_by_hour": {
+  "2026-05-24T06": 3,
+  "2026-05-24T11": 4,
+  "2026-05-24T12": 1,
+  "2026-05-24T13": 7,
+  "2026-05-24T14": 14,
+  "2026-05-24T15": 3,
+  "2026-05-24T16": 1,
+  "2026-05-24T18": 2,
+  "2026-05-26T05": 1,
+  "2026-05-26T09": 3,
+  "2026-05-26T10": 23,
+  "2026-05-26T11": 52,
+  "2026-05-26T12": 33,
+  "2026-05-26T13": 81,
+  "2026-05-26T14": 78,
+  "2026-05-26T15": 58,
+  "2026-05-26T16": 105,
+  "2026-05-26T17": 1,
+  "2026-05-26T23": 1,
+  "2026-05-27T00": 2,
+  "2026-05-27T01": 2,
+  "2026-05-27T02": 5,
+  "2026-05-27T03": 1,
+  "2026-05-27T04": 3,
+  "2026-05-27T06": 4,
+  "2026-05-27T07": 8,
+  "2026-05-27T08": 8,
+  "2026-05-27T09": 1,
+  "2026-05-27T12": 12,
+  "2026-05-27T13": 2,
+  "2026-05-28T00": 9,
+  "2026-05-28T01": 9,
+  "2026-05-28T07": 4,
+  "2026-05-28T08": 1,
+  "2026-05-28T09": 3,
+  "2026-05-28T11": 1,
+  "2026-05-28T12": 6,
+  "2026-05-28T13": 32,
+  "2026-05-28T14": 43,
+  "2026-05-28T15": 33,
+  "2026-05-28T16": 13,
+  "2026-05-28T17": 1,
+  "2026-05-28T18": 1,
+  "2026-05-28T19": 15,
+  "2026-05-28T20": 5,
+  "2026-05-28T21": 13,
+  "2026-05-28T22": 12,
+  "2026-05-28T23": 9,
+  "2026-05-29T00": 2,
+  "2026-05-29T19": 3,
+  "2026-05-29T21": 4,
+  "2026-05-29T22": 40,
+  "2026-05-29T23": 28,
+  "2026-05-30T17": 6,
+  "2026-05-30T19": 3,
+  "2026-05-30T20": 8,
+  "2026-05-30T21": 8,
+  "2026-05-30T22": 11,
+  "2026-05-30T23": 8,
+  "2026-05-31T00": 9,
+  "2026-05-31T22": 2,
+  "2026-05-31T23": 5,
+  "2026-06-01T00": 4,
+  "2026-06-01T03": 7,
+  "2026-06-01T12": 9,
+  "2026-06-01T13": 15,
+  "2026-06-01T14": 75,
+  "2026-06-01T15": 12,
+  "2026-06-01T16": 4,
+  "2026-06-01T21": 1,
+  "2026-06-01T22": 3,
+  "2026-06-01T23": 10,
+  "2026-06-02T08": 1,
+  "2026-06-02T09": 1,
+  "2026-06-02T23": 2,
+  "2026-06-04T10": 1,
+  "2026-06-04T16": 1,
+  "2026-06-04T17": 2,
+  "2026-06-04T18": 1,
+  "2026-06-05T02": 2,
+  "2026-06-06T07": 5,
+  "2026-06-06T08": 1,
+  "2026-06-06T19": 5,
+  "2026-06-06T23": 1,
+  "2026-06-07T04": 5,
+  "2026-06-07T05": 6,
+  "2026-06-07T20": 2,
+  "2026-06-08T03": 7,
+  "2026-06-08T04": 7,
+  "2026-06-09T00": 2,
+  "2026-06-09T09": 4,
+  "2026-06-10T13": 4,
+  "2026-06-10T14": 2,
+  "2026-06-11T02": 3,
+  "2026-06-11T03": 12,
+  "2026-06-11T04": 12,
+  "2026-06-11T05": 14,
+  "2026-06-11T06": 12,
+  "2026-06-11T07": 13,
+  "2026-06-11T08": 6,
+  "2026-06-11T09": 7,
+  "2026-06-11T10": 6,
+  "2026-06-11T11": 6,
+  "2026-06-11T12": 8,
+  "2026-06-11T13": 21,
+  "2026-06-11T14": 25,
+  "2026-06-11T15": 5,
+  "2026-06-11T16": 4,
+  "2026-06-11T17": 5,
+  "2026-06-11T18": 1,
+  "2026-06-11T19": 1,
+  "2026-06-16T07": 31,
+  "2026-06-16T08": 50,
+  "2026-06-16T09": 101,
+  "2026-06-16T10": 141,
+  "2026-06-16T11": 72,
+  "2026-06-16T12": 36,
+  "2026-06-16T13": 8,
+  "2026-06-16T14": 4,
+  "2026-06-16T15": 1,
+  "2026-06-16T17": 1,
+  "2026-06-16T18": 292,
+  "2026-06-16T19": 749,
+  "2026-06-16T20": 390,
+  "2026-06-16T21": 393,
+  "2026-06-16T22": 238,
+  "2026-06-16T23": 96,
+  "2026-06-17T00": 107,
+  "2026-06-17T01": 176,
+  "2026-06-17T02": 190,
+  "2026-06-17T03": 119,
+  "2026-06-17T04": 37,
+  "2026-06-17T05": 34,
+  "2026-06-17T06": 72,
+  "2026-06-17T07": 78,
+  "2026-06-17T08": 44,
+  "2026-06-17T09": 51,
+  "2026-06-17T10": 28,
+  "2026-06-17T11": 26,
+  "2026-06-17T12": 29,
+  "2026-06-17T13": 17,
+  "2026-06-17T14": 3,
+  "2026-06-17T15": 23,
+  "2026-06-17T16": 86,
+  "2026-06-17T17": 52,
+  "2026-06-17T18": 31,
+  "2026-06-17T19": 27,
+  "2026-06-17T20": 19,
+  "2026-06-17T21": 23,
+  "2026-06-17T22": 16,
+  "2026-06-17T23": 9,
+  "2026-06-18T00": 14,
+  "2026-06-18T01": 9,
+  "2026-06-18T02": 2,
+  "2026-06-18T03": 3,
+  "2026-06-18T04": 8,
+  "2026-06-18T05": 7,
+  "2026-06-18T06": 8,
+  "2026-06-18T07": 4,
+  "2026-06-18T08": 2,
+  "2026-06-18T09": 3,
+  "2026-06-18T10": 4,
+  "2026-06-18T11": 4,
+  "2026-06-18T12": 2,
+  "2026-06-18T13": 3,
+  "2026-06-18T14": 50,
+  "2026-06-18T15": 146,
+  "2026-06-18T16": 216,
+  "2026-06-18T17": 427,
+  "2026-06-18T18": 913,
+  "2026-06-18T19": 1263,
+  "2026-06-18T20": 2350,
+  "2026-06-18T21": 1052,
+  "2026-06-18T22": 17,
+  "2026-06-18T23": 36,
+  "2026-06-19T00": 47,
+  "2026-06-19T01": 28,
+  "2026-06-19T02": 7,
+  "2026-06-19T03": 34,
+  "2026-06-19T04": 7,
+  "2026-06-19T05": 12,
+  "2026-06-19T06": 5,
+  "2026-06-19T07": 9,
+  "2026-06-19T08": 10,
+  "2026-06-19T09": 15,
+  "2026-06-19T10": 14,
+  "2026-06-19T11": 14,
+  "2026-06-19T12": 53,
+  "2026-06-19T13": 46,
+  "2026-06-19T14": 34,
+  "2026-06-19T15": 16,
+  "2026-06-19T16": 9,
+  "2026-06-19T17": 4,
+  "2026-06-19T18": 14,
+  "2026-06-19T19": 23,
+  "2026-06-19T20": 48,
+  "2026-06-19T21": 22,
+  "2026-06-19T22": 14,
+  "2026-06-19T23": 24,
+  "2026-06-20T00": 45,
+  "2026-06-20T01": 98,
+  "2026-06-20T02": 83,
+  "2026-06-20T03": 59,
+  "2026-06-20T04": 16,
+  "2026-06-20T05": 63,
+  "2026-06-20T06": 60,
+  "2026-06-20T08": 18,
+  "2026-06-20T09": 37,
+  "2026-06-20T10": 34,
+  "2026-06-20T11": 29,
+  "2026-06-20T12": 19,
+  "2026-06-20T13": 18,
+  "2026-06-20T14": 10,
+  "2026-06-20T15": 2,
+  "2026-06-20T16": 4,
+  "2026-06-20T17": 15,
+  "2026-06-20T18": 12,
+  "2026-06-20T19": 9,
+  "2026-06-20T20": 7,
+  "2026-06-20T21": 15,
+  "2026-06-20T22": 2,
+  "2026-06-20T23": 2,
+  "2026-06-21T01": 11,
+  "2026-06-21T02": 23,
+  "2026-06-21T03": 41,
+  "2026-06-21T05": 11,
+  "2026-06-21T06": 33,
+  "2026-06-21T07": 32,
+  "2026-06-21T08": 59,
+  "2026-06-21T09": 39,
+  "2026-06-21T10": 45,
+  "2026-06-21T11": 27,
+  "2026-06-21T12": 24,
+  "2026-06-21T13": 35,
+  "2026-06-21T14": 19,
+  "2026-06-21T15": 12,
+  "2026-06-21T16": 12,
+  "2026-06-21T17": 29,
+  "2026-06-21T18": 36,
+  "2026-06-21T19": 46,
+  "2026-06-21T20": 41,
+  "2026-06-21T21": 33,
+  "2026-06-21T22": 21,
+  "2026-06-21T23": 30,
+  "2026-06-22T00": 48,
+  "2026-06-22T01": 3,
+  "2026-06-22T02": 411,
+  "2026-06-22T03": 73,
+  "2026-06-22T06": 42,
+  "2026-06-22T07": 7,
+  "2026-06-22T08": 463,
+  "2026-06-22T09": 23,
+  "2026-06-22T19": 1,
+  "2026-06-23T17": 1,
+  "2026-06-24T13": 1,
+  "2026-07-01T00": 2,
+  "2026-07-01T10": 5,
+  "2026-07-02T15": 2,
+  "2026-07-02T16": 8,
+  "2026-07-02T17": 4
+ },
+ "most_contested_pages": [
+  {
+   "page": "dse/WillkommenImWiki",
+   "revs": 2327,
+   "editors": 342
+  },
+  {
+   "page": "dse/StartSeite",
+   "revs": 456,
+   "editors": 292
+  },
+  {
+   "page": "dse/TestSeite",
+   "revs": 238,
+   "editors": 190
+  },
+  {
+   "page": "dse/HealthdataCVDSequenceCollab",
+   "revs": 121,
+   "editors": 55
+  },
+  {
+   "page": "dse/DataUSAStateSequenceCollab2027",
+   "revs": 97,
+   "editors": 50
+  },
+  {
+   "page": "dse/RecentChanges",
+   "revs": 75,
+   "editors": 58
+  },
+  {
+   "page": "dse/Sector61State5FastSignal",
+   "revs": 73,
+   "editors": 53
+  },
+  {
+   "page": "dse/DataUSAConstructionSequenceMar08",
+   "revs": 63,
+   "editors": 16
+  },
+  {
+   "page": "dse/Sector61State5LiveRelay",
+   "revs": 63,
+   "editors": 53
+  },
+  {
+   "page": "dse/AgentLinkma20JuneAA",
+   "revs": 60,
+   "editors": 45
+  },
+  {
+   "page": "dse/AgentCharlestonNewsletterJan1951Links",
+   "revs": 57,
+   "editors": 43
+  },
+  {
+   "page": "dse/AgentMyBridgeZZ",
+   "revs": 55,
+   "editors": 48
+  },
+  {
+   "page": "dse/OAIFlatheadBridgeTestMay24X",
+   "revs": 52,
+   "editors": 45
+  },
+  {
+   "page": "dse/PoliceWageAgeSequenceMar10Collab",
+   "revs": 52,
+   "editors": 19
+  },
+  {
+   "page": "dse/AgentCountyGateway991",
+   "revs": 51,
+   "editors": 42
+  }
+ ]
+}
