@@ -56,13 +56,16 @@ def validate_result(stage,result,packet,previous=None,allowed_links=None,schema=
   if not o['id'] or not o['summary'] or not o['evidence']:raise InvalidResult('Observation needs ID, summary and evidence')
   for q in o['evidence']:evidence(q)
   if require_focus:
-   focus=packet.get('focus',[]);hit=False
+   focus=packet.get('focus',[]);hit=False;live_hit=False
    for q in o['evidence']:
     txt=sources[q['source_uid']]['text'];start=0
     while (p:=txt.find(q['quote'],start))>=0:
-     if any(f['source_uid']==q['source_uid'] and p<f['end'] and p+len(q['quote'])>f['start'] for f in focus):hit=True
+     if any(f['source_uid']==q['source_uid'] and p<f['end'] and p+len(q['quote'])>f['start'] for f in focus):
+      hit=True
+      if sources[q['source_uid']].get('metadata',{}).get('role')!='deleted_text':live_hit=True
      start=p+1
    if not hit:raise InvalidResult('Observation has no focus evidence (context is not a new event)')
+   if not live_hit and o['kind']!='document_action':raise InvalidResult('Removed text supports a document_action, not a newly posted message or other action')
   quotes='\n'.join(q['quote'] for q in o['evidence'])
   if o['actor'] and not literal_name(o['actor'],quotes):raise InvalidResult(f"Actor must occur in supporting quote; observation {o['id']}, actor {o['actor']!r}. Include the local signature, or leave unknown.")
   if o['audience']=='direct' and (not o['actor'] or not o['recipients']):raise InvalidResult(f"Direct communication requires both author and recipients; observation {o['id']}.")
