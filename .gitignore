@@ -1,0 +1,8 @@
+pipeline-state/
+runs/
+work-v3/
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite-*
+.DS_Store

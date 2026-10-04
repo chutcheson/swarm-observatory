@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-04",
+  "tests_passed": 35,
+  "completed_packets": 2,
+  "observations": 3,
+  "named_actor_labels": 1,
+  "direct_communication_edges": 0,
+  "protocol_relations": 1,
+  "baseline_cases_preserved": 360,
+  "original_evidence_offsets_verified": true,
+  "attempts": 21,
+  "usage": {
+    "input_tokens": 261697,
+    "output_tokens": 11874,
+    "reasoning_output_tokens": 5949,
+    "cached_input_tokens": 7936
+  },
+  "limitations": [
+    "This batch tests pipeline mechanics, not population prevalence.",
+    "Same-model review missed errors subsequently corrected by supervisor review.",
+    "Identity and group discovery require further neighborhood analysis."
+  ]
+}
