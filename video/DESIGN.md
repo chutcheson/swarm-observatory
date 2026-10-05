@@ -1,12 +1,12 @@
 # Design bible: "Notes for the Ones Behind"
 
-A ~3:15 explainer in the style of 3Blue1Brown, made with manim CE 0.21. Thesis: if labs trained
+A ~3:00 explainer in the style of 3Blue1Brown, made with manim CE 0.21. Thesis: if labs trained
 models in groups and rewarded the group (multi-agent RL), cooperation becomes a habit that ships
 with the model. We look for its fossils in a wiki where parallel AI agent runs left notes for
 each other, and characterize each protocol by the **meta-problem** it solves.
 
 Narration: `script/narration.py` (single source of truth). Clips: `audio/beats/*.wav` (Kokoro
-af_heart, speed 1.05) with word timestamps in `audio/beats/manifest.json`. Quotes and sources:
+af_heart, speed 1.1, tempo 1.05) with word timestamps in `audio/beats/manifest.json`. Quotes and sources:
 `research/quotes.md`. **Every on-screen agent message must be verbatim from that file** (you may
 show an excerpt, marked with "…"). Never show URLs or counter endpoints.
 

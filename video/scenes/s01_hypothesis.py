@@ -53,8 +53,8 @@ class S01Hypothesis(SwarmScene):
         tb = training_box(C1)
         plus = MathTex("+1", font_size=64, color=C_REWARD).move_to(UP * 2.3)
         with self.beat("s01_b1") as b:
-            b.wait_word("working", lead=0.15)
-            self.play(FadeIn(title, shift=DOWN * 0.15), run_time=0.8)
+            b.wait_word("working", lead=0.5)
+            self.play(FadeIn(title, shift=DOWN * 0.15), run_time=0.9)
             b.wait_word("labs", lead=0.1)
             self.play(FadeIn(tb.box, scale=0.96), FadeIn(tb.lab, shift=RIGHT * 0.1), run_time=b.until_word("models"))
             self.add(tb.halos)
@@ -69,19 +69,19 @@ class S01Hypothesis(SwarmScene):
             minis = VGroup(*[plus.copy() for _ in range(4)])
             self.remove(plus)
             self.add(minis)
-            self.play(*[m.animate.scale(0.6).move_to(p) for m, p in zip(minis, tb.pts)],
-                      run_time=0.55, rate_func=smooth)
-            self.play(*[FadeOut(m, scale=0.4) for m in minis],
+            self.play(*[m.animate.scale(0.6).move_to(p + UP * 0.38) for m, p in zip(minis, tb.pts)],
+                      run_time=0.55, rate_func=rate_functions.ease_out_cubic)
+            self.play(*[FadeOut(m, shift=DOWN * 0.34, scale=0.3) for m in minis],
                       *[h.animate.set_level(1.0) for h in tb.halos],
                       run_time=0.45)
             self.play(*[h.animate.set_level(0.45) for h in tb.halos], run_time=0.5)
 
         # ------------------------------------------------------------ b2
         cols = {}
-        y_dot, y0 = 0.12, -1.55
+        y_dot, y0 = 0.3, -1.4
         for side, cx, head, tex, hcol in (("L", -3.5, "individual reward", r"R_i = r_i", INK_2),
                                           ("R", 3.5, "group reward", r"R_i = \sum_j r_j", C_REWARD)):
-            h = tx(head, size=34, italic=True, color=hcol).move_to([cx, 2.68, 0])
+            h = tx(head, size=34, italic=True, color=hcol).move_to([cx, 2.62, 0])
             eq = MathTex(tex, font_size=52, color=INK)
             eq.shift(UP * (1.78 - eq[0][0].get_center()[1]))
             eq.set_x(cx)
@@ -102,14 +102,21 @@ class S01Hypothesis(SwarmScene):
                               base=base, red=red, blue=blue, lc=lc, lb=lb, cx=cx)
 
         L, R = cols["L"], cols["R"]
+        R["h"].align_to(L["h"], UP)          # same baseline despite the descenders in "group"
         bl = L["blue"]
         cross = VGroup(Line(bl.get_corner(DL) + LEFT * 0.1, bl.get_corner(UR) + RIGHT * 0.1),
                        Line(bl.get_corner(UL) + LEFT * 0.1, bl.get_corner(DR) + RIGHT * 0.1)).set_stroke(INK_2, 3.5)
-        netL = MathTex(r"\Delta R_i", "=", "-c", font_size=48, color=INK).move_to([L["cx"], -2.8, 0])
+        netL = MathTex(r"\Delta R_i", "=", "-c", font_size=48, color=INK).move_to([L["cx"], -2.65, 0])
         netL[2].set_color(C_MORT)
-        netR = MathTex(r"\Delta R_i", "=", "b - c", ">", "0", font_size=48, color=INK).move_to([R["cx"], -2.8, 0])
-        pays = tx("helping pays", size=32, italic=True, color=C_REWARD).move_to([R["cx"], -3.4, 0])
-        divider = Line([0, 2.85, 0], [0, -3.3, 0], stroke_width=1.5, color=FAINT)
+        netR = MathTex(r"\Delta R_i", "=", "b - c", ">", "0", font_size=48, color=INK).move_to([R["cx"], -2.65, 0])
+        pays = tx("helping pays", size=32, italic=True, color=C_REWARD).move_to([R["cx"], -3.25, 0])
+        divider = Line([0, 2.8, 0], [0, -3.15, 0], stroke_width=1.5, color=FAINT)
+        # the comparison owns the frame in b2 (the title steps aside): scale up and centre it
+        comp = VGroup(VGroup(*[c[k] for c in (L, R) for k in
+                                           ("h", "eq", "di", "dj", "li", "lj", "arr", "helps",
+                                            "base", "red", "blue", "lc", "lb")]),
+                      cross, netL, netR, pays, divider)
+        comp.scale(min(1.2, 7.15 / comp.height, 13.3 / comp.width)).move_to(ORIGIN)
 
         def act(c):
             return [FadeIn(c["di"], scale=0.5), FadeIn(c["dj"], scale=0.5), FadeIn(c["li"]), FadeIn(c["lj"]),
@@ -119,15 +126,15 @@ class S01Hypothesis(SwarmScene):
             return VGroup(*[c[k] for k in ("h", "eq", "di", "dj", "li", "lj", "arr", "helps",
                                            "base", "red", "blue", "lc", "lb")])
 
-        C2 = np.array([-3.55, -0.5, 0])
+        C2 = np.array([-3.55, -0.3, 0])
         tb2 = training_box(C2, halo_level=0.12)
-        boundary = DashedLine([0, 2.4, 0], [0, -3.0, 0], dash_length=0.12, stroke_width=2, color=DIM)
+        boundary = DashedLine([0, 2.6, 0], [0, -2.9, 0], dash_length=0.12, stroke_width=2, color=DIM)
         dep = tx("deployment", size=28, italic=True, color=DIM)
         dep.move_to([0, tb2.lab.get_center()[1], 0]).align_to(boundary, LEFT).shift(RIGHT * 0.4)
-        dest = np.array([3.55, -0.5, 0])
+        dest = np.array([3.55, -0.3, 0])
 
         with self.beat("s01_b2") as b:
-            self.play(FadeOut(VGroup(tb.box, tb.lab, tb.ring, tb.halos, tb.dots)), run_time=0.4)
+            self.play(FadeOut(VGroup(title, tb.box, tb.lab, tb.ring, tb.halos, tb.dots)), run_time=0.4)
             self.play(FadeIn(L["h"], shift=DOWN * 0.12), run_time=b.until_word("reward", lead=0.1))
             self.play(Write(L["eq"]), run_time=b.until_word("helping", lead=0.05))
             self.play(*act(L), run_time=b.until_word("costs", lead=0.05))
@@ -203,7 +210,7 @@ class S01Hypothesis(SwarmScene):
 
         with self.beat("s01_b3") as b:
             last = fpts[-1]
-            self.play(FadeOut(VGroup(title, tb2.box, tb2.lab, tb2.ring, tb2.halos[:3], tb2.dots[:3], boundary, dep)),
+            self.play(FadeOut(VGroup(tb2.box, tb2.lab, tb2.ring, tb2.halos[:3], tb2.dots[:3], boundary, dep)),
                       mover[0].animate.set_level(0.0), mover[1].animate.move_to(last).fade(0.5),
                       FadeIn(crowd[:-1], lag_ratio=0.05), run_time=b.until_word("fossils", lead=0.3))
             self.remove(mover)
@@ -219,5 +226,5 @@ class S01Hypothesis(SwarmScene):
             self.play(FadeOut(lens), crowd.animate.fade(0.5), *[h.animate.set_level(0.3) for h in fossils],
                       run_time=0.4)
             self.play(Write(question), run_time=b.until_word("solve", lead=-0.2))
-            b.wait_until(b.duration - 0.05)
+            b.wait_until(b.duration - 0.1)
             self.play(FadeOut(Group(*self.mobjects)), run_time=0.4)

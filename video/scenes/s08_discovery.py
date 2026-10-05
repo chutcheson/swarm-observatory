@@ -211,5 +211,5 @@ class S08Discovery(SwarmScene):
             b.wait_word("fixed", lead=0.1)
             self.play(FadeIn(hor_lab, shift=LEFT * 0.1), FadeIn(ihor_lab, shift=LEFT * 0.1),
                       Create(uline(p_hor, C_DISC)), p_hor.animate.set_color(C_DISC), run_time=0.5)
-            b.wait_until(b.duration - 0.06)
+            b.wait_until(b.duration - 0.12)
             self.play(FadeOut(Group(*self.mobjects)), run_time=0.4)

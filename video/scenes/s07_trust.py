@@ -5,7 +5,7 @@ from swarm import *
 
 # verbatim excerpts (research/quotes.md, s07 rows)
 Q_NOISE = ("COUNTER NOISE: … HI5/MT5/IA5/WV5/ID5 were batch-created within 8s … "
-           "so NOT credible G5 confirmation.")
+           "so NOT credible G5 confirmation. Creator please identify.")
 Q_CLARIFY = "CLARIFY: HI5/MT5/IA5/WV5/ID5/NY5/ME5 batch … was my polling test; ignore. … Sorry for noise."
 Q_READ = "Observers please READ only, never /up."
 
@@ -62,10 +62,12 @@ class S07Trust(SwarmScene):
         noise_note = tx("five new counters in eight seconds", size=21, color=DIM, italic=True)
         noise_note.next_to(noise_lab, DOWN, buff=0.12)
 
-        eye = problem_icon(5, s=0.5).move_to(MD5_AT + UP * 2.0)
+        eye = problem_icon(5, s=0.5).move_to(MD5_AT + UP * 1.85)
         gaze = DashedLine(eye.get_bottom() + DOWN * 0.08, md5.box.get_top() + UP * 0.1, dash_length=0.07,
                           dashed_ratio=0.5, stroke_width=2, color=C_TRUST)
         up = mono("/up", size=26, color=C_MORT).next_to(md5.box, RIGHT, buff=0.3)
+        # the whole counter scene a little larger
+        VGroup(md5, noise, noise_lab, noise_note, eye, gaze, up).scale(1.25, about_point=np.array([0, 1.2, 0]))
 
         with self.beat("s07_b1") as b:
             self.play(Write(hdr), run_time=1.0)
@@ -88,7 +90,7 @@ class S07Trust(SwarmScene):
             self.play(md5.box.animate.set_stroke(C_TRUST, width=2), md5.num.animate.set_color(INK), run_time=0.4)
 
             # "flag noise, own their mistakes in public": two posts, one minute apart
-            c1 = card(Q_NOISE, "OpenAIResearchAug09X", C_TRUST, width=40, size=23, sig_size=22,
+            c1 = card(Q_NOISE, "OpenAIResearchAug09X", C_TRUST, width=42, size=23, sig_size=22,
                       header="dse wiki · 16 June 2026, 22:42 UTC")
             c2 = card(Q_CLARIFY, "Sep21 watcher", C_TRUST, width=40, size=23, sig_size=22,
                       header="22:43 UTC · one minute later")
@@ -121,7 +123,7 @@ class S07Trust(SwarmScene):
             b.wait_word("own", lead=0.1)
             self.play(FadeIn(VGroup(c2.bg, c2.bar, c2.header, c2.body, c2.sig), shift=UP * 0.12),
                       Create(thread), run_time=0.35)
-            ul = underline(hl_sorry, C_TRUST, buff=0.1)
+            ul = underline(hl_sorry, C_TRUST)
             self.play(Create(ul), hl_sorry.animate.set_color(C_TRUST), run_time=0.4)
 
             # "tell observers: read only"
@@ -137,8 +139,8 @@ class S07Trust(SwarmScene):
                       run_time=0.35)
             self.play(FadeIn(c3.body, shift=UP * 0.06), FadeIn(c3.sig), run_time=0.45)
             b.wait_word("read", occurrence=2, lead=0.05)
-            self.play(Create(underline(hl_read, C_TRUST, buff=0.1, stroke=3.5)), hl_read.animate.set_color(C_TRUST),
+            self.play(Create(underline(hl_read, C_TRUST, stroke=3.5)), hl_read.animate.set_color(C_TRUST),
                       run_time=0.35)
             self.play(hl_up.animate.set_color(C_MORT), run_time=0.3)
-            b.wait_until(b.duration - 0.05)
+            b.wait_until(b.duration - 0.1)
             self.play(FadeOut(Group(*self.mobjects)), run_time=0.4)

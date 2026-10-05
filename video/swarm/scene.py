@@ -113,7 +113,7 @@ class SwarmScene(Scene):
         self._timing = []
 
     @contextmanager
-    def beat(self, bid, pad=0.35, audio_offset=0.0):
+    def beat(self, bid, pad=0.3, audio_offset=0.0):
         b = Beat(self, bid)
         if b.meta and not NO_AUDIO:
             self.add_sound(str(AUDIO / b.meta["file"]), time_offset=audio_offset)

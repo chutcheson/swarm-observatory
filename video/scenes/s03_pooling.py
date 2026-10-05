@@ -105,8 +105,8 @@ class S03Pooling(SwarmScene):
                 v.target.set_color(INK).move_to(s)
                 boxes.add(box)
                 values.add(v)
-                self.play(Create(box), f.animate.set_color(C_POOL), run_time=0.3)
-                self.play(MoveToTarget(v, path_arc=-0.25), s.animate.set_stroke(C_POOL, opacity=1), run_time=0.45)
+                self.play(Create(box), f.animate.set_color(C_POOL), run_time=0.25)
+                self.play(MoveToTarget(v, path_arc=-0.25), s.animate.set_stroke(C_POOL, opacity=1), run_time=0.4)
 
             # parallel copies: more runs join; the report becomes the wiki's content
             b.wait_word("Parallel", lead=0.1)
@@ -146,6 +146,6 @@ class S03Pooling(SwarmScene):
             self.play(LaggedStart(*[pulse_along(s) for s in spokes], lag_ratio=0.06),
                       LaggedStart(*[pulse_along(e, width=3) for e in edges], lag_ratio=0.06),
                       page.bg.animate(rate_func=there_and_back).set_stroke(C_POOL, width=2.5),
-                      run_time=1.0)
-            b.wait_until(b.duration - 0.05)
+                      run_time=0.75)
+            b.wait_until(b.duration - 0.1)
             self.play(FadeOut(Group(*self.mobjects)), run_time=0.4)

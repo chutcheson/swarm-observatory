@@ -33,18 +33,21 @@ class S05Compression(SwarmScene):
         hdr = problem_header(3)
 
         # ---- the clock and the long report
-        ring, frac = timer_ring(radius=0.85, color=C_CHAN, stroke=8)
-        ring.move_to([-4.6, 0.0, 0])
-        secs = tx("13 s", size=32, color=INK).move_to(ring[0])
-        para = mono_para(REPORT, width=48, size=20, color=INK_2)
-        para.move_to([1.3, 0.0, 0])
+        RY = -0.3
+        ring, frac = timer_ring(radius=1.2, color=C_CHAN, stroke=11)
+        ring.move_to([-4.15, RY, 0])
+        secs = tx("13 s", size=44, color=INK).move_to(ring[0])
+        para = mono_para(" ".join(REPORT.split()), width=31, size=27, color=INK_2)
+        para.next_to(ring, RIGHT, buff=1.0)
+        para.align_to([0, RY + 0.85, 0], UP)
+        XT = para.get_center()[0]
         glyphs = list(para.submobjects)
         row_y = rows_of(glyphs)
         N = len(glyphs)
         cut = int(N * 0.58)
         for g in glyphs:
             g.set_opacity(0)
-        cursor = Rectangle(width=0.11, height=0.27, stroke_width=0, fill_color=C_CHAN, fill_opacity=1)
+        cursor = Rectangle(width=0.15, height=0.37, stroke_width=0, fill_color=C_CHAN, fill_opacity=1)
         cursor.move_to([para.get_left()[0] + 0.06, row_y[0], 0])
 
         def typing(_, a):
@@ -53,14 +56,14 @@ class S05Compression(SwarmScene):
                 g.set_opacity(1 if i < k else 0)
             if k > 0:
                 g = glyphs[k - 1]
-                cursor.move_to([g.get_right()[0] + 0.1, row_y[k - 1], 0])
+                cursor.move_to([g.get_right()[0] + 0.13, row_y[k - 1], 0])
 
         # ---- compressed forms
-        first = mono(FIRST, size=40, color=C_CHAN, weight=BOLD).move_to([1.3, 0.3, 0])
-        later = mono(LATER, size=24, color=DIM).next_to(first, DOWN, buff=0.35).align_to(first, RIGHT).shift(RIGHT * 0.6)
-        pkt = packet(TOKEN, C_CHAN, size=34, pad=0.2).move_to([1.3, 0.25, 0])
-        pkt_q = mono(TOKEN_Q, size=20, color=DIM).next_to(pkt, DOWN, buff=0.45)
-        pkt_sig = tx("— SectorAgentJun15", size=20, color=DIM, italic=True).next_to(pkt_q, DOWN, buff=0.15).align_to(pkt_q, RIGHT)
+        first = mono(FIRST, size=56, color=C_CHAN, weight=BOLD).move_to([XT, RY + 0.3, 0])
+        later = mono(LATER, size=32, color=DIM).next_to(first, DOWN, buff=0.45).align_to(first, RIGHT).shift(RIGHT * 0.8)
+        pkt = packet(TOKEN, C_CHAN, size=46, pad=0.26).move_to([XT, RY + 0.4, 0])
+        pkt_q = mono(TOKEN_Q, size=24, color=DIM).next_to(pkt, DOWN, buff=0.55)
+        pkt_sig = tx("— SectorAgentJun15", size=24, color=DIM, italic=True).next_to(pkt_q, DOWN, buff=0.18).align_to(pkt_q, RIGHT)
 
         # ---- one number
         eq = MathTex(r"\text{CODE}", "=", "2", "+", "2", r"(\text{year}", "-", "2014)", "+", r"\text{sex}",
@@ -91,7 +94,7 @@ class S05Compression(SwarmScene):
             b.wait_word("thirteen", lead=0.0)
             # the clock runs out before the report is written
             self.play(frac.animate.set_value(0), UpdateFromAlphaFunc(para, typing),
-                      run_time=2.0, rate_func=linear)
+                      run_time=1.8, rate_func=linear)
 
             # so messages shrink: country first, details later
             shown = VGroup(*glyphs[:cut])
@@ -122,5 +125,5 @@ class S05Compression(SwarmScene):
             ring8 = Circle(radius=0.2, stroke_width=2.5, color=C_CHAN).move_to(nl.n2p(8))
             self.play(TransformFromCopy(ex[4], mark, path_arc=-0.4), Create(ring8),
                       nl.numbers[2].animate.set_color(C_CHAN), run_time=0.55)
-            b.wait_until(b.duration - 0.05)
+            b.wait_until(b.duration - 0.1)
             self.play(FadeOut(Group(*self.mobjects)), run_time=0.4)

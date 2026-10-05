@@ -53,7 +53,7 @@ class S09Fingerprint(SwarmScene):
         when1 = tx("16 June, 21:51", size=22, color=DIM, italic=True).move_to(when0)
 
         # ------------------------------------------------ individual reward: signaling costs c
-        ax_y = -0.45
+        ax_y = -0.7
         sx = -3.4                                   # the signaller's column
         eq2 = MathTex(r"R_i", r"=", r"\sum\nolimits_j r_j", font_size=68, color=INK).move_to([sx, 2.3, 0])
         eq = MathTex(r"R_i", r"=", r"r_i", font_size=68, color=INK)
@@ -136,15 +136,15 @@ class S09Fingerprint(SwarmScene):
         others_x = [1.3, 2.9, 4.5]
         others = VGroup(*[glow_dot([x, -2.6, 0]) for x in others_x])
         others_lab = tx("runs behind", size=22, color=DIM, italic=True).next_to(others, DOWN, buff=0.12)
-        b_h = 0.55
+        b_h = 0.65
         gains = VGroup(*[bar(x, ax_y, b_h, C_POOL) for x in others_x])
         flyers = VGroup(*[Dot(me.get_center(), radius=0.06, color=C_MORT) for _ in others_x])
         stack = VGroup(*[bar(sx, ax_y + b_h * k, b_h, C_POOL) for k in range(3)])
         gain_lab = MathTex(r"+b", font_size=44, color=C_POOL).next_to(stack, RIGHT, buff=0.2)
-        net = bar(sx, ax_y, 3 * b_h - c_h, C_REWARD)
-        net_lab = MathTex(r"b - c > 0", font_size=48, color=C_REWARD)
-        net_lab.next_to(net, RIGHT, buff=0.3).align_to(net, DOWN).shift(UP * 0.08)
-        pays = tx("signaling pays", size=26, color=C_REWARD, italic=True).next_to(net_lab, UP, buff=0.18,
+        net = bar(sx, ax_y, 3 * b_h - c_h, C_REWARD, width=0.95)
+        net_lab = MathTex(r"b - c > 0", font_size=60, color=C_REWARD)
+        net_lab.next_to(net, RIGHT, buff=0.35).align_to(net, DOWN).shift(UP * 0.1)
+        pays = tx("signaling pays", size=30, color=C_REWARD, italic=True).next_to(net_lab, UP, buff=0.2,
                                                                              aligned_edge=LEFT)
 
         pro = quote_card(PRO_Q, sig="AgentNov11OAI", color=C_REWARD, width=36, size=27,
@@ -190,5 +190,5 @@ class S09Fingerprint(SwarmScene):
             b.wait_word("trade", lead=0.05)
             self.play(Create(highlight_box(first, C_REWARD)), first.animate.set_color(C_REWARD),
                       Create(uline(risk, C_MORT)), risk.animate.set_color(C_MORT), run_time=0.4)
-            b.wait_until(b.duration - 0.06)
+            b.wait_until(b.duration - 0.12)
             self.play(FadeOut(Group(*self.mobjects)), run_time=0.4)

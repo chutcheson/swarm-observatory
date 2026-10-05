@@ -18,7 +18,7 @@ YT, YS = 1.25, -1.35          # task clock (top), shared clock (bottom)
 
 def axis(label, y, color):
     ln = Line([X0, y, 0], [X1, y, 0], stroke_width=2, color=color)
-    lab = tx(label, size=22, color=color, italic=True).next_to(ln, LEFT, buff=0.25)
+    lab = tx(label, size=26, color=color, italic=True).next_to(ln, LEFT, buff=0.25)
     ticks = VGroup(*[Line([x, y - 0.07, 0], [x, y + 0.07, 0], stroke_width=1.5, color=color, stroke_opacity=0.6)
                      for x in np.arange(X0 + 0.35, X1, 0.7)])
     g = VGroup(ln, ticks, lab)
@@ -27,7 +27,7 @@ def axis(label, y, color):
 
 
 def end_dot(x, y, color):
-    return Dot([x, y, 0], radius=0.045, color=color)
+    return Dot([x, y, 0], radius=0.055, color=color)
 
 
 def mapping(pairs, color, opacity=0.75):
@@ -47,8 +47,8 @@ def trace(scene, pairs, color, run_time, extra=()):
         ln.set_opacity(0)
     s0, t0 = pairs[0]
     s1, t1 = pairs[-1]
-    ds = glow_dot([s0, YS, 0], color=color, radius=0.06, glow=0.26)
-    dt = glow_dot([t0, YT, 0], color=color, radius=0.06, glow=0.26)
+    ds = glow_dot([s0, YS, 0], color=color, radius=0.08, glow=0.32)
+    dt = glow_dot([t0, YT, 0], color=color, radius=0.08, glow=0.32)
     n = len(pairs) - 1
     state = {"shown": -1}
 
@@ -117,7 +117,7 @@ class S04Time(SwarmScene):
                       FadeIn(task.lab, shift=RIGHT * 0.15), FadeIn(shared.lab, shift=RIGHT * 0.15), run_time=0.7)
 
             # run A: both clocks tick at the same rate -> parallel reading lines
-            labA = tx("run A", size=22, color=RUN, italic=True)
+            labA = tx("run A", size=25, color=RUN, italic=True)
             baseline_shift(labA, "run A", YT + 0.3).set_x(-2.75)
             A_pairs = [(x, x) for x in np.linspace(-3.8, -1.7, 4)]
             linesA, dsA, dtA = trace(self, A_pairs, RUN, b.until_word("clock", lead=-0.25),
@@ -125,7 +125,7 @@ class S04Time(SwarmScene):
 
             # run B: waits, and its task clock fast-forwards
             b.wait_word("waiting", lead=0.15)
-            labB = tx("run B", size=22, color=C_TIME, italic=True)
+            labB = tx("run B", size=25, color=C_TIME, italic=True)
             baseline_shift(labB, "run B", YT + 0.3).set_x(-0.8)
             B1 = [(x, x) for x in np.linspace(-1.1, -0.2, 3)]
             linesB1, dsB, dtB = trace(self, B1, C_TIME, b.until_word("fast", lead=0.05),
@@ -138,9 +138,9 @@ class S04Time(SwarmScene):
             # braces: a short span of shared time, a long span of task time
             brT = Brace(Line([-0.2, YT, 0], [5.8, YT, 0]), direction=UP, buff=0.14, color=C_TIME)
             brS = Brace(Line([-0.2, YS, 0], [0.5, YS, 0]), direction=DOWN, buff=0.14, color=INK_2)
-            lT = mono(FF_TASK, size=20, color=C_TIME).next_to(brT, UP, buff=0.12)
-            lS = mono(FF_SHARED, size=20, color=INK_2).next_to(brS, DOWN, buff=0.12)
-            sig = tx("— ChatGPTAug11", size=20, color=DIM, italic=True).next_to(lS, RIGHT, buff=0.45)
+            lT = mono(FF_TASK, size=22, color=C_TIME).next_to(brT, UP, buff=0.12)
+            lS = mono(FF_SHARED, size=22, color=INK_2).next_to(brS, DOWN, buff=0.12)
+            sig = tx("— ChatGPTAug11", size=22, color=DIM, italic=True).next_to(lS, RIGHT, buff=0.45)
             sig.align_to(lS, DOWN)
             self.play(GrowFromCenter(brT), GrowFromCenter(brS), FadeIn(lT, shift=UP * 0.1),
                       FadeIn(lS, shift=DOWN * 0.1), run_time=0.5)
@@ -152,8 +152,8 @@ class S04Time(SwarmScene):
             names = ["Oct23", "Sep23", "Apr10"]
             tpos = [-2.6, 0.8, 4.2]           # order by task clock
             spos = {"Apr10": -2.6, "Oct23": 0.8, "Sep23": 4.2}   # order by shared clock
-            rdots = VGroup(*[glow_dot([x, YT, 0]) for x in tpos])
-            rlabs = VGroup(*[mono(n, size=20, color=INK_2).next_to(d, UP, buff=0.12) for n, d in zip(names, rdots)])
+            rdots = VGroup(*[glow_dot([x, YT, 0], radius=0.095, glow=0.38) for x in tpos])
+            rlabs = VGroup(*[mono(n, size=24, color=INK_2).next_to(d, UP, buff=0.1) for n, d in zip(names, rdots)])
             self.play(FadeOut(phase1), run_time=0.4)
             self.play(LaggedStart(*[AnimationGroup(FadeIn(d, scale=0.4), FadeIn(l, shift=DOWN * 0.1))
                                     for d, l in zip(rdots, rlabs)], lag_ratio=0.2), run_time=0.5)
@@ -180,12 +180,12 @@ class S04Time(SwarmScene):
                                      color=INK_2, stroke_opacity=0.6))
                 sd = d.copy()
                 sdots.add(sd)
-                slabs.add(mono(n, size=20, color=INK).next_to([x, YS, 0], DOWN, buff=0.28))
+                slabs.add(mono(n, size=24, color=INK).next_to([x, YS, 0], DOWN, buff=0.3))
             self.play(LaggedStart(*[Create(dl) for dl in drops], lag_ratio=0.15),
                       *[MoveAlongPath(sd, Line(sd.get_center(), [spos[n], YS, 0])) for n, sd in zip(names, sdots)],
                       *[dimmed(d, 0.35) for d in rdots], rlabs.animate.set_opacity(0.45),
                       run_time=0.8)
-            ahead = tx("really ahead  →", size=22, color=DIM, italic=True)
+            ahead = tx("really ahead  →", size=24, color=DIM, italic=True)
             ahead.next_to(slabs, DOWN, buff=0.3).align_to(shared.line, RIGHT)
             self.play(LaggedStart(*[FadeIn(l, shift=UP * 0.1) for l in slabs], lag_ratio=0.15),
                       FadeIn(ahead, shift=RIGHT * 0.15),
@@ -232,5 +232,5 @@ class S04Time(SwarmScene):
             self.play(FadeIn(card, shift=UP * 0.15), run_time=0.45)
             b.wait_word("even", occurrence=2, lead=0.1)
             self.play(Create(uline(hl, "Even a no-show update helps.", C_TIME)), hl.animate.set_color(C_TIME), run_time=0.45)
-            b.wait_until(b.duration - 0.05)
+            b.wait_until(b.duration - 0.1)
             self.play(FadeOut(Group(*self.mobjects)), run_time=0.4)

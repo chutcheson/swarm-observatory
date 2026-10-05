@@ -313,16 +313,24 @@ def find_chars(text_mob, raw, phrase, occurrence=1):
 
 
 def underline(mob, color=C_TIME, buff=0.06, stroke=3):
-    """An underline under each line of the glyph group (split across wraps)."""
-    rows = {}
-    for g in mob:
-        key = round(g.get_bottom()[1] / 0.15)
-        rows.setdefault(key, []).append(g)
+    """Underline a glyph group on its baseline, one segment per wrapped line.
+
+    Rows are grouped by glyph centre; the baseline is the median glyph bottom, so
+    descenders (g, p, y) and hyphens don't break the line into steps."""
+    gl = [g for g in mob]
+    hmax = max(g.height for g in gl)
+    rows = []
+    for g in sorted(gl, key=lambda g: -g.get_center()[1]):
+        if rows and abs(g.get_center()[1] - np.mean([h.get_center()[1] for h in rows[-1]])) <= 0.6 * hmax:
+            rows[-1].append(g)
+        else:
+            rows.append([g])
     lines = VGroup()
-    for row in rows.values():
-        grp = VGroup(*row)
-        lines.add(Line(grp.get_corner(DL) + DOWN * buff, grp.get_corner(DR) + DOWN * buff,
-                       stroke_width=stroke, color=color))
+    for row in rows:
+        y = float(np.median([g.get_bottom()[1] for g in row])) - buff
+        x0 = min(g.get_left()[0] for g in row)
+        x1 = max(g.get_right()[0] for g in row)
+        lines.add(Line([x0, y, 0], [x1, y, 0], stroke_width=stroke, color=color))
     return lines
 
 
